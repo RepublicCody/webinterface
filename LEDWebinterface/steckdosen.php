@@ -37,7 +37,6 @@ if(isset($_POST['allesteckdosenaus'])) {
 function send_steckdose ($frequenz, $nummer, $zustand){
     echo 'Ich rede mit der Steckdose: '. $frequenz . ' ' .$nummer . ' ' . $zustand;
     exec("bash /var/www/html/scripts/steckdosen.sh ". $frequenz . ' ' .$nummer . ' ' . $zustand);
-    exec("bash /var/www/html/scripts/steckdosen.sh ". $frequenz . ' ' .$nummer . ' ' . $zustand);
     $output = exec("bash /var/www/html/scripts/steckdosen.sh ". $frequenz . ' ' .$nummer . ' ' . $zustand);
     echo $output;
 }
@@ -45,9 +44,9 @@ function send_steckdose ($frequenz, $nummer, $zustand){
 
 function steckdose_zustand($value){
     if($value == 0){
-        $_SESSION['steckdosenzustand'][$value] = 1;
+        //$GLOBALS['steckdosenzustand'][$value] = 1;
     }else {
-        $_SESSION['steckdosenzustand'][$value] = 0;
+        //$GLOBALS['steckdosenzustand'][$value] = 0;
     }
 }
 
