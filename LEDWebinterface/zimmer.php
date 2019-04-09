@@ -9,7 +9,7 @@
 session_start();
 
     function steckdose_background($value){
-        if($_SESSION['steckdosenzustand'][$value] == 0){
+        if($_SESSION['steckdosenzustand'][0][$value] == 0){
             echo "class='steckdosedivaus'";
         }else {
             echo "class='steckdosedivan'";
@@ -57,12 +57,12 @@ session_start();
         </form>
 
         <form action="steckdosen.php" method="post">
-            <button id="steckdose_0" name="steckdose[]" value="11111 0 <?php echo $_SESSION['steckdosenzustand'][0]?>" class="steckdose"><div <?php steckdose_background(0)?>></div></button>
-            <button id="steckdose_1" name="steckdose[]" value="11111 1 <?php echo $_SESSION['steckdosenzustand'][1]?>" class="steckdose"><div <?php steckdose_background(1)?>></div></button>
-            <button id="steckdose_2" name="steckdose[]" value="11111 2 <?php echo $_SESSION['steckdosenzustand'][2]?>" class="steckdose"><div <?php steckdose_background(2)?>></div></button>
-            <button id="steckdose_3" name="steckdose[]" value="11111 3 <?php echo $_SESSION['steckdosenzustand'][3]?>" class="steckdose"><div <?php steckdose_background(3)?>></div></button>
-            <button id="steckdose_4" name="steckdose[]" value="11111 4 <?php echo $_SESSION['steckdosenzustand'][4]?>" class="steckdose"><div <?php steckdose_background(4)?>></div></button>
-            <button id="steckdose_5" name="steckdose[]" value="11111 5 <?php echo $_SESSION['steckdosenzustand'][5]?>" class="steckdose"><div <?php steckdose_background(5)?>></div></button>
+            <button id="steckdose_0" name="steckdose[]" value="11111 0 <?php echo $_SESSION['steckdosenzustand'][0][0]?>" class="steckdose"><div <?php steckdose_background(0)?>></div></button>
+            <button id="steckdose_1" name="steckdose[]" value="11111 1 <?php echo $_SESSION['steckdosenzustand'][0][1]?>" class="steckdose"><div <?php steckdose_background(1)?>></div></button>
+            <button id="steckdose_2" name="steckdose[]" value="11111 2 <?php echo $_SESSION['steckdosenzustand'][0][2]?>" class="steckdose"><div <?php steckdose_background(2)?>></div></button>
+            <button id="steckdose_3" name="steckdose[]" value="11111 3 <?php echo $_SESSION['steckdosenzustand'][0][3]?>" class="steckdose"><div <?php steckdose_background(3)?>></div></button>
+            <button id="steckdose_4" name="steckdose[]" value="11111 4 <?php echo $_SESSION['steckdosenzustand'][0][4]?>" class="steckdose"><div <?php steckdose_background(4)?>></div></button>
+            <button id="steckdose_5" name="steckdose[]" value="11111 5 <?php echo $_SESSION['steckdosenzustand'][0][5]?>" class="steckdose"><div <?php steckdose_background(5)?>></div></button>
         </form>
 
         <button id="regalbett" name="regalbett" value="regalbett"></button>

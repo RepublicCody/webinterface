@@ -12,7 +12,7 @@
 
 session_start();
 
-$_SESSION['steckdosenzustand'] = array(0, 0, 0, 0, 0, 0);
+$_SESSION['steckdosenzustand'] = array(array(0, 0, 0, 0, 0, 0));
 
 include 'zimmer.php'
 
