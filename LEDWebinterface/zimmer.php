@@ -6,6 +6,8 @@
  * Time: 14:59
  */
 
+session_start();
+
     function steckdose_background($value){
         if($_SESSION['steckdosenzustand'][$value] == 0){
             echo "class='steckdosedivaus'";

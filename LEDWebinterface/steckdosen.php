@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 $steckdosenliste = array(array("11111","1"),array("11111","2"),array("11111","3"));
 
 
