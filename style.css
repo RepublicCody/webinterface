@@ -1,0 +1,799 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    position: absolute;
+    z-index: 6;
+    top: 5%;
+    left: 50%;
+    width: 100%;
+    height: 10%;
+    background-color: #404040;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.regalnummer {
+    position: absolute;
+    width: 36%;
+    height: 60%;
+    top: 50%;
+    left: 65%;
+    color: #c0c0c0;
+    background-color: #282828;
+    border: 2px solid #505050;
+    border-radius: 3%;
+    text-align: center;
+    font-size: 200%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#alleregalehauptmenue {
+    left: 10%;
+}
+
+#alleregale {
+    left: 25%;
+}
+
+#alleregaleledsaus {
+    left: 40%;
+}
+
+#allesteckdosenaus {
+    left: 55%;
+}
+
+.headerbutton {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    width: 10%;
+    height: 80%;
+    color: #ffffff;
+    background-color: #717171;
+    border: 2px solid #505050;
+    border-radius: 6%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-color: #282828;
+}
+
+#regalansichthauptmenue {
+    left: 10%;
+}
+
+#regalansichtalleleds {
+    left: 25%;
+}
+
+#regalansichtalleledsaus {
+    left: 40%;
+}
+
+#regalansichtzurueck {
+    left: 90%;
+}
+
+
+
+
+#fachansichtalleleds {
+    left: 25%;
+}
+
+#fachansichtalleledsaus {
+    left: 40%;
+}
+
+#fachansichtzurueck {
+    left: 90%;
+}
+
+#fachansichthauptmenue {
+    left: 10%;
+}
+
+
+#farbauswahlausschalten {
+    left: 40%;
+}
+#farbauswahlzurueck {
+    left: 90%;
+}
+#farbauswahlhauptmenue {
+    left: 10%;
+}
+
+
+
+
+
+
+#zimmer {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    top: 55%;
+    left: 50%;
+    background-image: url("images/boden.jpg");
+    background-size: 60%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#bett {
+    position: absolute;
+    top: 37%;
+    left: 77%;
+    width: 42%;
+    height: 50%;
+    background-color: #000000;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#matraze {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 96%;
+    height: 92%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#nachttisch {
+    position: absolute;
+    top: 69%;
+    left: 95%;
+    width: 10%;
+    height: 14%;
+    background-color: #000000;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#kratzbaum {
+    position: absolute;
+    top: 6%;
+    left: 92%;
+    width: 10%;
+    height: 11%;
+    border: 1px solid #000000;
+    border-radius: 5%;
+    background-color: #808080;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#lampediv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/gluehbirne.png");
+    background-size: 100%;
+    opacity: 1;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#lampe {
+    z-index: 5;
+    position: absolute;
+    top: 90%;
+    left: 95%;
+    width: 6%;
+    height: 13%;
+    border: none;
+    background: rgba(0, 0, 0, 0.0);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#steckdose_0 {
+    top: 5%;
+    left: 10%;
+}
+#steckdose_1 {
+    top: 95%;
+    left: 10%;
+}
+#steckdose_2 {
+    top: 5%;
+    left: 52.5%;
+}
+#steckdose_3 {
+    top: 5%;
+    left: 90%;
+}
+#steckdose_4 {
+    top: 95%;
+    left: 5%;
+}
+#steckdose_5 {
+    top: 69%;
+    left: 97.5%;
+}
+
+.steckdose {
+    z-index: 5;
+    position: absolute;
+    width: 3%;
+    height: 7%;
+    border: none;
+    background: rgba(0, 0, 0, 0.0);
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.steckdosedivan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/steckdose_green.png");
+    background-size: 100%;
+    opacity: 1;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.steckdosedivaus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/steckdose_red.png");
+    background-size: 100%;
+    opacity: 1;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#regalbett {
+    position: absolute;
+    top: 37%;
+    left: 97.5%;
+    width: 5%;
+    height: 50%;
+    background-color: #000000;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#schreibtisch {
+    position: absolute;
+    top: 50%;
+    left: 9%;
+    width: 18%;
+    height: 100%;
+    background-color: #ffffff;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#kommode {
+    position: absolute;
+    top: 6%;
+    left: 18%;
+    width: 16%;
+    height: 12%;
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.regal {
+    position: absolute;
+    width: 30%;
+    height: 12%;
+    border: 2px solid #ffffff;
+    background-color: #000000;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#regal_1 {
+    top: 94%;
+    left: 33%;
+}
+
+#regal_2 {
+    top: 94%;
+    left: 63%;
+}
+
+#regal_3 {
+    width: 7%;
+    height: 48%;
+    top: 36%;
+    left: 52.5%;
+
+    /*top: 39%;
+    left: 31%;
+    transform: rotate(90deg);
+    */
+}
+
+#regal_4 {
+    top: 6%;
+    left: 71%;
+}
+
+#regal_5 {
+    top: 6%;
+    left: 41%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#regalansicht {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#tabelle {
+    border: 8px solid #000000;
+}
+
+table {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+td {
+    width: 20vh;
+    height: 20vh;
+}
+
+.fach {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000000;
+}
+
+.fachdisabled {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000000;
+    background-image: url("images/schloss.png");
+    background-size: 100%;
+}
+
+
+
+
+
+
+
+
+#fachansicht {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#fachansichttabelle {
+    border: 8px solid #000000;
+}
+
+.led {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#farbauswahl {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+#links {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#tabellemitte {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.farbauswahlbuttons {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#rechts {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#bar {
+    position: absolute;
+    width: 90%;
+    height: 40%;
+    top: 24%;
+    left: 50%;
+    color: #ffffff;
+    background-color: #717171;
+    border: 2px solid #505050;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+}
+
+#hexfarbe {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 60%;
+    width: 60%;
+    height: auto;
+    border: 1px solid #000000;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#hexbar {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#farbe {
+    position: absolute;
+    top: 60%;
+    left: 82%;
+    width: 30%;
+    height: 10%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#submit {
+    position: absolute;
+    top: 83%;
+    left: 82%;
+    width: 30%;
+    height: 30%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#versteckterbutton {
+
+}
+
+.bar {
+    position: absolute;
+    left: 50%;
+    height: 14%;
+    width: 90%;
+    color: #ffffff;
+    background-color: #282828;
+    border: 2px solid #505050;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#reddivbar {
+    top: 25%;
+}
+
+#greendivbar {
+    top: 50%;
+}
+
+#bluedivbar {
+    top: 75%;
+}
+
+#redbar {
+    position: absolute;
+    top: 50%;
+    left: 58%;
+    height: 100%;
+    width: 75%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#redname {
+    position: absolute;
+    top: 50%;
+    left: 12.5%;
+    height: 100%;
+    width: 25%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#greenbar {
+    position: absolute;
+    top: 50%;
+    left: 58%;
+    height: 100%;
+    width: 75%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#greenname {
+    position: absolute;
+    top: 50%;
+    left: 12.5%;
+    height: 100%;
+    width: 25%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#bluebar {
+    position: absolute;
+    top: 50%;
+    left: 58%;
+    height: 100%;
+    width: 75%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#bluename {
+    position: absolute;
+    top: 50%;
+    left: 12.5%;
+    height: 100%;
+    width: 25%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#display {
+
+}
+
+#status {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#farbtabellenid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.farbtabelle {
+    width: 70px;
+    height: 50px;
+}
+
+.farbe {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #505050;
+    border-radius: 2px;
+}
+
+#rot {
+    background-color: #ff0000;
+}
+#gelb {
+    background-color: #ffff00;
+}
+#gruen {
+    background-color: #00ff00;
+}
+#blau {
+    background-color: #0000ff;
+}
+#orange {
+    background-color: #ffa500;
+}
+#weiss {
+    background-color: #ffffff;
+}
+#pink {
+    background-color: #ffc0cb;
+}
+#schwarz {
+    background-color: #000000;
+}
+#lila {
+    background-color: #800080;
+}
+
+
+
+
+/*
+#00 {
+    top: 10%;
+    left: 10%;
+}
+
+#01 {
+    top: 20%;
+    left: 10%;
+}
+
+#02 {
+    top: 30%;
+    left: 10%;
+}
+
+#03 {
+    top: 40%;
+    left: 10%;
+}
+
+
+
+#10 {
+    top: 10%;
+    left: 20%;
+}
+
+#11 {
+    top: 20%;
+    left: 20%;
+}
+
+#12 {
+    top: 30%;
+    left: 20%;
+}
+
+#13 {
+    top: 40%;
+    left: 20%;
+}
+
+
+
+#20 {
+
+}
+
+#21 {
+
+}
+
+#22 {
+
+}
+
+#23 {
+
+}
+
+
+
+#30 {
+
+}
+
+#31 {
+
+}
+
+#32 {
+
+}
+
+#33 {
+
+}
