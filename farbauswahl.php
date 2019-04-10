@@ -6,7 +6,7 @@
  * Time: 14:55
  */
 
-$regalfach_pro_regal = array(12, 16 , 14, 12, 12);               //todo modularer machen also function schreiben
+$regalfach_pro_regal = array(16, 12 , 14, 12, 12);               //todo modularer machen also function schreiben
 
     $befehlsstring = '';
 

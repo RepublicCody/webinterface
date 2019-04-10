@@ -317,12 +317,12 @@ html, body {
 
 #regal_1 {
     top: 94%;
-    left: 33%;
+    left: 63%;
 }
 
 #regal_2 {
     top: 94%;
-    left: 63%;
+    left: 33%;
 }
 
 #regal_3 {
@@ -331,10 +331,6 @@ html, body {
     top: 36%;
     left: 52.5%;
 
-    /*top: 39%;
-    left: 31%;
-    transform: rotate(90deg);
-    */
 }
 
 #regal_4 {

@@ -6,8 +6,8 @@
  * Time: 14:55
  */
 
-$regale = array(array(array(1,1,1,1),array(1,1,1,1),array(1,1,0,0),array(1,1,0,0)),
-    array(array(1,1,1,1),array(1,1,1,1),array(1,1,1,1),array(1,1,1,1)),
+$regale = array(array(array(1,1,1,1),array(1,1,1,1),array(1,1,1,1),array(1,1,1,1)),
+    array(array(1,1,1,1),array(1,1,1,1),array(1,1,0,0),array(1,1,0,0)),
     array(array(1,1,1,1),array(1,1,1,1),array(0,1,1,0),array(1,1,1,1)),
     array(array(1,1,1,1),array(1,1,1,1),array(1,1,1,1),array(0,0,0,0)),
     array(array(1,1,1,0),array(1,1,1,0),array(1,1,1,0),array(1,1,1,0)));
