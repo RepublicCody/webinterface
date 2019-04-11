@@ -13,6 +13,7 @@ if(isset($_POST['aus'])) {
     send_led_befehl($sendestring);
 
     header("Location:zimmer.php");
+    
 }else  {
 
     $red = $_POST['red'];
@@ -27,8 +28,6 @@ if(isset($_POST['aus'])) {
     $sendestring = merge_befehlsstring_und_farbe($befehlsstring, $farbe);
 
     send_led_befehl($sendestring);
-
-    header("Location:zimmer.php");
 
 }
 
