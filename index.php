@@ -14,7 +14,7 @@ session_start();
 
 $_SESSION['steckdosenzustand'] = array(array(0, 0, 0, 0, 0, 0));
 
-include 'zimmer.php'
+include 'zimmer.php';
 
 ?>
 

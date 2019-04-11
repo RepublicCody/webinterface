@@ -17,7 +17,8 @@ if(isset($_POST['allesteckdosenaus'])) {
         send_steckdose($frequenz, $nummer, $zustand);
     }
 
-    include 'zimmer.php';
+    header("Location:zimmer.php");
+
 }else  if(isset($_POST['steckdose'])) {
 
     $frequenzUndNummer = explode(' ', $_POST['steckdose'][0]);

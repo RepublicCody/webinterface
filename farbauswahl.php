@@ -79,7 +79,6 @@ $regalfach_pro_regal = array(16, 12 , 14, 12, 12);               //todo modulare
         for($x = 0; $x < $regalnummer; $x++){
             $zaehler += $regalfaecher_im_regal[$x];
         }
-        //$zaehler = $zaehler*4;
         return $zaehler;
     }
 
@@ -117,29 +116,6 @@ $regalfach_pro_regal = array(16, 12 , 14, 12, 12);               //todo modulare
             }
         }
         return $returnstring;
-    }
-
-    function platzhalter($regalnummer) {
-        $s = '';
-        switch ($regalnummer) {
-            case 0:
-                {}
-            break;
-
-            case 1:
-                {}
-                break;
-            case 2:
-                {}
-                break;
-            case 3:
-                {}
-                break;
-            case 4:
-                {}
-                break;
-        }
-
     }
 
 ?>
