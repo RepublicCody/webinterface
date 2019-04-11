@@ -50,7 +50,7 @@ session_start();
     <div id="zimmer">
 
         <div id="kratzbaum"></div>
-        <div id="kommode"></div>
+        <button id="kommode" disabled></button>
 
         <form action="lampe.php" method="post">
             <button id="lampe" name="lampe" value="lampe"><div id="lampediv"></div></button>
