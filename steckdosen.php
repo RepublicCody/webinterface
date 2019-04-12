@@ -48,9 +48,9 @@ function send_steckdose ($frequenz, $nummer, $zustand){
 
 function steckdose_zustand($frequenz, $nummer, $value){
     if($value == 0){
-        $_SESSION['steckdosenzustand'][0][$nummer] = 1;
-    }else {
         $_SESSION['steckdosenzustand'][0][$nummer] = 0;
+    }else {
+        $_SESSION['steckdosenzustand'][0][$nummer] = 1;
     }
 }
 
