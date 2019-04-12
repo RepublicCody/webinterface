@@ -6,6 +6,8 @@
  * Time: 23:21
  */
 
+session_start();
+
 if(isset($_POST['aus'])) {
     $befehlsstring = $_POST['aus'];
     $sendestring = $befehlsstring;
@@ -13,17 +15,23 @@ if(isset($_POST['aus'])) {
     send_led_befehl($sendestring);
 
     header("Location:zimmer.php");
-    
-}else  {
+
+}elseif(isset($_POST['rgbhex'])) {
+    $farbe = $_POST['rgbhex'];
+    $befehlsstring = $_SESSION['befehlsstring'];
+    $sendestring = merge_befehlsstring_und_farbe($befehlsstring, $farbe);
+
+    send_led_befehl($sendestring);
+
+}else {
 
     $red = $_POST['red'];
     $green = $_POST['green'];
     $blue = $_POST['blue'];
-    $befehlsstring = $_POST['befehlsstring'];
+    $befehlsstring = $_SESSION['befehlsstring'];
     $hexfarbe = $_POST['hexfarbe'];
-    $farbbutton = $_POST['farbe'];
 
-    $farbe = farbeninterpreter($hexfarbe, $red, $green, $blue, $farbbutton);
+    $farbe = farbeninterpreter($hexfarbe, $red, $green, $blue);
 
     $sendestring = merge_befehlsstring_und_farbe($befehlsstring, $farbe);
 
@@ -52,19 +60,15 @@ function dezimaltohex($red, $green, $blue) {
     return $red.$green.$blue;
 }
 
-function farbeninterpreter($hexfarbe, $red, $green, $blue, $farbbutton){
+function farbeninterpreter($hexfarbe, $red, $green, $blue){
     $returnstring = '';
-
-    $farbbutton = $farbbutton[1].$farbbutton[2].$farbbutton[3].$farbbutton[4].$farbbutton[5].$farbbutton[6];
 
     $rgb = dezimaltohex($red, $green, $blue);
 
     if (strlen($hexfarbe) >= 1){
         $returnstring = $hexfarbe;
-    }elseif(strcmp($farbbutton, '000000') == 0){
-        $returnstring = $rgb;
     }else {
-        $returnstring = $farbbutton;
+        $returnstring = $rgb;
     }
 
     return $returnstring;
