@@ -28,9 +28,9 @@ if(isset($_POST['aus'])) {
     $befehlsstring = $_SESSION['befehlsstring'];
     $hexfarbe = $_POST['hexfarbe'];
 
-    $farbe = $hexfarbe;
+    $farbe = explode('#',$hexfarbe);
 
-    $sendestring = merge_befehlsstring_und_farbe($befehlsstring, $farbe);
+    $sendestring = merge_befehlsstring_und_farbe($befehlsstring, $farbe[1]);
 
     send_led_befehl($sendestring);
 
