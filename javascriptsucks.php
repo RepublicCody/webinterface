@@ -25,53 +25,15 @@ if(isset($_POST['aus'])) {
 
 }else {
 
-    $red = $_POST['red'];
-    $green = $_POST['green'];
-    $blue = $_POST['blue'];
     $befehlsstring = $_SESSION['befehlsstring'];
     $hexfarbe = $_POST['hexfarbe'];
 
-    $farbe = farbeninterpreter($hexfarbe, $red, $green, $blue);
+    $farbe = $hexfarbe;
 
     $sendestring = merge_befehlsstring_und_farbe($befehlsstring, $farbe);
 
     send_led_befehl($sendestring);
 
-}
-
-
-
-function dezimaltohex($red, $green, $blue) {
-
-    $red = dechex($red);
-    $green = dechex($green);
-    $blue = dechex($blue);
-
-    if(strlen($red)<2){
-        $red = '0'.$red;
-    }
-    if(strlen($green)<2){
-        $green = '0'.$green;
-    }
-    if(strlen($blue)<2){
-        $blue = '0'.$blue;
-    }
-
-    return $red.$green.$blue;
-}
-
-function farbeninterpreter($hexfarbe, $red, $green, $blue){
-    $returnstring = '';
-
-    $rgb = dezimaltohex($red, $green, $blue);
-
-    if (strlen($hexfarbe) >= 1){
-        $returnstring = $hexfarbe;
-    }else {
-        $returnstring = $rgb;
-    }
-
-    return $returnstring;
 }
 
 function merge_befehlsstring_und_farbe($befehlsstring, $farbe){

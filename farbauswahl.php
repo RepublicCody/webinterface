@@ -139,11 +139,8 @@ function generatebefehlsstring($ledarray)
             var hr = new XMLHttpRequest();
             // Create some variables we need to send to our PHP file
             var url = "javascriptsucks.php";
-            var red = document.getElementById("redbar").value;
-            var green = document.getElementById("greenbar").value;
-            var blue = document.getElementById("bluebar").value;
             var hexfarbe = document.getElementById("hexfarbe").value;
-            var vars = "red=" + red + "&green=" + green + "&blue=" + blue + "&hexfarbe=" + hexfarbe;
+            var vars = "hexfarbe=" + hexfarbe;
             hr.open("POST", url, true);
             // Set content type header information for sending url encoded variables in the request
             hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
