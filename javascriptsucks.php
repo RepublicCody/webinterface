@@ -25,13 +25,15 @@ if(isset($_POST['aus'])) {
 
 }else {
 
-    $red = $_POST['red'];
-    $green = $_POST['green'];
-    $blue = $_POST['blue'];
+    //$red = $_POST['red'];
+    //$green = $_POST['green'];
+    //$blue = $_POST['blue'];
     $befehlsstring = $_SESSION['befehlsstring'];
     $hexfarbe = $_POST['hexfarbe'];
 
-    $farbe = farbeninterpreter($hexfarbe, $red, $green, $blue);
+    //$farbe = farbeninterpreter($hexfarbe, $red, $green, $blue);
+
+    $farbe = $hexfarbe;
 
     $sendestring = merge_befehlsstring_und_farbe($befehlsstring, $farbe);
 

@@ -143,7 +143,7 @@ function generatebefehlsstring($ledarray)
             var green = document.getElementById("greenbar").value;
             var blue = document.getElementById("bluebar").value;
             var hexfarbe = document.getElementById("hexfarbe").value;
-            var vars = "red=" + red + "&green=" + green + "&blue=" + blue + "&hexfarbe=" + hexfarbe;
+            var vars = "hexfarbe=" + hexfarbe;
             hr.open("POST", url, true);
             // Set content type header information for sending url encoded variables in the request
             hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -155,30 +155,6 @@ function generatebefehlsstring($ledarray)
                 }
             }
             // Send the data to PHP now... and wait for response to update the status div
-            hr.send(vars); // Actually execute the request
-            document.getElementById("status").innerHTML = "verschicke Kekse";
-        }
-
-        function colorWheel_post() {
-
-            var colorPicker = new iro.ColorWheel('#colorWheel');
-
-            var hex = colorPicker.color.hexString;
-
-            var hr = new XMLHttpRequest();
-            var url = "javascriptsucks.php";
-            var vars = "rgbhex=" + hex;
-            hr.open("POST", url, true);
-// Set content type header information for sending url encoded variables in the request
-            hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-// Access the onreadystatechange event for the XMLHttpRequest object
-            hr.onreadystatechange = function () {
-                if (hr.readyState == 4 && hr.status == 200) {
-                    var return_data = hr.responseText;
-                    document.getElementById("status").innerHTML = return_data;
-                }
-            }
-// Send the data to PHP now... and wait for response to update the status div
             hr.send(vars); // Actually execute the request
             document.getElementById("status").innerHTML = "verschicke Kekse";
         }
@@ -223,7 +199,6 @@ function generatebefehlsstring($ledarray)
             <div class="wheel" id="colorWheel"></div>
 
             <script src="iro.min.js" charset="utf-8"></script>
-            <script src="colorWheel.js" charset="utf-8"></script>
 
         </div>
 
@@ -248,11 +223,13 @@ function generatebefehlsstring($ledarray)
             <div id="hexbar">Hex Farbe</div>
             <input id="hexfarbe" name="hexfarbe" type="text">
 
+
             <input id="submit" type="submit" name="submitbutton" value="Kekse" onclick="javascript:ajax_post();">
 
 
             <div id="display"></div>
 
+            <script src="colorWheel.js" charset="utf-8"></script>
 
         </div>
         <div id="status"></div>
