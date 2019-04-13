@@ -143,7 +143,7 @@ function generatebefehlsstring($ledarray)
             var green = document.getElementById("greenbar").value;
             var blue = document.getElementById("bluebar").value;
             var hexfarbe = document.getElementById("hexfarbe").value;
-            var vars = "hexfarbe=" + hexfarbe;
+            var vars = "red=" + red + "&green=" + green + "&blue=" + blue + "&hexfarbe=" + hexfarbe;
             hr.open("POST", url, true);
             // Set content type header information for sending url encoded variables in the request
             hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -222,6 +222,7 @@ function generatebefehlsstring($ledarray)
 
             <div id="hexbar">Hex Farbe</div>
             <input id="hexfarbe" name="hexfarbe" type="text">
+
 
 
             <input id="submit" type="submit" name="submitbutton" value="Kekse" onclick="javascript:ajax_post();">
