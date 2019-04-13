@@ -15,6 +15,7 @@ if(isset($_POST['allesteckdosenaus'])) {
         $frequenz = $steckdosenliste[$x][0];
         $nummer = $steckdosenliste[$x][1];
         send_steckdose($frequenz, $nummer, $zustand);
+        steckdose_zustand($frequenz, $nummer, $zustand);
     }
 
     header("Location:zimmer.php");
@@ -28,6 +29,9 @@ if(isset($_POST['allesteckdosenaus'])) {
     $frequenz = $frequenzUndNummer[0];
     $nummer = $frequenzUndNummer[1];
     $zustand = $frequenzUndNummer[2];
+
+    if($zustand == 0)$zustand = 1;
+    else $zustand = 0;
 
     send_steckdose($frequenz, $nummer, $zustand);
 
@@ -47,11 +51,8 @@ function send_steckdose ($frequenz, $nummer, $zustand){
 
 
 function steckdose_zustand($frequenz, $nummer, $value){
-    if($value == 0){
-        $_SESSION['steckdosenzustand'][0][$nummer] = 1;
-    }else {
-        $_SESSION['steckdosenzustand'][0][$nummer] = 0;
-    }
+        $_SESSION['steckdosenzustand'][0][$nummer] = $value;
+
 }
 
 ?>
