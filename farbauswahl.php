@@ -123,7 +123,7 @@ include 'htmlheader.php';?>
             // Create our XMLHttpRequest object
             var hr = new XMLHttpRequest();
             // Create some variables we need to send to our PHP file
-            var url = "javascriptsucks.php";
+            var url = "send/leds.php";
             var hexfarbe = document.getElementById("hexfarbe").value;
             var vars = "hexfarbe=" + hexfarbe;
             hr.open("POST", url, true);
