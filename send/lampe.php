@@ -4,7 +4,7 @@ if(isset($_POST['lampe'])) {
 
     send_lampe();
 
-    header("Location:zimmer.php");
+    header("Location:../zimmer.php");
 }
 
     function send_lampe (){

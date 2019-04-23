@@ -14,7 +14,7 @@ if(isset($_POST['aus'])) {
 
     send_led_befehl($sendestring);
 
-    header("Location:zimmer.php");
+    header("Location:../zimmer.php");
 
 }elseif(isset($_POST['rgbhex'])) {
     $farbe = $_POST['rgbhex'];
