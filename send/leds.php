@@ -59,5 +59,4 @@ function send_led_befehl ($befehlsstring){
     echo $output;
 }
 
-
 ?>

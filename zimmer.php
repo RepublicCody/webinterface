@@ -17,14 +17,8 @@ session_start();
     }
 
 
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Hier könnte Ihre Werbung stehen</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/favicon.ico">
+ include 'htmlheader.php';?>
+
 </head>
 <body>
 
@@ -38,10 +32,10 @@ session_start();
         <form action="farbauswahl.php" method="post">
             <button id="alleregale" name="alleregale" value="alleregale" class="headerbutton">Alle LEDs Auswählen</button>
         </form>
-        <form action="javascriptsucks.php" method="post">
+        <form action="send/leds.php" method="post">
             <button id="alleregaleledsaus" name="aus" value="off" class="headerbutton">Alle LEDs Ausschalten</button>
         </form>
-        <form action="steckdosen.php" method="post">
+        <form action="send/steckdosen.php" method="post">
             <button id="allesteckdosenaus" name="allesteckdosenaus" value="allesteckdosenaus" class="headerbutton">Alle Steckdosen Ausschalten</button>
         </form>
 
@@ -52,11 +46,11 @@ session_start();
         <div id="kratzbaum"></div>
         <button id="kommode" disabled></button>
 
-        <form action="lampe.php" method="post">
+        <form action="send/lampe.php" method="post">
             <button id="lampe" name="lampe" value="lampe"><div id="lampediv"></div></button>
         </form>
 
-        <form action="steckdosen.php" method="post">
+        <form action="send/steckdosen.php" method="post">
             <button id="steckdose_0" name="steckdose[]" value="11111 0 <?php echo $_SESSION['steckdosenzustand'][0][0]?>" class="steckdose"><div <?php steckdose_background(0)?>></div></button>
             <button id="steckdose_1" name="steckdose[]" value="11111 1 <?php echo $_SESSION['steckdosenzustand'][0][1]?>" class="steckdose"><div <?php steckdose_background(1)?>></div></button>
             <button id="steckdose_2" name="steckdose[]" value="11111 2 <?php echo $_SESSION['steckdosenzustand'][0][2]?>" class="steckdose"><div <?php steckdose_background(2)?>></div></button>

@@ -116,16 +116,8 @@ function generatebefehlsstring($ledarray){
     return $returnstring;
 }
 
-?>
+include 'htmlheader.php';?>
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Hier könnte Ihre Werbung stehen</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/favicon.ico">
     <script language="JavaScript" type="text/javascript">
         function ajax_post() {
             // Create our XMLHttpRequest object
@@ -156,7 +148,7 @@ function generatebefehlsstring($ledarray){
 
     <div id="farbauswahlheader" class="header">
 
-        <form action="javascriptsucks.php" method="post">
+        <form action="send/leds.php" method="post">
             <button id="farbauswahlausschalten" name="aus" value="off" class="headerbutton">Alle Ausschalten</button>
         </form>
 
@@ -188,7 +180,7 @@ function generatebefehlsstring($ledarray){
 
             <div class="wheel" id="colorWheel"></div>
 
-            <script src="iro.min.js" charset="utf-8"></script>
+            <script src="javascript/iro.min.js" charset="utf-8"></script>
 
         </div>
 
@@ -220,7 +212,7 @@ function generatebefehlsstring($ledarray){
 
             <div id="display"></div>
 
-            <script src="colorWheel.js" charset="utf-8"></script>
+            <script src="javascript/colorWheel.js" charset="utf-8"></script>
 
         </div>
         <div id="status"></div>

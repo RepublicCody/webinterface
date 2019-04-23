@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Hier könnte Ihre Werbung stehen</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/favicon.ico">
+<?php include 'htmlheader.php';?>
 </head>
 <body>
 
@@ -13,6 +7,12 @@
 session_start();
 
 $_SESSION['steckdosenzustand'] = array(array(0, 0, 0, 0, 0, 0));
+$_SESSION['regale'] = array(
+    array(array(1,1,1,1),array(1,1,1,1),array(1,1,1,1),array(1,1,1,1)),
+    array(array(1,1,1,1),array(1,1,1,1),array(1,1,0,0),array(1,1,0,0)),
+    array(array(1,1,1,1),array(1,1,1,1),array(0,1,1,0),array(1,1,1,1)),
+    array(array(1,1,1,1),array(1,1,1,1),array(1,1,1,1),array(0,0,0,0)),
+    array(array(1,1,1,0),array(1,1,1,0),array(1,1,1,0),array(1,1,1,0)));
 
 header("Location:zimmer.php");
 

@@ -12,14 +12,9 @@ foreach($dummy as $key => $value) {
     $regalundfachnummer = $value;
 }
 
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Hier könnte Ihre Werbung stehen</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/favicon.ico">
+
+include 'htmlheader.php';?>
+
 </head>
 <body>
 
@@ -29,7 +24,7 @@ foreach($dummy as $key => $value) {
         <form action="farbauswahl.php" method="post">
             <button id="fachansichtalleleds" name="allefachleds" value="<?php echo $regalundfachnummer; ?>" class="headerbutton">Alle Auswählen</button>
         </form>
-        <form action="javascriptsucks.php" method="post">
+        <form action="send/leds.php" method="post">
             <button id="fachansichtalleledsaus" name="aus" value="off" class="headerbutton">Alle Ausschalten</button>
         </form>
 
