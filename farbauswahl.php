@@ -12,11 +12,7 @@ $regalfach_pro_regal = array(16, 12, 14, 12, 12);               //todo modularer
 
 $befehlsstring = '';
 
-$farbe = '';
-
 $farben = array(array());
-
-$regalundfachundlednummer;
 
 if (isset($_POST['alleregale'])) {
 
@@ -76,8 +72,7 @@ if (isset($_POST['alleregale'])) {
  * Das heißt über $regalnummer gibt man ihn die Nummer des Regals,
  * wessen Position man finden will ein und bekommt diese dann zurück
  */
-function position($regalnummer, $regalfaecher_im_regal)
-{
+function position($regalnummer, $regalfaecher_im_regal){
     $zaehler = 0;
     for ($x = 0; $x < $regalnummer; $x++) {
         $zaehler += $regalfaecher_im_regal[$x];
@@ -91,8 +86,7 @@ function position($regalnummer, $regalfaecher_im_regal)
  * @param $position Postion des Regals
  * @param $anzahl der Fächer im Regal
  */
-function leds_im_regal($position, $faecheranzahl)
-{
+function leds_im_regal($position, $faecheranzahl){
 
     $ledarray = array(array());
     $anzahlDerLEDSProFach = 4;
@@ -111,8 +105,7 @@ function leds_im_regal($position, $faecheranzahl)
     return $ledarray;
 }
 
-function generatebefehlsstring($ledarray)
-{
+function generatebefehlsstring($ledarray){
     $returnstring = '';
 
     for ($x = 0; $x < sizeof($ledarray); $x++) {

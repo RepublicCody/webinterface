@@ -12,9 +12,6 @@ foreach($dummy as $key => $value) {
     $regalundfachnummer = $value;
 }
 
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
