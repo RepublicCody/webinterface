@@ -59,6 +59,10 @@ session_start();
             <button id="steckdose_5" name="steckdose[]" value="11111 5 <?php echo $_SESSION['steckdosenzustand'][0][5]?>" class="steckdose"><div <?php steckdose_background(5)?>></div></button>
         </form>
 
+        <button id="schreibtischlampe_1" name="schreibtischlampe_1" value="" class="schreibtischlampe"></button>
+        <button id="schreibtischlampe_2" name="schreibtischlampe_2" value="" class="schreibtischlampe"></button>
+        <button id="monitore" name="monitore" value="" class="monitore"></button>
+        <button id="computer" name="computer" value="" class="computer"></button>
         <button id="regalbett" name="regalbett" value="regalbett"></button>
         <button id="nachttisch" name="nachttisch" value="nachttisch"></button>
         <button id="schreibtisch" name="schreibtisch" value="schreibtisch"></button>

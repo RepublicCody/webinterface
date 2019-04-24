@@ -54,9 +54,9 @@ function merge_befehlsstring_und_farbe($befehlsstring, $farbe){
 
 function send_led_befehl ($befehlsstring){
     $sendstring = $befehlsstring;
-    //echo 'Ich bin der Sendestring: '.$sendstring;
+    echo 'Ich bin der Sendestring: '.$sendstring;
     $output = exec("/var/www/html/scripts/run.sh ".$sendstring);
-    //echo $output;
+    echo $output;
 }
 
 ?>
