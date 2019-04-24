@@ -7,12 +7,16 @@
  */
 
 session_start();
-
-$dummy = $_POST['regal'];
-
-foreach($dummy as $key => $value) {
-    $regalnummer = $value;
+if(isset($_POST['regal'])){
+    $dummy = $_POST['regal'];
+    foreach($dummy as $key => $value) {
+        $regalnummer = $value;
+    }
 }
+else {
+    $regalnummer = $_POST['fachansichtheaderbutton'];
+}
+
 
  include 'htmlheader.php';?>
 

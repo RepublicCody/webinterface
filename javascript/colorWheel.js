@@ -30,15 +30,13 @@ var colorPicker = new iro.ColorPicker("#colorWheel", {
     ]
 });
 
-
-
 colorPicker.on(["color:init", "color:change"], function(color){
-    // Show the current color in different formats
-    // Using the selected color: https://iro.js.org/guide.html#selected-color-api
-    document.getElementById("hexfarbe").value = color.hexString;
+
+    document.getElementById("hexfeld").value = color.hexString;
+    document.getElementById("submit").style.backgroundColor = color.hexString;
     document.getElementById("redbar").value = color.rgb["r"];
     document.getElementById("greenbar").value = color.rgb["g"];
     document.getElementById("bluebar").value = color.rgb["b"];
 
-    //display.innerHTML = color.hexString;
+    //status.innerHTML = color.hexString;
 });

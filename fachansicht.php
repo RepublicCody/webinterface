@@ -6,12 +6,16 @@
  * Time: 14:53
  */
 
-$dummy = $_POST['fach'];
+if(isset($_POST['fach'])) {
 
-foreach($dummy as $key => $value) {
-    $regalundfachnummer = $value;
+    $dummy = $_POST['fach'];
+
+    foreach ($dummy as $key => $value) {
+        $regalundfachnummer = $value;
+    }
+}else {
+
 }
-
 
 include 'htmlheader.php';?>
 
@@ -28,7 +32,9 @@ include 'htmlheader.php';?>
             <button id="fachansichtalleledsaus" name="aus" value="off" class="headerbutton">Alle Ausschalten</button>
         </form>
 
-        <button id="fachansichtzurueck" class="headerbutton">Zurück</button>
+        <form action="regalansicht.php" method="post">
+        <button id="fachansichtzurueck" class="headerbutton" name="fachansichtheaderbutton" value="<?php echo $regalundfachnummer[0]; ?>">Zurück</button>
+        </form>
 
         <form action="zimmer.php">
             <button id="fachansichthauptmenue" class="headerbutton">Hauptmenü</button>

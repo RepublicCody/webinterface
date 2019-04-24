@@ -152,7 +152,7 @@ include 'htmlheader.php';?>
             <button id="farbauswahlausschalten" name="aus" value="off" class="headerbutton">Alle Ausschalten</button>
         </form>
 
-        <button id="farbauswahlzurueck" class="headerbutton">Zurück</button>
+        <button id="farbauswahlzurueck" name="farbauswahlheaderbuttonzurueck" class="headerbutton">Zurück</button>
 
         <form action="zimmer.php">
             <button id="farbauswahlhauptmenue" class="headerbutton">Hauptmenü</button>
@@ -196,21 +196,19 @@ include 'htmlheader.php';?>
                     <div id="greenname">Grün</div>
                     <input id="greenbar" type="range" min="0" max="255" step="1" value="255">
                 </div>
+
                 <div id="bluedivbar" class="bar">
                     <div id="bluename">Blau</div>
                     <input id="bluebar" type="range" min="0" max="255" step="1" value="255">
                 </div>
             </div>
 
-            <div id="hexbar">Hex Farbe</div>
-            <input id="hexfarbe" name="hexfarbe" type="text">
+            <div id="hexfarbe">
+                <div id="hexname">Hex Farbe</div>
+                <input id="hexfeld" name="hexfarbe" type="text">
+            </div>
 
-
-
-            <input id="submit" type="submit" name="submitbutton" value="Kekse" onclick="javascript:ajax_post();">
-
-
-            <div id="display"></div>
+            <input id="submit" type="submit" name="submitbutton" value="Absenden" onclick="javascript:ajax_post();">
 
             <script src="javascript/colorWheel.js" charset="utf-8"></script>
 

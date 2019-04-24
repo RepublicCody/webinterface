@@ -59,7 +59,7 @@ html, body {
     color: #ffffff;
     background-color: #717171;
     border: 2px solid #505050;
-    border-radius: 6%;
+    border-radius: 10px;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
@@ -174,7 +174,7 @@ html, body {
     width: 10%;
     height: 11%;
     border: 1px solid #000000;
-    border-radius: 5%;
+    border-radius: 10px;
     background-color: #808080;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -487,6 +487,9 @@ td {
     height: 100%;
     top: 50%;
     left: 75%;
+    color: #ffffff;
+    background-color: #717171;
+    border: 2px solid #505050;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
@@ -495,11 +498,8 @@ td {
     position: absolute;
     width: 90%;
     height: 40%;
-    top: 24%;
+    top: 20%;
     left: 50%;
-    color: #ffffff;
-    background-color: #717171;
-    border: 2px solid #505050;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 
@@ -509,15 +509,29 @@ td {
     position: absolute;
     z-index: 5;
     top: 50%;
+    left: 50%;
+    width: 86%;
+    height: 10%;
+    color: #ffffff;
+    background-color: #282828;
+    border: 2px solid #505050;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+ }
+
+#hexfeld {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
     left: 60%;
     width: 60%;
-    height: auto;
+    height: 40%;
     border: 1px solid #000000;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
 
-#hexbar {
+#hexname {
     position: absolute;
     top: 50%;
     left: 15%;
@@ -528,9 +542,12 @@ td {
 #submit {
     position: absolute;
     top: 83%;
-    left: 82%;
-    width: 30%;
+    left: 50%;
+    width: 60%;
     height: 30%;
+    border: 3px solid #505050;
+    border-radius: 40px;
+    font-size: 200%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
@@ -542,8 +559,8 @@ td {
 .bar {
     position: absolute;
     left: 50%;
-    height: 14%;
-    width: 90%;
+    height: 18%;
+    width: 94%;
     color: #ffffff;
     background-color: #282828;
     border: 2px solid #505050;
@@ -576,7 +593,7 @@ td {
 
 #redname {
     position: absolute;
-    top: 50%;
+    top: 75%;
     left: 12.5%;
     height: 100%;
     width: 25%;
@@ -597,7 +614,7 @@ td {
 
 #greenname {
     position: absolute;
-    top: 50%;
+    top: 75%;
     left: 12.5%;
     height: 100%;
     width: 25%;
@@ -618,7 +635,7 @@ td {
 
 #bluename {
     position: absolute;
-    top: 50%;
+    top: 75%;
     left: 12.5%;
     height: 100%;
     width: 25%;
