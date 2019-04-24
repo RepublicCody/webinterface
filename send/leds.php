@@ -26,7 +26,7 @@ if(isset($_POST['aus'])) {
 }else {
 
     $befehlsstring = $_SESSION['befehlsstring'];
-    $hexfarbe = $_POST['hexfarbe'];
+    $hexfarbe = $_POST['hexfeld'];
 
     $farbe = explode('#',$hexfarbe);
 

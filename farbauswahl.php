@@ -125,7 +125,7 @@ include 'htmlheader.php';?>
             // Create some variables we need to send to our PHP file
             var url = "send/leds.php";
             var hexfarbe = document.getElementById("hexfarbe").value;
-            var vars = "hexfarbe=" + hexfarbe;
+            var vars = "hexfeld=" + hexfeld;
             hr.open("POST", url, true);
             // Set content type header information for sending url encoded variables in the request
             hr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
