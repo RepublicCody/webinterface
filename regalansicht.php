@@ -13,6 +13,15 @@ if(isset($_POST['regal'])){
         $regalnummer = $value;
     }
 }
+elseif(isset($_POST['farbauswahlheaderbuttonzurueck'])){
+
+    $dummy = $_POST['farbauswahlheaderbuttonzurueck'];
+
+    echo "ich bin ein dummy ". $dummy . "kekse";
+
+    $regalnummer = $dummy;
+
+}
 else {
     $regalnummer = $_POST['fachansichtheaderbutton'];
 }

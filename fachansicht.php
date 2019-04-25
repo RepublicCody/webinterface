@@ -13,7 +13,11 @@ if(isset($_POST['fach'])) {
     foreach ($dummy as $key => $value) {
         $regalundfachnummer = $value;
     }
-}else {
+}elseif(isset($_POST['farbauswahlheaderbuttonzurueck'])){
+
+    $regalundfachnummer = $_POST['farbauswahlheaderbuttonzurueck'];
+    }
+else {
 
 }
 

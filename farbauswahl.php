@@ -14,13 +14,21 @@ $befehlsstring = '';
 
 $farben = array(array());
 
+$zielseite = '';
+
 if (isset($_POST['alleregale'])) {
+
+    $zielseite = 'zimmer.php';
 
     $_SESSION['befehlsstring'] = 'all_color ';
 
 } elseif (isset($_POST['alleregalleds'])) {
 
+    $zielseite = 'regalansicht.php';
+
     $regalnummer = $_POST['alleregalleds'];
+
+    $nummern = $regalnummer;
 
     $position = position($regalnummer, $regalfach_pro_regal);
 
@@ -30,7 +38,11 @@ if (isset($_POST['alleregale'])) {
 
 } elseif (isset($_POST['allefachleds'])) {
 
+    $zielseite = 'fachansicht.php';
+
     $regal_und_fachnummer = explode('_', $_POST['allefachleds']);
+
+    $nummern = $regal_und_fachnummer[0] . "_" . $regal_und_fachnummer[1];
 
     $position = position($regal_und_fachnummer[0], $regalfach_pro_regal);
 
@@ -41,9 +53,14 @@ if (isset($_POST['alleregale'])) {
     $_SESSION['befehlsstring'] = generatebefehlsstring($ledarray);
 
 } elseif (isset($_POST['led'])) {
+
+    $zielseite = 'fachansicht.php';
+
     $dummy = $_POST['led'];
 
     $regal_und_fach_und_lednummer = $stringarray = explode('_', $_POST['led'][0]);
+
+    $nummern = $regal_und_fach_und_lednummer[0] . "_" . $regal_und_fach_und_lednummer[1];
 
     $position = position($regal_und_fach_und_lednummer[0], $regalfach_pro_regal);
 
@@ -124,7 +141,7 @@ include 'htmlheader.php';?>
             var hr = new XMLHttpRequest();
             // Create some variables we need to send to our PHP file
             var url = "send/leds.php";
-            var hexfarbe = document.getElementById("hexfarbe").value;
+            var hexfeld = document.getElementById("hexfeld").value;
             var vars = "hexfeld=" + hexfeld;
             hr.open("POST", url, true);
             // Set content type header information for sending url encoded variables in the request
@@ -152,7 +169,9 @@ include 'htmlheader.php';?>
             <button id="farbauswahlausschalten" name="aus" value="off" class="headerbutton">Alle Ausschalten</button>
         </form>
 
-        <button id="farbauswahlzurueck" name="farbauswahlheaderbuttonzurueck" class="headerbutton">Zurück</button>
+        <form action="<?php echo $zielseite; ?>" method="post">
+            <button id="farbauswahlzurueck" name="farbauswahlheaderbuttonzurueck" value="<?php echo $nummern; ?>" class="headerbutton">Zurück</button>
+        </form>
 
         <form action="zimmer.php">
             <button id="farbauswahlhauptmenue" class="headerbutton">Hauptmenü</button>
@@ -205,7 +224,7 @@ include 'htmlheader.php';?>
 
             <div id="hexfarbe">
                 <div id="hexname">Hex Farbe</div>
-                <input id="hexfeld" name="hexfarbe" type="text">
+                <input id="hexfeld" name="hexfeld" type="text">
             </div>
 
             <input id="submit" type="submit" name="submitbutton" value="Absenden" onclick="javascript:ajax_post();">
