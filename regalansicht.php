@@ -37,10 +37,10 @@ else {
     <div id="regalansichtheader" class="header">
 
         <form action="farbauswahl.php" method="post">
-            <button id="regalansichtalleleds" name="alleregalleds" value="<?php echo $regalnummer; ?>" class="headerbutton">Alle Einschalten</button>
+            <button id="regalansichtalleleds" name="alleregalleds" value="<?php echo $regalnummer; ?>" class="headerbutton">Alle</button>
         </form>
         <form action="send/leds.php" method="post">
-            <button id="regalansichtalleledsaus" name="aus" value="off" class="headerbutton">Alle Ausschalten</button>
+            <button id="regalansichtalleledsaus" name="aus" value="off" class="headerbutton">Alle Aus</button>
         </form>
         <form action="zimmer.php">
             <button id="regalansichtzurueck" class="headerbutton">Zurück</button>

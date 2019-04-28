@@ -44,33 +44,16 @@ html, body {
     -ms-transform: translate(-50%, -50%);
 }
 
-#alleregalehauptmenue {
-    left: 10%;
-}
-
-#alleregale {
-    left: 25%;
-}
-
-#alleregaleledsaus {
-    left: 40%;
-}
-
-#allesteckdosenaus {
-    left: 56%;
-    width: 12%;
-}
-
 .headerbutton {
     position: absolute;
     z-index: 5;
     top: 50%;
     width: 10%;
-    height: 80%;
+    height: 60%;
     color: #ffffff;
-    background-color: #717171;
-    border: 2px solid #505050;
-    border-radius: 10px;
+    background-color: #1e90ff;
+    border: 0;
+    border-radius: 30px;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     font-family: 'Quicksand', sans-serif;
@@ -84,20 +67,45 @@ html, body {
     background-color: #282828;
 }
 
+#alleregalehauptmenue {
+    left: 10%;
+}
+
+#alleregale {
+    left: 25%;
+    background-color: #2ed573;
+}
+
+#alleregaleledsaus {
+    left: 40%;
+    background-color: #ff4757;
+}
+
+#allesteckdosenaus {
+    left: 58%;
+    width: 14%;
+    background-color: #ff4757;
+}
+
+
+
 #regalansichthauptmenue {
     left: 10%;
 }
 
 #regalansichtalleleds {
     left: 25%;
+    background-color: #2ed573;
 }
 
 #regalansichtalleledsaus {
     left: 40%;
+    background-color: #ff4757;
 }
 
 #regalansichtzurueck {
     left: 90%;
+    background-color: #ffa502;
 }
 
 
@@ -105,14 +113,17 @@ html, body {
 
 #fachansichtalleleds {
     left: 25%;
+    background-color: #2ed573;
 }
 
 #fachansichtalleledsaus {
     left: 40%;
+    background-color: #ff4757;
 }
 
 #fachansichtzurueck {
     left: 90%;
+    background-color: #ffa502;
 }
 
 #fachansichthauptmenue {
@@ -122,9 +133,11 @@ html, body {
 
 #farbauswahlausschalten {
     left: 40%;
+    background-color: #ff4757;
 }
 #farbauswahlzurueck {
     left: 90%;
+    background-color: #ffa502;
 }
 #farbauswahlhauptmenue {
     left: 10%;
@@ -570,14 +583,16 @@ td {
 
 
 
+
+
 #rechts {
     position: absolute;
-    width: 50%;
+    width: 40%;
     height: 100%;
     top: 50%;
     left: 75%;
     color: #ffffff;
-    background-color: #717171;
+    background-color: #57606f;
     border: 2px solid #505050;
     border-radius: 30px;
     transform: translate(-50%, -50%);
@@ -639,8 +654,8 @@ td {
     position: absolute;
     top: 83%;
     left: 50%;
-    width: 60%;
-    height: 30%;
+    width: 70%;
+    height: 20%;
     border: 3px solid #505050;
     border-radius: 40px;
     font-size: 240%;
@@ -681,7 +696,7 @@ input[type=range] {
 
 input[type=range]::-webkit-slider-runnable-track{
     background: #717171;
-    height: 4px;
+    height: 5px;
     border-radius: 4px;
     transition: .3s;
 }
@@ -693,7 +708,7 @@ input[type=range]::-webkit-slider-thumb{
     height: 28px;
     border-radius: 50%;
     margin-top: -12px;
-    border: 4px solid #505050;
+    border: 3px solid #505050;
 }
 #redbar::-webkit-slider-thumb {
     background: #ff0000;
@@ -717,11 +732,11 @@ input[type=range]::-moz-range-thumb {
     height: 28px;
     border-radius: 50%;
     margin-top: -12px;
-    border: 4px solid #505050;
+    border: 3px solid #505050;
 }
 
 input[type=range]::-moz-range-track {
-    height: 4px;
+    height: 5px;
     background: #717171;
     border-radius: 4px;
     transition: .3s;
@@ -729,7 +744,7 @@ input[type=range]::-moz-range-track {
 
 input[type=range]::-moz-range-progress {
     border-radius: 4px;
-    height: 4px;
+    height: 5px;
 }
 
 #redbar::-moz-range-thumb {
@@ -769,7 +784,7 @@ input[type=range]::-moz-range-progress {
 
 #redbar {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 58%;
     height: 100%;
     width: 75%;
@@ -780,7 +795,7 @@ input[type=range]::-moz-range-progress {
 #redname {
     position: absolute;
     top: 75%;
-    left: 12.5%;
+    left: 11%;
     height: 100%;
     width: 25%;
     text-align: center;
@@ -790,7 +805,7 @@ input[type=range]::-moz-range-progress {
 
 #greenbar {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 58%;
     height: 100%;
     width: 75%;
@@ -801,7 +816,7 @@ input[type=range]::-moz-range-progress {
 #greenname {
     position: absolute;
     top: 75%;
-    left: 12.5%;
+    left: 11%;
     height: 100%;
     width: 25%;
     text-align: center;
@@ -811,7 +826,7 @@ input[type=range]::-moz-range-progress {
 
 #bluebar {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 58%;
     height: 100%;
     width: 75%;
@@ -822,7 +837,7 @@ input[type=range]::-moz-range-progress {
 #bluename {
     position: absolute;
     top: 75%;
-    left: 12.5%;
+    left: 11%;
     height: 100%;
     width: 25%;
     text-align: center;

@@ -1,6 +1,6 @@
 var colorPicker = new iro.ColorPicker("#colorWheel", {
-    width: 420,
-    height: 420,
+    width: 360,
+    height: 360,
     padding: 4,
     borderColor: "#fff",
     color: "rgb(255, 255, 255)",
@@ -17,14 +17,30 @@ var colorPicker = new iro.ColorPicker("#colorWheel", {
         {
             component: iro.ui.Wheel,
             options: {
-
+                borderWidth: 0
             }
         },
         {
+            // regular value slider
             component: iro.ui.Slider,
             options: {
-                borderWidth: 1,
-                borderColor: '#000000'
+                borderWidth: 0
+            }
+        },
+        {
+            // hue slider
+            component: iro.ui.Slider,
+            options: {
+                borderWidth: 0,
+                sliderType: 'hue'
+            }
+        },
+        {
+            // saturation slider
+            component: iro.ui.Slider,
+            options: {
+                borderWidth: 0,
+                sliderType: 'saturation'
             }
         }
     ]

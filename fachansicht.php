@@ -30,10 +30,10 @@ include 'htmlheader.php';?>
 
     <div id="fachansichtansichtheader" class="header">
         <form action="farbauswahl.php" method="post">
-            <button id="fachansichtalleleds" name="allefachleds" value="<?php echo $regalundfachnummer; ?>" class="headerbutton">Alle Auswählen</button>
+            <button id="fachansichtalleleds" name="allefachleds" value="<?php echo $regalundfachnummer; ?>" class="headerbutton">Alle</button>
         </form>
         <form action="send/leds.php" method="post">
-            <button id="fachansichtalleledsaus" name="aus" value="off" class="headerbutton">Alle Ausschalten</button>
+            <button id="fachansichtalleledsaus" name="aus" value="off" class="headerbutton">Alle Aus</button>
         </form>
 
         <form action="regalansicht.php" method="post">

@@ -166,7 +166,7 @@ include 'htmlheader.php';?>
     <div id="farbauswahlheader" class="header">
 
         <form action="send/leds.php" method="post">
-            <button id="farbauswahlausschalten" name="aus" value="off" class="headerbutton">Alle Ausschalten</button>
+            <button id="farbauswahlausschalten" name="aus" value="off" class="headerbutton">Alle Aus</button>
         </form>
 
         <form action="<?php echo $zielseite; ?>" method="post">
@@ -223,7 +223,7 @@ include 'htmlheader.php';?>
             </div>
 
             <div id="hexfarbe">
-                <div id="hexname">Hex Farbe</div>
+                <div id="hexname">Farbe</div>
                 <input id="hexfeld" name="hexfeld" type="text">
             </div>
 

@@ -30,13 +30,13 @@ session_start();
             <button id="alleregalehauptmenue" name="alleregalehauptmenue" value="alleregalehauptmenue" class="headerbutton">Hauptmenü</button>
         </form>
         <form action="farbauswahl.php" method="post">
-            <button id="alleregale" name="alleregale" value="alleregale" class="headerbutton">Alle LEDs Auswählen</button>
+            <button id="alleregale" name="alleregale" value="alleregale" class="headerbutton">Alle LEDs</button>
         </form>
         <form action="send/leds.php" method="post">
-            <button id="alleregaleledsaus" name="aus" value="off" class="headerbutton">Alle LEDs Ausschalten</button>
+            <button id="alleregaleledsaus" name="aus" value="off" class="headerbutton">LEDs Aus</button>
         </form>
         <form action="send/steckdosen.php" method="post">
-            <button id="allesteckdosenaus" name="allesteckdosenaus" value="allesteckdosenaus" class="headerbutton">Alle Steckdosen Ausschalten</button>
+            <button id="allesteckdosenaus" name="allesteckdosenaus" value="allesteckdosenaus" class="headerbutton">Steckdosen Aus</button>
         </form>
 
     </div>
