@@ -17,7 +17,8 @@ var colorPicker = new iro.ColorPicker("#colorWheel", {
         {
             component: iro.ui.Wheel,
             options: {
-                borderWidth: 0
+                borderWidth: 0,
+                border: 0
             }
         },
         {

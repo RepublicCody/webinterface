@@ -37,7 +37,7 @@ else {
     <div id="regalansichtheader" class="header">
 
         <form action="farbauswahl.php" method="post">
-            <button id="regalansichtalleleds" name="alleregalleds" value="<?php echo $regalnummer; ?>" class="headerbutton">Alle</button>
+            <button id="regalansichtalleleds" name="alleregalleds" value="<?php echo $regalnummer; ?>" class="headerbutton">Alle LEDs</button>
         </form>
         <form action="send/leds.php" method="post">
             <button id="regalansichtalleledsaus" name="aus" value="off" class="headerbutton">Alle Aus</button>

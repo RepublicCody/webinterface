@@ -206,19 +206,19 @@ include 'htmlheader.php';?>
         <div id="rechts">
 
             <div id="bar">
-                <div id="reddivbar" class="bar">
+                <div id="reddivbar" class="bardiv">
                     <div id="redname">Rot</div>
-                    <input id="redbar" type="range" min="0" max="255" step="1" value="255">
+                    <input id="redbar" type="range" class="bar" min="0" max="255" step="1" value="255">
                 </div>
 
-                <div id="greendivbar" class="bar">
+                <div id="greendivbar" class="bardiv">
                     <div id="greenname">Grün</div>
-                    <input id="greenbar" type="range" min="0" max="255" step="1" value="255">
+                    <input id="greenbar" type="range" class="bar" min="0" max="255" step="1" value="255">
                 </div>
 
-                <div id="bluedivbar" class="bar">
+                <div id="bluedivbar" class="bardiv">
                     <div id="bluename">Blau</div>
-                    <input id="bluebar" type="range" min="0" max="255" step="1" value="255">
+                    <input id="bluebar" type="range" class="bar" min="0" max="255" step="1" value="255">
                 </div>
             </div>
 
@@ -230,6 +230,40 @@ include 'htmlheader.php';?>
             <input id="submit" type="submit" name="submitbutton" value="Absenden" onclick="javascript:ajax_post();">
 
             <script src="javascript/colorWheel.js" charset="utf-8"></script>
+
+            <script type="text/javascript">
+
+                var input = document.querySelectorAll(".bar")
+
+                var rgbToHex = function (rgb) {
+                    var hex = Number(rgb).toString(16);
+                    if (hex.length < 2) {
+                        hex = "0" + hex;
+                    }
+                    return hex;
+                };
+
+                var fullColorHex = function(r,g,b) {
+                    var red = rgbToHex(r);
+                    var green = rgbToHex(g);
+                    var blue = rgbToHex(b);
+                    return "#" + red + green + blue;
+                };
+
+                for(var i = 0; i < input.length; i++){
+                    input[i].addEventListener("input", function(){
+                        var red = document.getElementById("redbar").value;
+                        var blue = document.getElementById("bluebar").value;
+                        var green = document.getElementById("greenbar").value;
+
+                        var hex = fullColorHex(red, green, blue);
+
+                        document.getElementById("hexfeld").value = hex;
+                    });
+                }
+
+
+            </script>
 
         </div>
         <div id="status"></div>
