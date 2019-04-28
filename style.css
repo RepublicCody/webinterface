@@ -655,7 +655,7 @@ td {
     top: 83%;
     left: 50%;
     width: 70%;
-    height: 20%;
+    height: 14%;
     border: 3px solid #505050;
     border-radius: 40px;
     font-size: 240%;
@@ -696,28 +696,29 @@ input[type=range] {
 
 input[type=range]::-webkit-slider-runnable-track{
     background: #717171;
-    height: 5px;
-    border-radius: 4px;
+    height: 12px;
+    width: 100%;
+    border-radius: 30px;
     transition: .3s;
 }
 
 input[type=range]::-webkit-slider-thumb{
     -webkit-appearance: none;
     background: pink;
-    width: 28px;
-    height: 28px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
-    margin-top: -12px;
     border: 3px solid #505050;
+    margin-top: -5px;
 }
 #redbar::-webkit-slider-thumb {
-    background: #ff0000;
+    background: #ff4757;
 }
 #bluebar::-webkit-slider-thumb {
-    background: #0000ff;
+    background: #3742fa;
 }
 #greenbar::-webkit-slider-thumb {
-    background: #00ff00;
+    background: #2ed573;
 }
 
 /*firefox*/
@@ -728,15 +729,14 @@ input[type=range]::-moz-focus-outer {
 
 input[type=range]::-moz-range-thumb {
     -webkit-appearance: none;
-    width: 28px;
-    height: 28px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
-    margin-top: -12px;
-    border: 3px solid #505050;
+    margin-top: -4px;
 }
 
 input[type=range]::-moz-range-track {
-    height: 5px;
+    height: 12px;
     background: #717171;
     border-radius: 4px;
     transition: .3s;
@@ -744,27 +744,27 @@ input[type=range]::-moz-range-track {
 
 input[type=range]::-moz-range-progress {
     border-radius: 4px;
-    height: 5px;
+    height: 12px;
 }
 
 #redbar::-moz-range-thumb {
-    background: #ff0000;
+    background: #ff4757;
 }
 #bluebar::-moz-range-thumb {
-    background: #0000ff;
+    background: #3742fa;
 }
 #greenbar::-moz-range-thumb {
-    background: #00ff00;
+    background: #2ed573;
 }
 
 #redbar::-moz-range-progress {
-    background: #ff0000;
+    background: #ff4757;
 }
 #bluebar::-moz-range-progress {
-    background: #0000ff;
+    background: #3742fa;
 }
 #greenbar::-moz-range-progress {
-    background: #00ff00;
+    background: #2ed573;
 }
 
 
@@ -784,7 +784,7 @@ input[type=range]::-moz-range-progress {
 
 #redbar {
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 58%;
     height: 100%;
     width: 75%;
@@ -805,7 +805,7 @@ input[type=range]::-moz-range-progress {
 
 #greenbar {
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 58%;
     height: 100%;
     width: 75%;
@@ -826,7 +826,7 @@ input[type=range]::-moz-range-progress {
 
 #bluebar {
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 58%;
     height: 100%;
     width: 75%;
