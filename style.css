@@ -826,16 +826,7 @@ input[type=range]::-moz-range-progress {
     top: 50%;
     left: 58%;
     height: 100%;
-    width: 75%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-.bar::-moz-range-progress {
-    position: absolute;
-    top: 50%;
-    left: 54%;
-    height: 100%;
+    width: 70%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
