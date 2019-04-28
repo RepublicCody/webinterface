@@ -49,7 +49,7 @@ else {
             <button id="regalansichthauptmenue" class="headerbutton">Hauptmenü</button>
         </form>
 
-        <div id="regalansichtregalnummer" class="regalnummer">Regal: <?php echo $regalnummer; ?></div>
+        <div id="regalansichtregalnummer" class="regalnummer"><div class="regalnummertext">Regal: <?php echo $regalnummer; ?></div></div>
 
     </div>
 

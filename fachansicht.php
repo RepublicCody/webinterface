@@ -44,7 +44,7 @@ include 'htmlheader.php';?>
             <button id="fachansichthauptmenue" class="headerbutton">Hauptmenü</button>
         </form>
 
-        <div id="fachansichtregalnummer" class="regalnummer">Regal: <?php echo $regalundfachnummer[0].' Fach: '.$regalundfachnummer[2].$regalundfachnummer[3]; ?></div>
+        <div id="fachansichtregalnummer" class="regalnummer"><div class="regalnummertext">Regal: <?php echo $regalundfachnummer[0].' Fach: '.$regalundfachnummer[2].$regalundfachnummer[3]; ?></div></div>
     
     </div>
 

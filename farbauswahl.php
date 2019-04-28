@@ -177,7 +177,7 @@ include 'htmlheader.php';?>
             <button id="farbauswahlhauptmenue" class="headerbutton">Hauptmenü</button>
         </form>
 
-        <div id="fachansichtregalnummer" class="regalnummer"><?php
+        <div id="fachansichtregalnummer" class="regalnummer"><div class="regalnummertext"><?php
 
             if (isset($_POST['alleregale'])) {
                 echo 'Alle LEDs';
@@ -189,7 +189,7 @@ include 'htmlheader.php';?>
                 echo 'Regal: ' . $regal_und_fach_und_lednummer[0] . ' Fach: ' . $regal_und_fach_und_lednummer[1] . ' LED: ' . $regal_und_fach_und_lednummer[2];
             }
 
-            ?></div>
+                ?></div></div>
 
     </div>
 
