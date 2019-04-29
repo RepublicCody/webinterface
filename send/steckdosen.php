@@ -18,7 +18,7 @@ if(isset($_POST['allesteckdosenaus'])) {
         steckdose_zustand($frequenz, $nummer, $zustand);
     }
 
-    header("Location:../zimmer.php");
+    header("Location:../raeume/schlafzimmer/zimmer.php");
 
 }else  if(isset($_POST['steckdose'])) {
 
@@ -37,7 +37,7 @@ if(isset($_POST['allesteckdosenaus'])) {
 
     steckdose_zustand($frequenz, $nummer, $zustand);
 
-    header("Location:../zimmer.php");
+    header("Location:../raeume/schlafzimmer/zimmer.php");
 }
 
 
