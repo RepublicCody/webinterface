@@ -133,14 +133,14 @@ function generatebefehlsstring($ledarray){
     return $returnstring;
 }
 
-include 'htmlheader.php';?>
+include '../../htmlheader.php';?>
 
     <script language="JavaScript" type="text/javascript">
         function ajax_post() {
             // Create our XMLHttpRequest object
             var hr = new XMLHttpRequest();
             // Create some variables we need to send to our PHP file
-            var url = "send/leds.php";
+            var url = "../../send/leds.php";
             var hexfeld = document.getElementById("hexfeld").value;
             var vars = "hexfeld=" + hexfeld;
             hr.open("POST", url, true);
@@ -165,16 +165,18 @@ include 'htmlheader.php';?>
 
     <div id="farbauswahlheader" class="header">
 
-        <form action="send/leds.php" method="post">
+        <form action="../../mainmenu.php">
+            <button id="farbauswahlmainmenue" name="farbauswahlmainmenue" value="farbauswahlmainmenue" class="headerbutton"><div id="farbauswahlmainmenudiv" class="rundbutton"></div></button>
+        </form>
+        <form action="zimmer.php">
+            <button id="farbauswahlhauptmenue" class="headerbutton">Schlafzimmer</button>
+        </form>
+        <form action="../../send/leds.php" method="post">
             <button id="farbauswahlausschalten" name="aus" value="off" class="headerbutton">Alle Aus</button>
         </form>
 
         <form action="<?php echo $zielseite; ?>" method="post">
             <button id="farbauswahlzurueck" name="farbauswahlheaderbuttonzurueck" value="<?php echo $nummern; ?>" class="headerbutton">Zurück</button>
-        </form>
-
-        <form action="zimmer.php">
-            <button id="farbauswahlhauptmenue" class="headerbutton">Hauptmenü</button>
         </form>
 
         <div id="fachansichtregalnummer" class="regalnummer"><div class="regalnummertext"><?php
@@ -199,7 +201,7 @@ include 'htmlheader.php';?>
 
             <div class="wheel" id="colorWheel"></div>
 
-            <script src="javascript/iro.min.js" charset="utf-8"></script>
+            <script src="../../javascript/iro.min.js" charset="utf-8"></script>
 
         </div>
 
@@ -229,7 +231,7 @@ include 'htmlheader.php';?>
 
             <input id="submit" type="submit" name="submitbutton" value="Absenden" onclick="javascript:ajax_post();">
 
-            <script src="javascript/colorWheel.js" charset="utf-8"></script>
+            <script src="../../javascript/colorWheel.js" charset="utf-8"></script>
 
             <script type="text/javascript">
 

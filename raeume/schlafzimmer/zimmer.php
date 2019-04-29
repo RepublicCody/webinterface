@@ -17,7 +17,7 @@ session_start();
     }
 
 
- include 'htmlheader.php';?>
+ include '../../htmlheader.php';?>
 
 </head>
 <body>
@@ -26,17 +26,23 @@ session_start();
 
     <div id="zimmerheader" class="header">
 
+        <form action="../../mainmenu.php">
+            <button id="alleregalemainmenue" name="alleregalemainmenue" value="alleregalemainmenue" class="headerbutton"><div id="alleregalemainmenudiv" class="rundbutton"></div></button>
+        </form>
         <form action="zimmer.php" method="post">
-            <button id="alleregalehauptmenue" name="alleregalehauptmenue" value="alleregalehauptmenue" class="headerbutton">Hauptmenü</button>
+            <button id="alleregalehauptmenue" name="alleregalehauptmenue" value="alleregalehauptmenue" class="headerbutton">Schlafzimmer</button>
         </form>
         <form action="farbauswahl.php" method="post">
             <button id="alleregale" name="alleregale" value="alleregale" class="headerbutton">Alle LEDs</button>
         </form>
-        <form action="send/leds.php" method="post">
+        <form action="../../send/leds.php" method="post">
             <button id="alleregaleledsaus" name="aus" value="off" class="headerbutton">LEDs Aus</button>
         </form>
-        <form action="send/steckdosen.php" method="post">
+        <form action="../../send/steckdosen.php" method="post">
             <button id="allesteckdosenaus" name="allesteckdosenaus" value="allesteckdosenaus" class="headerbutton">Steckdosen Aus</button>
+        </form>
+        <form action="../../mainmenu.php">
+            <button id="regalansichtzurueck" class="headerbutton">Zurück</button>
         </form>
 
     </div>
@@ -46,11 +52,11 @@ session_start();
         <div id="kratzbaum"></div>
         <button id="kommode" disabled></button>
 
-        <form action="send/lampe.php" method="post">
+        <form action="../../send/lampe.php" method="post">
             <button id="lampe" name="lampe" value="lampe"><div id="lampediv"></div></button>
         </form>
 
-        <form action="send/steckdosen.php" method="post">
+        <form action="../../send/steckdosen.php" method="post">
             <button id="steckdose_0" name="steckdose[]" value="11111 0 <?php echo $_SESSION['steckdosenzustand'][0][0]?>" class="steckdose"><div <?php steckdose_background(0)?>></div></button>
             <button id="steckdose_1" name="steckdose[]" value="11111 1 <?php echo $_SESSION['steckdosenzustand'][0][1]?>" class="steckdose"><div <?php steckdose_background(1)?>></div></button>
             <button id="steckdose_2" name="steckdose[]" value="11111 2 <?php echo $_SESSION['steckdosenzustand'][0][2]?>" class="steckdose"><div <?php steckdose_background(2)?>></div></button>

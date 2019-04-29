@@ -1,0 +1,140 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+#mainmenu {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(40deg, #3b3650, #3b3640 50%, #574960, #574970);
+}
+
+.maindiv {
+    position: absolute;
+    width: 16%;
+    height: 40%;
+    color: #ffffff;
+    background: linear-gradient(10deg, transparent 20%, #ff5e57, #f53b57, #f54478);
+    border: 0;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.mainbild {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    color: #ffffff;
+    background: #574960;
+    border: 0;
+    border-radius: 50px;
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.mainname {
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    width: 100%;
+    height: 10%;
+    color: #ffffff;
+    border: 0;
+    border-radius: 50px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 140%;
+}
+
+#schlafzimmer {
+    top: 25%;
+    left: 20%;
+}
+
+#wohnzimmer {
+    top: 25%;
+    left: 40%;
+}
+
+#bad {
+    top: 25%;
+    left: 60%;
+}
+
+#kueche {
+    top: 25%;
+    left: 80%;
+}
+
+#flur {
+    top: 75%;
+    left: 20%;
+}
+
+#platzhalter {
+    top: 75%;
+    left: 40%;
+}
+
+#platzhalter2 {
+    top: 75%;
+    left: 60%;
+}
+
+#sleep {
+    top: 75%;
+    left: 80%;
+}
+
+
+
+#schlafzimmerbild {
+    background-color: #1e90ff;
+    background-image: url("../images/icons/bett.png");
+
+}
+
+#wohnzimmerbild {
+    background-color: #eb3b6a;
+    background-image: url("../images/icons/sofa.png");
+}
+
+#badbild {
+    background-color: #fed330;
+    background-image: url("../images/icons/bad.png");
+}
+
+#kuechebild {
+    background-color: #20bf6b;
+    background-image: url("../images/icons/kueche.png");
+}
+
+#flurbild {
+    background-color: #0fb9b1;
+    background-image: url("../images/icons/flur.png");
+}
+
+#platzhalterbild {
+    background-color: #a55eea;
+}
+
+#platzhalter2bild {
+    background-color: #fa8231;
+}
+
+#sleepbild {
+    background-color: #c44569;
+    background-image: url("../images/icons/schlafen.png");
+}

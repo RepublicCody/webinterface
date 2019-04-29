@@ -27,7 +27,7 @@ else {
 }
 
 
- include 'htmlheader.php';?>
+ include '../../htmlheader.php';?>
 
 </head>
 <body>
@@ -36,17 +36,20 @@ else {
 
     <div id="regalansichtheader" class="header">
 
+        <form action="../../mainmenu.php">
+            <button id="regalansichtmainmenue" name="regalansichtmainmenue" value="regalansichtmainmenue" class="headerbutton"><div id="regalansichtmainmenudiv" class="rundbutton"></div></button>
+        </form>
+        <form action="zimmer.php">
+            <button id="regalansichthauptmenue" class="headerbutton">Schlafzimmer</button>
+        </form>
         <form action="farbauswahl.php" method="post">
             <button id="regalansichtalleleds" name="alleregalleds" value="<?php echo $regalnummer; ?>" class="headerbutton">Alle LEDs</button>
         </form>
-        <form action="send/leds.php" method="post">
+        <form action="../../send/leds.php" method="post">
             <button id="regalansichtalleledsaus" name="aus" value="off" class="headerbutton">Alle Aus</button>
         </form>
         <form action="zimmer.php">
             <button id="regalansichtzurueck" class="headerbutton">Zurück</button>
-        </form>
-        <form action="zimmer.php">
-            <button id="regalansichthauptmenue" class="headerbutton">Hauptmenü</button>
         </form>
 
         <div id="regalansichtregalnummer" class="regalnummer"><div class="regalnummertext">Regal: <?php echo $regalnummer; ?></div></div>
