@@ -17,9 +17,10 @@
     <link rel="icon" href="images/icon.ico">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
 </head>
+
 <body>
 
-    <div id="mainmenu">
+    <div id="mainmenu" class="background">
 
         <div id="mitte">
             <form action="raeume/schlafzimmer/zimmer.php">

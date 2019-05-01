@@ -1,4 +1,3 @@
-
 html, body {
     width: 100%;
     height: 100%;
@@ -22,25 +21,17 @@ div {
     -ms-transform: translate(-50%, -50%);
 }
 
-#zimmerbackground, #regalansichtbackground, #fachansichtbackground, #farbauswahlbackground {
-    top: 50%;
-    left: 50%;
-}
 
 .header {
-    position: absolute;
     z-index: 6;
     top: 5%;
     left: 50%;
     width: 100%;
     height: 10%;
-    background-image: linear-gradient(50deg, #404040 50%, #505060);
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    background-image: linear-gradient(50deg, #404040 50%, #505060)
 }
 
 .seitenname {
-    position: absolute;
     width: 36%;
     height: 60%;
     top: 50%;
@@ -49,19 +40,14 @@ div {
     background-color: #282828;
     border: 2px solid #505050;
     border-radius: 3px;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 .seitennametext {
-    position: absolute;
     top: 50%;
     left: 50%;
     width: 100%;
     font-size: 200%;
     text-align: center;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 .headerbutton {
@@ -82,7 +68,6 @@ div {
 }
 
 .rundbutton {
-    position: absolute;
     top: 50%;
     left: 50%;
     width: 100%;
@@ -91,8 +76,6 @@ div {
     background-position: center;
     opacity: 1;
     background-repeat: no-repeat;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 .background {
@@ -120,7 +103,6 @@ div {
 }
 
 .zurueckbild {
-    position: absolute;
     top: 50%;
     left: 16%;
     width: 24%;
@@ -130,21 +112,12 @@ div {
     background-image: url("../images/icons/back.png");
     opacity: 1;
     background-repeat: no-repeat;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 .zurueckname {
-    position: absolute;
-    top: 75%;
+    top: 50%;
     left: 60%;
     width: 80%;
-    height: 100%;
-    background-position: center;
-    opacity: 1;
-    background-repeat: no-repeat;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 #alleregalemainmenue {
@@ -376,7 +349,6 @@ div {
 
 
 #zimmer {
-    position: absolute;
     width: 88%;
     height: 80%;
     top: 55%;
@@ -385,48 +357,36 @@ div {
     border: 2px solid #505050;
     border-radius: 3px;
     background-size: 70%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 #bettbild {
-    position: absolute;
     top: 37%;
     left: 77%;
     width: 42%;
     height: 50%;
     border: 2px solid #505050;
     background-color: #1d1a20;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 #matraze {
-    position: absolute;
     top: 50%;
     left: 50%;
     width: 96%;
     height: 92%;
     background-color: #ffffff;
     border-radius: 20px;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 #nachttischbild {
-    position: absolute;
     top: 70%;
     left: 95%;
     width: 10%;
     height: 14%;
     border: 2px solid #505050;
     background-color: #1d1a20;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 #kratzbaumbild {
-    position: absolute;
     top: 6%;
     left: 92%;
     width: 10%;
@@ -434,31 +394,23 @@ div {
     border: 1px solid #000000;
     border-radius: 10px;
     background-color: #808080;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 #regalbettbild {
-    position: absolute;
     top: 37%;
     left: 97.5%;
     width: 5%;
     height: 50%;
     border: 2px solid #505050;
     background-color: #1d1a20;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 #schreibtischbild {
-    position: absolute;
     top: 50%;
     left: 9%;
     width: 18%;
     height: 100%;
     background-color: #ffffff;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 #kommode {
@@ -506,39 +458,30 @@ div {
 }
 
 .schreibtischlampe {
-    position: absolute;
     z-index: 5;
     width: 40px;
     height: 48px;
     background: rgba(0, 0, 0, 0.0);
     background-repeat: no-repeat;
     border: none;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 .monitore {
-    position: absolute;
     z-index: 5;
     width: 76px;
     height: 214px;
     background: rgba(0, 0, 0, 0.0);
     background-repeat: no-repeat;
     border: none;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 .computer {
-    position: absolute;
     z-index: 5;
     width: 90px;
     height: 42px;
     background: rgba(0, 0, 0, 0.0);
     background-repeat: no-repeat;
     border: none;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 
@@ -584,7 +527,6 @@ div {
 }
 
 .steckdosedivan {
-    position: absolute;
     top: 50%;
     left: 50%;
     width: 100%;
@@ -593,12 +535,9 @@ div {
     background-size: 100%;
     opacity: 1;
     background-repeat: no-repeat;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 .steckdosedivaus {
-    position: absolute;
     top: 50%;
     left: 50%;
     width: 100%;
@@ -607,8 +546,6 @@ div {
     background-size: 100%;
     opacity: 1;
     background-repeat: no-repeat;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 
@@ -651,13 +588,10 @@ div {
 
 
 #regalansicht {
-    position: absolute;
     width: 90%;
     height: 80%;
     top: 55%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 #tabelle {
@@ -674,13 +608,25 @@ table {
 }
 
 td {
+    top: 50%;
+    left: 50%;
     width: 20vh;
     height: 20vh;
 }
 
 .fach {
+    top: 50%;
+    left: 50%;
     width: 100%;
     height: 100%;
+    border: 2px solid #000000;
+}
+
+.fachdiv {
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    height: 25%;
     border: 2px solid #000000;
 }
 
@@ -695,13 +641,10 @@ td {
 
 
 #fachansicht {
-    position: absolute;
     width: 90%;
     height: 80%;
     top: 55%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 #fachansichttabelle {
@@ -717,34 +660,25 @@ td {
 
 
 #farbauswahl {
-    position: absolute;
     width: 90%;
     height: 80%;
     top: 55%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 
 #links {
-    position: absolute;
     width: 50%;
     height: 100%;
     top: 50%;
     left: 25%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 #colorWheel {
-    position: absolute;
     width: 100%;
     height: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 #iro__colorPicker {
@@ -756,7 +690,6 @@ td {
 
 
 #rechts {
-    position: absolute;
     width: 40%;
     height: 100%;
     top: 50%;
@@ -765,23 +698,17 @@ td {
     background-image: linear-gradient(50deg, #57606f 50%, #67708f);
     border: 2px solid #505050;
     border-radius: 30px;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 #bar {
-    position: absolute;
     width: 90%;
     height: 40%;
     top: 20%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 
 }
 
 #hexfarbe {
-    position: absolute;
     z-index: 5;
     top: 50%;
     left: 50%;
@@ -791,8 +718,6 @@ td {
     background-color: #282828;
     border: 2px solid #505050;
     border-radius: 60px;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 #hexfeld {
@@ -813,11 +738,8 @@ td {
 }
 
 #hexname {
-    position: absolute;
     top: 50%;
     left: 15%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 #submit {
@@ -840,7 +762,6 @@ td {
 }
 
 .bardiv {
-    position: absolute;
     left: 50%;
     height: 18%;
     width: 94%;
@@ -849,8 +770,6 @@ td {
     border: 2px solid #505050;
     border-radius: 60px;
     text-align: center;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 /*chrome*/
@@ -955,36 +874,27 @@ input[type=range]::-moz-range-progress {
 }
 
 #redname {
-    position: absolute;
     top: 75%;
     left: 11%;
     height: 100%;
     width: 25%;
     text-align: center;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 #greenname {
-    position: absolute;
     top: 75%;
     left: 11%;
     height: 100%;
     width: 25%;
     text-align: center;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 #bluename {
-    position: absolute;
     top: 75%;
     left: 11%;
     height: 100%;
     width: 25%;
     text-align: center;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 .bar {
@@ -998,25 +908,22 @@ input[type=range]::-moz-range-progress {
 }
 
 #display {
-    position: absolute;
     height: 25%;
     width: 25%;
     top: 90%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 #status {
-    position: absolute;
     top: 90%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 @media all and (orientation: landscape) {
-
+    #zimmerbackground, #regalansichtbackground, #fachansichtbackground, #farbauswahlbackground {
+        top: 50%;
+        left: 50%;
+    }
 }
 
 @media all and (orientation: portrait) {
@@ -1025,6 +932,12 @@ input[type=range]::-moz-range-progress {
         overflow:hidden;
     }
     .background{
+
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+
         transform: rotate(90deg);
         transform-origin:bottom left;
 
