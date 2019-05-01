@@ -19,6 +19,7 @@ session_start();
 
  include '../../htmlheader.php';?>
 
+<link rel="stylesheet" href="../../style/badstyle.css">
 </head>
 <body>
 

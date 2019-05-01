@@ -16,9 +16,9 @@ session_start();
         }
     }
 
+    include '../../htmlheader.php';?>
 
- include '../../htmlheader.php';?>
-
+<link rel="stylesheet" href="../../style/schlafzimmerstyle.css">
 </head>
 <body>
 

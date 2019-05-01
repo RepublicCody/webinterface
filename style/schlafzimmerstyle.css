@@ -948,9 +948,6 @@ input[type=range]::-moz-range-progress {
         height:100vw;
         width:100vh;
 
-        background-color:#000;
-        color:#fff;
-
         overflow:auto;
     }
 }

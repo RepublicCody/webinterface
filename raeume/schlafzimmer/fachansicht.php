@@ -23,6 +23,7 @@ else {
 
 include '../../htmlheader.php';?>
 
+<link rel="stylesheet" href="../../style/schlafzimmerstyle.css">
 </head>
 <body>
 

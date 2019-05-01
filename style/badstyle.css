@@ -7,27 +7,31 @@ html, body {
     font-weight: 500;
 }
 
-input[type="button"]:focus{
-    outline:none !important;
+input[type="button"]:focus {
+    outline: none !important;
 }
+
 input[type="button"]::-moz-focus-inner {
     border: 0 !important;
 }
 
-.header {
+div {
     position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+.header {
     z-index: 6;
     top: 5%;
     left: 50%;
     width: 100%;
     height: 10%;
-    background-image: linear-gradient(50deg, #404040 50%, #505060);
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    background-image: linear-gradient(50deg, #404040 50%, #505060)
 }
 
 .seitenname {
-    position: absolute;
     width: 36%;
     height: 60%;
     top: 50%;
@@ -36,19 +40,14 @@ input[type="button"]::-moz-focus-inner {
     background-color: #282828;
     border: 2px solid #505050;
     border-radius: 3px;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 .seitennametext {
-    position: absolute;
     top: 50%;
     left: 50%;
     width: 100%;
     font-size: 200%;
     text-align: center;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 .headerbutton {
@@ -69,7 +68,6 @@ input[type="button"]::-moz-focus-inner {
 }
 
 .rundbutton {
-    position: absolute;
     top: 50%;
     left: 50%;
     width: 100%;
@@ -78,8 +76,6 @@ input[type="button"]::-moz-focus-inner {
     background-position: center;
     opacity: 1;
     background-repeat: no-repeat;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 .background {
@@ -107,7 +103,6 @@ input[type="button"]::-moz-focus-inner {
 }
 
 .zurueckbild {
-    position: absolute;
     top: 50%;
     left: 16%;
     width: 24%;
@@ -117,21 +112,12 @@ input[type="button"]::-moz-focus-inner {
     background-image: url("../images/icons/back.png");
     opacity: 1;
     background-repeat: no-repeat;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 .zurueckname {
-    position: absolute;
-    top: 75%;
+    top: 50%;
     left: 60%;
     width: 80%;
-    height: 100%;
-    background-position: center;
-    opacity: 1;
-    background-repeat: no-repeat;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 #alleregalemainmenue {
@@ -162,6 +148,7 @@ input[type="button"]::-moz-focus-inner {
     border-radius: 50%;
     width: 4%;
     padding-bottom: 4%;
+    background-color: #c44569;
 }
 
 #alleregalesleepdiv {
@@ -181,122 +168,10 @@ input[type="button"]::-moz-focus-inner {
 }
 
 #allesteckdosenaus {
-    left: 58%;
-    width: 14%;
+    left: 25%;
+    width: 12%;
     background-color: #ff4757;
 }
-
-
-
-
-
-
-
-#regalansichtmainmenue {
-    left: 4%;
-    border-radius: 50%;
-    width: 4%;
-    padding-bottom: 4%;
-    background-color: #6c5ce7;
-}
-
-#regalansichtmainmenudiv {
-    background-image: url("../images/icons/home.png");
-}
-
-#regalansichtschlafzimmer {
-    left: 10%;
-    border-radius: 50%;
-    width: 4%;
-    padding-bottom: 4%;
-}
-
-#regalansichtschlafzimmerdiv {
-    background-image: url("../images/icons/bett.png");
-}
-
-#regalansichtalleleds {
-    left: 74%;
-    width: 8%;
-    background-color: #2ed573;
-}
-
-#regalansichtalleledsaus {
-    left: 84%;
-    width: 8%;
-    background-color: #ff4757;
-}
-
-
-
-#fachansichtmainmenue {
-    left: 4%;
-    border-radius: 50%;
-    width: 4%;
-    padding-bottom: 4%;
-    background-color: #6c5ce7;
-}
-
-#fachansichtmainmenudiv {
-    background-image: url("../images/icons/home.png");
-}
-
-#fachansichtschlafzimmer {
-    left: 10%;
-    border-radius: 50%;
-    width: 4%;
-    padding-bottom: 4%;
-}
-
-#fachansichtschlafzimmerdiv {
-    background-image: url("../images/icons/bett.png");
-}
-
-#fachansichtalleleds {
-    left: 74%;
-    width: 8%;
-    background-color: #2ed573;
-}
-
-#fachansichtalleledsaus {
-    left: 84%;
-    width: 8%;
-    background-color: #ff4757;
-}
-
-
-
-
-#farbauswahlmainmenue {
-    left: 4%;
-    border-radius: 50%;
-    width: 4%;
-    padding-bottom: 4%;
-    background-color: #6c5ce7;
-}
-
-#farbauswahlmainmenudiv {
-    background-image: url("../images/icons/home.png");
-}
-
-#farbauswahlschlafzimmer {
-    left: 10%;
-    border-radius: 50%;
-    width: 4%;
-    padding-bottom: 4%;
-}
-
-#farbauswahlschlafzimmerdiv {
-    background-image: url("../images/icons/bett.png");
-}
-
-#farbauswahlausschalten {
-    left: 84%;
-    width: 8%;
-    background-color: #ff4757;
-}
-
-
 
 
 .zimmerbutton {
@@ -315,7 +190,7 @@ input[type="button"]::-moz-focus-inner {
     border-radius: 50%;
     width: 4%;
     padding-bottom: 4%;
-    background-color: #6c5ce7;
+    background-color: #006266;
 }
 
 #computerdiv {
@@ -327,7 +202,7 @@ input[type="button"]::-moz-focus-inner {
     border-radius: 50%;
     width: 4%;
     padding-bottom: 4%;
-    background-color: #6c5ce7;
+    background-color: #FFC312;
 }
 
 #lampediv {
@@ -339,7 +214,7 @@ input[type="button"]::-moz-focus-inner {
     border-radius: 50%;
     width: 4%;
     padding-bottom: 4%;
-    background-color: #6c5ce7;
+    background-color: #1289A7;
 }
 
 #schreibtischlampe_1div {
@@ -351,7 +226,7 @@ input[type="button"]::-moz-focus-inner {
     border-radius: 50%;
     width: 4%;
     padding-bottom: 4%;
-    background-color: #6c5ce7;
+    background-color: #1289A7;
 }
 
 #schreibtischlampe_2div {
@@ -363,7 +238,7 @@ input[type="button"]::-moz-focus-inner {
     border-radius: 50%;
     width: 4%;
     padding-bottom: 4%;
-    background-color: #6c5ce7;
+    background-color: #833471;
 }
 
 #monitorediv {
@@ -371,11 +246,7 @@ input[type="button"]::-moz-focus-inner {
 }
 
 
-
-
-
 #zimmer {
-    position: absolute;
     width: 88%;
     height: 80%;
     top: 55%;
@@ -384,160 +255,6 @@ input[type="button"]::-moz-focus-inner {
     border: 2px solid #505050;
     border-radius: 3px;
     background-size: 70%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-#bettbild {
-    position: absolute;
-    top: 37%;
-    left: 77%;
-    width: 42%;
-    height: 50%;
-    border: 2px solid #505050;
-    background-color: #1d1a20;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-#matraze {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 96%;
-    height: 92%;
-    background-color: #ffffff;
-    border-radius: 20px;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-#nachttischbild {
-    position: absolute;
-    top: 69%;
-    left: 95%;
-    width: 10%;
-    height: 14%;
-    border: 2px solid #505050;
-    background-color: #1d1a20;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-#kratzbaumbild {
-    position: absolute;
-    top: 6%;
-    left: 92%;
-    width: 10%;
-    height: 11%;
-    border: 1px solid #000000;
-    border-radius: 10px;
-    background-color: #808080;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-#regalbettbild {
-    position: absolute;
-    top: 37%;
-    left: 97.5%;
-    width: 5%;
-    height: 50%;
-    border: 2px solid #505050;
-    background-color: #1d1a20;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-#schreibtischbild {
-    position: absolute;
-    top: 50%;
-    left: 9%;
-    width: 18%;
-    height: 100%;
-    background-color: #ffffff;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-#kommode {
-    position: absolute;
-    top: 6%;
-    left: 18%;
-    width: 16%;
-    height: 12%;
-    background-color: #1d1a20;
-    border: 2px solid #505050;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-#computerbild {
-    top: 5%;
-    left: 7%;
-    background-image: url("../images/computer.png");
-    background-size: 100%;
-    opacity: 1;
-}
-
-#monitorebild {
-    top: 68%;
-    left: 7%;
-    background-image: url("../images/monitore.png");
-    background-size: 100%;
-    opacity: 1;
-}
-
-#schreibtischlampe_1bild {
-    top: 20%;
-    left: 4%;
-    background-image: url("../images/lampe.png");
-    background-size: 100%;
-    opacity: 1;
-}
-
-#schreibtischlampe_2bild {
-    top: 90%;
-    left: 15%;
-    background-image: url("../images/lampe.png");
-    background-size: 100%;
-    opacity: 1;
-}
-
-.schreibtischlampe {
-    position: absolute;
-    z-index: 5;
-    width: 40px;
-    height: 48px;
-    background: rgba(0, 0, 0, 0.0);
-    background-repeat: no-repeat;
-    border: none;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-.monitore {
-    position: absolute;
-    z-index: 5;
-    width: 76px;
-    height: 214px;
-    background: rgba(0, 0, 0, 0.0);
-    background-repeat: no-repeat;
-    border: none;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-.computer {
-    position: absolute;
-    z-index: 5;
-    width: 90px;
-    height: 42px;
-    background: rgba(0, 0, 0, 0.0);
-    background-repeat: no-repeat;
-    border: none;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 
@@ -545,22 +262,27 @@ input[type="button"]::-moz-focus-inner {
     top: 5%;
     left: 15%;
 }
+
 #steckdose_1 {
     top: 95%;
     left: 10%;
 }
+
 #steckdose_2 {
     top: 5%;
     left: 52.5%;
 }
+
 #steckdose_3 {
     top: 5%;
     left: 90%;
 }
+
 #steckdose_4 {
     top: 95%;
     left: 5%;
 }
+
 #steckdose_5 {
     top: 69%;
     left: 97.5%;
@@ -578,7 +300,6 @@ input[type="button"]::-moz-focus-inner {
 }
 
 .steckdosedivan {
-    position: absolute;
     top: 50%;
     left: 50%;
     width: 100%;
@@ -587,12 +308,9 @@ input[type="button"]::-moz-focus-inner {
     background-size: 100%;
     opacity: 1;
     background-repeat: no-repeat;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 .steckdosedivaus {
-    position: absolute;
     top: 50%;
     left: 50%;
     width: 100%;
@@ -601,8 +319,6 @@ input[type="button"]::-moz-focus-inner {
     background-size: 100%;
     opacity: 1;
     background-repeat: no-repeat;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 
@@ -644,404 +360,36 @@ input[type="button"]::-moz-focus-inner {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-#regalansicht {
-    position: absolute;
-    width: 90%;
-    height: 80%;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+@media all and (orientation: landscape) {
+    #zimmerbackground, #regalansichtbackground, #fachansichtbackground, #farbauswahlbackground {
+        top: 50%;
+        left: 50%;
+    }
 }
 
-#tabelle {
-    border: 8px solid #000000;
-    border-radius: 4px;
+@media all and (orientation: portrait) {
+    body{
+        margin:0;
+        overflow:hidden;
+    }
+    .background{
+
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+
+        transform: rotate(90deg);
+        transform-origin:bottom left;
+
+        position:absolute;
+        top: -100vw;
+        left: 0;
+
+        height:100vw;
+        width:100vh;
+
+        overflow:auto;
+    }
 }
-
-table {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-td {
-    width: 20vh;
-    height: 20vh;
-}
-
-.fach {
-    width: 100%;
-    height: 100%;
-    border: 2px solid #000000;
-}
-
-.fachdisabled {
-    width: 100%;
-    height: 100%;
-    border: 2px solid #000000;
-    background-image: url("../images/schloss.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-
-
-
-
-
-
-
-#fachansicht {
-    position: absolute;
-    width: 90%;
-    height: 80%;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-#fachansichttabelle {
-    border: 8px solid #000000;
-    border-radius: 4px;
-}
-
-.led {
-    width: 100%;
-    height: 100%;
-    border: 2px solid #000000;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#farbauswahl {
-    position: absolute;
-    width: 90%;
-    height: 80%;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-
-
-
-
-
-
-#links {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-#colorWheel{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-
-
-
-
-#rechts {
-    position: absolute;
-    width: 40%;
-    height: 100%;
-    top: 50%;
-    left: 75%;
-    color: #ffffff;
-    background-image: linear-gradient(50deg, #57606f 50%, #67708f);
-    border: 2px solid #505050;
-    border-radius: 30px;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-#bar {
-    position: absolute;
-    width: 90%;
-    height: 40%;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-
-}
-
-#hexfarbe {
-    position: absolute;
-    z-index: 5;
-    top: 50%;
-    left: 50%;
-    width: 86%;
-    height: 10%;
-    color: #ffffff;
-    background-color: #282828;
-    border: 2px solid #505050;
-    border-radius: 60px;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
- }
-
-#hexfeld {
-    position: absolute;
-    z-index: 5;
-    top: 50%;
-    left: 60%;
-    width: 60%;
-    height: 40%;
-    border: 1px solid #000000;
-    border-radius: 4px;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    font-family: 'Quicksand', sans-serif;
-    font-size: 110%;
-    font-weight: 500;
-}
-
-#hexname {
-    position: absolute;
-    top: 50%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-#submit {
-    position: absolute;
-    top: 83%;
-    left: 50%;
-    width: 70%;
-    height: 14%;
-    border: 0;
-    border-radius: 40px;
-    font-size: 240%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
-}
-
-#versteckterbutton {
-
-}
-
-.bardiv {
-    position: absolute;
-    left: 50%;
-    height: 18%;
-    width: 94%;
-    color: #ffffff;
-    background-color: #282828;
-    border: 2px solid #505050;
-    border-radius: 60px;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-/*chrome*/
-
-input[type=range] {
-    -webkit-appearance: none;
-    outline: none;
-    border: 0;
-    background: transparent;
-}
-
-input[type=range]::-webkit-slider-runnable-track{
-    background: #717171;
-    height: 8px;
-    width: 100%;
-    border-radius: 30px;
-    transition: .3s;
-}
-
-input[type=range]::-webkit-slider-thumb{
-    -webkit-appearance: none;
-    background: pink;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    border: 3px solid #505050;
-    margin-top: -7px;
-}
-#redbar::-webkit-slider-thumb {
-    background: #ff4757;
-}
-#bluebar::-webkit-slider-thumb {
-    background: #3742fa;
-}
-#greenbar::-webkit-slider-thumb {
-    background: #2ed573;
-}
-
-/*firefox*/
-
-input[type=range]::-moz-focus-outer {
-    border: 0;
-}
-
-input[type=range]::-moz-range-thumb {
-    -webkit-appearance: none;
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    margin-top: -6px;
-    border: 0;
-}
-
-input[type=range]::-moz-range-track {
-    height: 13px;
-    background: #717171;
-    border-radius: 30px;
-    transition: .3s;
-}
-
-input[type=range]::-moz-range-progress {
-    border-radius: 30px;
-    height: 13px;
-}
-
-#redbar::-moz-range-thumb {
-    background: #ff4757;
-}
-#bluebar::-moz-range-thumb {
-    background: #3742fa;
-}
-#greenbar::-moz-range-thumb {
-    background: #2ed573;
-}
-
-#redbar::-moz-range-progress {
-    background: #ff4757;
-}
-#bluebar::-moz-range-progress {
-    background: #3742fa;
-}
-#greenbar::-moz-range-progress {
-    background: #2ed573;
-}
-
-
-
-
-#reddivbar {
-    top: 25%;
-}
-
-#greendivbar {
-    top: 50%;
-}
-
-#bluedivbar {
-    top: 75%;
-}
-
-#redname {
-    position: absolute;
-    top: 75%;
-    left: 11%;
-    height: 100%;
-    width: 25%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-#greenname {
-    position: absolute;
-    top: 75%;
-    left: 11%;
-    height: 100%;
-    width: 25%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-#bluename {
-    position: absolute;
-    top: 75%;
-    left: 11%;
-    height: 100%;
-    width: 25%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-.bar {
-    position: absolute;
-    top: 50%;
-    left: 58%;
-    height: 100%;
-    width: 70%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-#display {
-    position: absolute;
-    height: 25%;
-    width: 25%;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-#status {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-
 
