@@ -261,6 +261,7 @@ include '../../htmlheader.php';?>
                         var hex = fullColorHex(red, green, blue);
 
                         document.getElementById("hexfeld").value = hex;
+                        document.getElementById("submit").style.backgroundColor = hex;
                     });
                 }
 
