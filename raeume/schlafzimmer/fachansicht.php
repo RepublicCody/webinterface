@@ -34,7 +34,7 @@ include '../../htmlheader.php';?>
             <button id="fachansichtmainmenue" name="fachansichtmainmenue" value="fachansichtmainmenue" class="headerbutton"><div id="fachansichtmainmenudiv" class="rundbutton"></div></button>
         </form>
         <form action="zimmer.php">
-            <button id="fachansichthauptmenue" class="headerbutton">Schlafzimmer</button>
+            <button id="fachansichtschlafzimmer" class="headerbutton"><div id="fachansichtschlafzimmerdiv" class="rundbutton"></div></button>
         </form>
         <form action="farbauswahl.php" method="post">
             <button id="fachansichtalleleds" name="allefachleds" value="<?php echo $regalundfachnummer; ?>" class="headerbutton">Alle LEDs</button>
@@ -44,10 +44,10 @@ include '../../htmlheader.php';?>
         </form>
 
         <form action="regalansicht.php" method="post">
-        <button id="fachansichtzurueck" class="headerbutton" name="fachansichtheaderbutton" value="<?php echo $regalundfachnummer[0]; ?>">Zurück</button>
+        <button id="fachansichtzurueck" class="zurueckbutton" name="fachansichtheaderbutton" value="<?php echo $regalundfachnummer[0]; ?>"><div class="zurueckbild"></div><div class="zurueckname">Zurück</div></button>
         </form>
 
-        <div id="fachansichtregalnummer" class="regalnummer"><div class="regalnummertext">Regal: <?php echo $regalundfachnummer[0].' Fach: '.$regalundfachnummer[2].$regalundfachnummer[3]; ?></div></div>
+        <div id="fachansichtseitenname" class="seitenname"><div class="seitennametext">Regal: <?php echo $regalundfachnummer[0].' Fach: '.$regalundfachnummer[2].$regalundfachnummer[3]; ?></div></div>
     
     </div>
 

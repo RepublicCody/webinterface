@@ -21,7 +21,7 @@ $_SESSION['regalzustand'] = array(
     array(array("0","0","0","0"),array("0","0","0","0"),array("0","0","0","0"),array("0","0","0","0")),
     array(array("0","0","0","0"),array("0","0","0","0"),array("0","0","0","0"),array("0","0","0","0")));
 
-header("Location:raeume/schlafzimmer/zimmer.php");
+header("Location:mainmenu.php");
 
 ?>
 

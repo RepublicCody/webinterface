@@ -70,6 +70,9 @@ session_start();
 
     <div id="zimmer">
 
+        <div id="kratzbaumbild"></div>
+        <button id="kommode" disabled></button>
+
         <form action="../../send/steckdosen.php" method="post">
             <button id="steckdose_0" name="steckdose[]" value="11110 5 <?php echo $_SESSION['steckdosenzustand'][0][0]?>" class="steckdose"><div <?php steckdose_background(0)?>></div></button>
             <button id="steckdose_1" name="steckdose[]" value="11111 1 <?php echo $_SESSION['steckdosenzustand'][0][1]?>" class="steckdose"><div <?php steckdose_background(1)?>></div></button>
@@ -79,9 +82,6 @@ session_start();
             <button id="steckdose_5" name="steckdose[]" value="11111 5 <?php echo $_SESSION['steckdosenzustand'][0][5]?>" class="steckdose"><div <?php steckdose_background(5)?>></div></button>
         </form>
 
-
-        <div id="kratzbaumbild"></div>
-        <button id="kommode" disabled></button>
         <div id="schreibtischlampe_1bild" name="schreibtischlampe_1" value="" class="schreibtischlampe"></div>
         <div id="schreibtischlampe_2bild" name="schreibtischlampe_2" value="" class="schreibtischlampe"></div>
         <div id="monitorebild" name="monitore" value="" class="monitore"></div>

@@ -26,19 +26,19 @@
                 <button id="schlafzimmer" class="maindiv"><div id="schlafzimmerbild" class="mainbild"></div><div id="schlafzimmername" class="mainname">Schlafzimmer</div></button>
             </form>
 
-            <form action="">
+            <form action="raeume/wohnzimmer/zimmer.php">
                 <button id="wohnzimmer" class="maindiv"><div id="wohnzimmerbild" class="mainbild"></div><div id="wohnzimmername" class="mainname">Wohnzimmer</div></button>
             </form>
 
-            <form action="">
+            <form action="raeume/bad/zimmer.php">
                 <button id="bad" class="maindiv"><div id="badbild" class="mainbild"></div><div id="badname" class="mainname">Bad</div></button>
             </form>
 
-            <form action="">
+            <form action="raeume/kueche/zimmer.php">
                 <button id="kueche" class="maindiv"><div id="kuechebild" class="mainbild"></div><div id="kuechename" class="mainname">Küche</div></button>
             </form>
 
-            <form action="">
+            <form action="raeume/flur/zimmer.php">
                 <button id="flur" class="maindiv"><div id="flurbild" class="mainbild"></div><div id="flurname" class="mainname">Flur</div></button>
             </form>
 

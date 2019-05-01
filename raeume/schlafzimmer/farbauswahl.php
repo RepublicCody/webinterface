@@ -86,7 +86,7 @@ if (isset($_POST['alleregale'])) {
 
 /*
  * die function gibt die Position im Regal zurück
- * Das heißt über $regalnummer gibt man ihn die Nummer des Regals,
+ * Das heißt über $seitenname gibt man ihn die Nummer des Regals,
  * wessen Position man finden will ein und bekommt diese dann zurück
  */
 function position($regalnummer, $regalfaecher_im_regal){
@@ -169,17 +169,17 @@ include '../../htmlheader.php';?>
             <button id="farbauswahlmainmenue" name="farbauswahlmainmenue" value="farbauswahlmainmenue" class="headerbutton"><div id="farbauswahlmainmenudiv" class="rundbutton"></div></button>
         </form>
         <form action="zimmer.php">
-            <button id="farbauswahlhauptmenue" class="headerbutton">Schlafzimmer</button>
+            <button id="farbauswahlschlafzimmer" class="headerbutton"><div id="fachansichtschlafzimmerdiv" class="rundbutton"></div></button>
         </form>
         <form action="../../send/leds.php" method="post">
             <button id="farbauswahlausschalten" name="aus" value="off" class="headerbutton">Alle Aus</button>
         </form>
 
         <form action="<?php echo $zielseite; ?>" method="post">
-            <button id="farbauswahlzurueck" name="farbauswahlheaderbuttonzurueck" value="<?php echo $nummern; ?>" class="headerbutton">Zurück</button>
+            <button id="farbauswahlzurueck" name="farbauswahlheaderbuttonzurueck" value="<?php echo $nummern; ?>" class="zurueckbutton"><div class="zurueckbild"></div><div class="zurueckname">Zurück</div></button>
         </form>
 
-        <div id="fachansichtregalnummer" class="regalnummer"><div class="regalnummertext"><?php
+        <div id="fachansichtseitenname" class="seitenname"><div class="seitennametext"><?php
 
             if (isset($_POST['alleregale'])) {
                 echo 'Alle LEDs';
