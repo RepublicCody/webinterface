@@ -84,6 +84,67 @@ div {
     background-image: linear-gradient(50deg, #282828 60%, #383848)
 }
 
+.mainmenuebutton {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 6%;
+    width: 10%;
+    height: 60%;
+    color: #ffffff;
+    background-color: #6c5ce7;
+    border: 0;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 90%;
+    font-weight: 500;
+}
+
+#mainmenuebild {
+    top: 50%;
+    left: 16%;
+    width: 24%;
+    height: 100%;
+    background-size: 70%;
+    background-position: center;
+    background-image: url("../images/icons/home.png");
+    opacity: 1;
+    background-repeat: no-repeat;
+}
+
+.schlafzimmerbutton {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 20%;
+    width: 14%;
+    height: 60%;
+    color: #ffffff;
+    background-color: #1e90ff;
+    border: 0;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 90%;
+    font-weight: 500;
+}
+
+#schlafzimmerbild {
+    top: 50%;
+    left: 16%;
+    width: 24%;
+    height: 100%;
+    background-size: 70%;
+    background-position: center;
+    background-image: url("../images/icons/bett.png");
+    opacity: 1;
+    background-repeat: no-repeat;
+}
+
+
 .zurueckbutton {
     position: absolute;
     z-index: 5;
@@ -102,7 +163,7 @@ div {
     font-weight: 500;
 }
 
-.zurueckbild {
+#zurueckbild {
     top: 50%;
     left: 16%;
     width: 24%;
@@ -114,45 +175,10 @@ div {
     background-repeat: no-repeat;
 }
 
-.zurueckname {
+.headername {
     top: 50%;
     left: 60%;
     width: 80%;
-}
-
-#alleregalemainmenue {
-    left: 4%;
-    border-radius: 50%;
-    width: 4%;
-    padding-bottom: 4%;
-    background-color: #6c5ce7;
-}
-
-#alleregalemainmenudiv {
-    background-image: url("../images/icons/home.png");
-}
-
-#alleregaleschlafzimmer {
-    left: 10%;
-    border-radius: 50%;
-    width: 4%;
-    padding-bottom: 4%;
-}
-
-#alleregaleschlafzimmerdiv {
-    background-image: url("../images/icons/bett.png");
-}
-
-#alleregalesleep {
-    left: 16%;
-    border-radius: 50%;
-    width: 4%;
-    padding-bottom: 4%;
-    background-color: #c44569;
-}
-
-#alleregalesleepdiv {
-    background-image: url("../images/icons/schlafen.png");
 }
 
 #alleregale {
@@ -174,28 +200,8 @@ div {
 }
 
 
-#regalansichtmainmenue {
-    left: 4%;
-    border-radius: 50%;
-    width: 4%;
-    padding-bottom: 4%;
-    background-color: #6c5ce7;
-}
 
-#regalansichtmainmenudiv {
-    background-image: url("../images/icons/home.png");
-}
 
-#regalansichtschlafzimmer {
-    left: 10%;
-    border-radius: 50%;
-    width: 4%;
-    padding-bottom: 4%;
-}
-
-#regalansichtschlafzimmerdiv {
-    background-image: url("../images/icons/bett.png");
-}
 
 #regalansichtalleleds {
     left: 74%;
@@ -210,28 +216,8 @@ div {
 }
 
 
-#fachansichtmainmenue {
-    left: 4%;
-    border-radius: 50%;
-    width: 4%;
-    padding-bottom: 4%;
-    background-color: #6c5ce7;
-}
 
-#fachansichtmainmenudiv {
-    background-image: url("../images/icons/home.png");
-}
 
-#fachansichtschlafzimmer {
-    left: 10%;
-    border-radius: 50%;
-    width: 4%;
-    padding-bottom: 4%;
-}
-
-#fachansichtschlafzimmerdiv {
-    background-image: url("../images/icons/bett.png");
-}
 
 #fachansichtalleleds {
     left: 74%;
@@ -246,34 +232,28 @@ div {
 }
 
 
-#farbauswahlmainmenue {
-    left: 4%;
-    border-radius: 50%;
-    width: 4%;
-    padding-bottom: 4%;
-    background-color: #6c5ce7;
-}
 
-#farbauswahlmainmenudiv {
-    background-image: url("../images/icons/home.png");
-}
-
-#farbauswahlschlafzimmer {
-    left: 10%;
-    border-radius: 50%;
-    width: 4%;
-    padding-bottom: 4%;
-}
-
-#farbauswahlschlafzimmerdiv {
-    background-image: url("../images/icons/bett.png");
-}
 
 #farbauswahlausschalten {
     left: 84%;
     width: 8%;
     background-color: #ff4757;
 }
+
+
+
+#clock {
+    top: 90%;
+    left: 4%;
+    width: 8%;
+    height: 8%;
+    color: #808080;
+
+    text-align: center;
+    line-height: 100px;
+
+}
+
 
 
 .zimmerbutton {
@@ -347,6 +327,17 @@ div {
     background-image: url("../images/icons/bildschirm.png");
 }
 
+#sleep {
+    top: 58%;
+    border-radius: 50%;
+    width: 4%;
+    padding-bottom: 4%;
+    background-color: #c44569;
+}
+
+#sleepdiv {
+    background-image: url("../images/icons/schlafen.png");
+}
 
 #zimmer {
     width: 88%;
@@ -651,13 +642,6 @@ td {
     border: 8px solid #000000;
     border-radius: 4px;
 }
-
-.led {
-    width: 100%;
-    height: 100%;
-    border: 2px solid #000000;
-}
-
 
 #farbauswahl {
     width: 90%;

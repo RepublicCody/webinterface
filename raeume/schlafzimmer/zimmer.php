@@ -27,13 +27,7 @@ session_start();
     <div id="zimmerheader" class="header">
 
         <form action="../../mainmenu.php">
-            <button id="alleregalemainmenue" name="alleregalemainmenue" value="alleregalemainmenue" class="headerbutton"><div id="alleregalemainmenudiv" class="rundbutton"></div></button>
-        </form>
-        <form action="zimmer.php" method="post">
-            <button id="alleregaleschlafzimmer" name="alleregaleschlafzimmer" value="alleregaleschlafzimmer" class="headerbutton"><div id="alleregaleschlafzimmerdiv" class="rundbutton"></div></button>
-        </form>
-        <form action="" method="post">
-            <button id="alleregalesleep" name="alleregalesleep" value="alleregalesleep" class="headerbutton"><div id="alleregalesleepdiv" class="rundbutton"></div></button>
+            <button id="alleregalemainmenue" class="mainmenuebutton"><div id="mainmenuebild"></div><div class="headername">Menü</div></button>
         </form>
         <form action="farbauswahl.php" method="post">
             <button id="alleregale" name="alleregale" value="alleregale" class="headerbutton">Alle LEDs</button>
@@ -45,7 +39,7 @@ session_start();
             <button id="allesteckdosenaus" name="allesteckdosenaus" value="allesteckdosenaus" class="headerbutton">Steckdosen Aus</button>
         </form>
         <form action="../../mainmenu.php">
-            <button id="regalansichtzurueck" class="zurueckbutton"><div class="zurueckbild"></div><div class="zurueckname">Zurück</div></button>
+            <button id="regalansichtzurueck" class="zurueckbutton"><div id="zurueckbild"></div><div class="headername">Zurück</div></button>
         </form>
 
         <div id="schlafzimmerseitenname" class="seitenname"><div class="seitennametext">Schlafzimmer</div></div>
@@ -67,6 +61,12 @@ session_start();
     <form action="">
         <button id="monitore" name="monitore" value="monitore" class="zimmerbutton"><div id="monitorediv"  class="rundbutton"></div></button>
     </form>
+    <form action="" method="post">
+        <button id="sleep" name="sleep" value="sleep" class="zimmerbutton"><div id="sleepdiv" class="rundbutton"></div></button>
+    </form>
+
+    <div id="clock">12:45:25</div>
+    <script src="../../javascript/clock.js" charset="utf-8"></script>
 
     <div id="zimmer">
 
@@ -78,7 +78,6 @@ session_start();
             <button id="steckdose_4" name="steckdose[]" value="11111 4 <?php echo $_SESSION['steckdosenzustand'][0][4]?>" class="steckdose"><div <?php steckdose_background(4)?>></div></button>
             <button id="steckdose_5" name="steckdose[]" value="11111 5 <?php echo $_SESSION['steckdosenzustand'][0][5]?>" class="steckdose"><div <?php steckdose_background(5)?>></div></button>
         </form>
-
 
         <div id="kratzbaumbild"></div>
         <button id="kommode" disabled></button>

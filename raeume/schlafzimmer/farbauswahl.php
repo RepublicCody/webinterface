@@ -167,17 +167,17 @@ include '../../htmlheader.php';?>
     <div id="farbauswahlheader" class="header">
 
         <form action="../../mainmenu.php">
-            <button id="farbauswahlmainmenue" name="farbauswahlmainmenue" value="farbauswahlmainmenue" class="headerbutton"><div id="farbauswahlmainmenudiv" class="rundbutton"></div></button>
+            <button id="farbauswahlmainmenue" class="mainmenuebutton"><div id="mainmenuebild"></div><div class="headername">Menü</div></button>
         </form>
         <form action="zimmer.php">
-            <button id="farbauswahlschlafzimmer" class="headerbutton"><div id="fachansichtschlafzimmerdiv" class="rundbutton"></div></button>
+            <button id="farbauswahlschlafzimmer" class="schlafzimmerbutton"><div id="schlafzimmerbild"></div><div class="headername">Schlafzimmer</div></button>
         </form>
         <form action="../../send/leds.php" method="post">
             <button id="farbauswahlausschalten" name="aus" value="off" class="headerbutton">Alle Aus</button>
         </form>
 
         <form action="<?php echo $zielseite; ?>" method="post">
-            <button id="farbauswahlzurueck" name="farbauswahlheaderbuttonzurueck" value="<?php echo $nummern; ?>" class="zurueckbutton"><div class="zurueckbild"></div><div class="zurueckname">Zurück</div></button>
+            <button id="farbauswahlzurueck" name="farbauswahlheaderbuttonzurueck" value="<?php echo $nummern; ?>" class="zurueckbutton"><div class="zurueckbild"></div><div class="headername">Zurück</div></button>
         </form>
 
         <div id="fachansichtseitenname" class="seitenname"><div class="seitennametext"><?php
@@ -195,6 +195,9 @@ include '../../htmlheader.php';?>
                 ?></div></div>
 
     </div>
+
+    <div id="clock">12:45:25</div>
+    <script src="../../javascript/clock.js" charset="utf-8"></script>
 
     <div id="farbauswahl">
 
