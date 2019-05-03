@@ -28,13 +28,7 @@ session_start();
     <div id="zimmerheader" class="header">
 
         <form action="../../mainmenu.php">
-            <button id="alleregalemainmenue" name="alleregalemainmenue" value="alleregalemainmenue" class="headerbutton"><div id="alleregalemainmenudiv" class="rundbutton"></div></button>
-        </form>
-        <form action="zimmer.php" method="post">
-            <button id="alleregaleschlafzimmer" name="alleregaleschlafzimmer" value="alleregaleschlafzimmer" class="headerbutton"><div id="alleregaleschlafzimmerdiv" class="rundbutton"></div></button>
-        </form>
-        <form action="" method="post">
-            <button id="alleregalesleep" name="alleregalesleep" value="alleregalesleep" class="headerbutton"><div id="alleregalesleepdiv" class="rundbutton"></div></button>
+            <button id="alleregalemainmenue" class="mainmenuebutton"><div id="mainmenuebild"></div><div class="headername">Menü</div></button>
         </form>
         <form action="farbauswahl.php" method="post">
             <button id="alleregale" name="alleregale" value="alleregale" class="headerbutton">Alle LEDs</button>
@@ -46,33 +40,16 @@ session_start();
             <button id="allesteckdosenaus" name="allesteckdosenaus" value="allesteckdosenaus" class="headerbutton">Steckdosen Aus</button>
         </form>
         <form action="../../mainmenu.php">
-            <button id="regalansichtzurueck" class="zurueckbutton"><div class="zurueckbild"></div><div class="zurueckname">Zurück</div></button>
+            <button id="regalansichtzurueck" class="zurueckbutton"><div id="zurueckbild"></div><div class="headername">Zurück</div></button>
         </form>
 
-        <div id="schlafzimmerseitenname" class="seitenname"><div class="seitennametext">Schlafzimmer</div></div>
+        <div id="schlafzimmerseitenname" class="seitenname"><div class="seitennametext">Wohnzimmer</div></div>
 
     </div>
 
-    <form action="">
-        <button id="computer" name="computer" value="computer" class="zimmerbutton"><div id="computerdiv" class="rundbutton"></div></button>
-    </form>
-    <form action="../../send/lampe.php" method="post">
-        <button id="lampe" name="lampe" value="lampe" class="zimmerbutton"><div id="lampediv"  class="rundbutton"></div></button>
-    </form>
-    <form action="">
-        <button id="schreibtischlampe_1" name="schreibtischlampe_1" value="schreibtischlampe_1" class="zimmerbutton"><div id="schreibtischlampe_1div"  class="rundbutton"></div></button>
-    </form>
-    <form action="">
-        <button id="schreibtischlampe_2" name="schreibtischlampe_2" value="schreibtischlampe_2" class="zimmerbutton"><div id="schreibtischlampe_2div"  class="rundbutton"></div></button>
-    </form>
-    <form action="">
-        <button id="monitore" name="monitore" value="monitore" class="zimmerbutton"><div id="monitorediv"  class="rundbutton"></div></button>
-    </form>
+
 
     <div id="zimmer">
-
-        <div id="kratzbaumbild"></div>
-        <button id="kommode" disabled></button>
 
         <form action="../../send/steckdosen.php" method="post">
             <button id="steckdose_0" name="steckdose[]" value="11110 5 <?php echo $_SESSION['steckdosenzustand'][0][0]?>" class="steckdose"><div <?php steckdose_background(0)?>></div></button>
@@ -83,22 +60,6 @@ session_start();
             <button id="steckdose_5" name="steckdose[]" value="11111 5 <?php echo $_SESSION['steckdosenzustand'][0][5]?>" class="steckdose"><div <?php steckdose_background(5)?>></div></button>
         </form>
 
-        <div id="schreibtischlampe_1bild" name="schreibtischlampe_1" value="" class="schreibtischlampe"></div>
-        <div id="schreibtischlampe_2bild" name="schreibtischlampe_2" value="" class="schreibtischlampe"></div>
-        <div id="monitorebild" name="monitore" value="" class="monitore"></div>
-        <div id="computerbild" name="computer" value="" class="computer"></div>
-        <div id="regalbettbild" name="regalbett" value="regalbett"></div>
-        <div id="nachttischbild" name="nachttisch" value="nachttisch"></div>
-        <div id="schreibtischbild" name="schreibtisch" value="schreibtisch"></div>
-        <div id="bettbild" name="bett" value="bett"><div id="matraze"></div></div>
-
-        <form action="regalansicht.php" method="post">
-            <button id="regal_1" name="regal[]" value="0" class="regal"></button>
-            <button id="regal_2" name="regal[]" value="1" class="regal"></button>
-            <button id="regal_3" name="regal[]" value="2" class="regal"></button>
-            <button id="regal_4" name="regal[]" value="3" class="regal"></button>
-            <button id="regal_5" name="regal[]" value="4" class="regal"></button>
-        </form>
     </div>
 
 </div>

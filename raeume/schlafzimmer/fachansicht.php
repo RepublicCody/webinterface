@@ -53,7 +53,7 @@ include '../../htmlheader.php';?>
     </div>
 
     <div id="clock">12:45:25</div>
-    <script src="../../javascript/clock.js" charset="utf-8"></script>
+    <script src="../../javascript/miniclock.js" charset="utf-8"></script>
 
     <div id="fachansicht">
 

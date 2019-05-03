@@ -7,18 +7,20 @@ html, body {
     font-weight: 500;
 }
 
-input[type="button"]:focus {
-    outline: none !important;
+input:focus, button:focus {
+    outline: 0;
 }
 
-input[type="button"]::-moz-focus-inner {
-    border: 0 !important;
+input::-moz-focus-inner, button::-moz-focus-inner{
+    border: 0;
 }
 
 div {
     position: absolute;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
 }
 
 

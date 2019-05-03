@@ -84,6 +84,67 @@ div {
     background-image: linear-gradient(50deg, #282828 60%, #383848)
 }
 
+.mainmenuebutton {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 6%;
+    width: 10%;
+    height: 60%;
+    color: #ffffff;
+    background-color: #6c5ce7;
+    border: 0;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 90%;
+    font-weight: 500;
+}
+
+#mainmenuebild {
+    top: 50%;
+    left: 16%;
+    width: 24%;
+    height: 100%;
+    background-size: 70%;
+    background-position: center;
+    background-image: url("../images/icons/home.png");
+    opacity: 1;
+    background-repeat: no-repeat;
+}
+
+.schlafzimmerbutton {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 20%;
+    width: 14%;
+    height: 60%;
+    color: #ffffff;
+    background-color: #1e90ff;
+    border: 0;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 90%;
+    font-weight: 500;
+}
+
+#schlafzimmerbild {
+    top: 50%;
+    left: 16%;
+    width: 24%;
+    height: 100%;
+    background-size: 70%;
+    background-position: center;
+    background-image: url("../images/icons/bett.png");
+    opacity: 1;
+    background-repeat: no-repeat;
+}
+
+
 .zurueckbutton {
     position: absolute;
     z-index: 5;
@@ -102,7 +163,7 @@ div {
     font-weight: 500;
 }
 
-.zurueckbild {
+#zurueckbild {
     top: 50%;
     left: 16%;
     width: 24%;
@@ -114,45 +175,10 @@ div {
     background-repeat: no-repeat;
 }
 
-.zurueckname {
+.headername {
     top: 50%;
     left: 60%;
     width: 80%;
-}
-
-#alleregalemainmenue {
-    left: 4%;
-    border-radius: 50%;
-    width: 4%;
-    padding-bottom: 4%;
-    background-color: #6c5ce7;
-}
-
-#alleregalemainmenudiv {
-    background-image: url("../images/icons/home.png");
-}
-
-#alleregaleschlafzimmer {
-    left: 10%;
-    border-radius: 50%;
-    width: 4%;
-    padding-bottom: 4%;
-}
-
-#alleregaleschlafzimmerdiv {
-    background-image: url("../images/icons/bett.png");
-}
-
-#alleregalesleep {
-    left: 16%;
-    border-radius: 50%;
-    width: 4%;
-    padding-bottom: 4%;
-    background-color: #c44569;
-}
-
-#alleregalesleepdiv {
-    background-image: url("../images/icons/schlafen.png");
 }
 
 #alleregale {
@@ -174,76 +200,19 @@ div {
 }
 
 
-.zimmerbutton {
-    position: absolute;
-    z-index: 5;
+
+#clock {
+    top: 90%;
     left: 4%;
-    width: 10%;
-    border: 0;
-    border-radius: 30px;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    width: 8%;
+    height: 8%;
+    color: #808080;
+
+    text-align: center;
+    line-height: 100px;
+
 }
 
-#computer {
-    top: 18%;
-    border-radius: 50%;
-    width: 4%;
-    padding-bottom: 4%;
-    background-color: #006266;
-}
-
-#computerdiv {
-    background-image: url("../images/icons/computer.png");
-}
-
-#lampe {
-    top: 26%;
-    border-radius: 50%;
-    width: 4%;
-    padding-bottom: 4%;
-    background-color: #FFC312;
-}
-
-#lampediv {
-    background-image: url("../images/icons/lampe.png");
-}
-
-#schreibtischlampe_1 {
-    top: 34%;
-    border-radius: 50%;
-    width: 4%;
-    padding-bottom: 4%;
-    background-color: #1289A7;
-}
-
-#schreibtischlampe_1div {
-    background-image: url("../images/icons/schreibtichlampe.png");
-}
-
-#schreibtischlampe_2 {
-    top: 42%;
-    border-radius: 50%;
-    width: 4%;
-    padding-bottom: 4%;
-    background-color: #1289A7;
-}
-
-#schreibtischlampe_2div {
-    background-image: url("../images/icons/schreibtichlampe.png");
-}
-
-#monitore {
-    top: 50%;
-    border-radius: 50%;
-    width: 4%;
-    padding-bottom: 4%;
-    background-color: #833471;
-}
-
-#monitorediv {
-    background-image: url("../images/icons/bildschirm.png");
-}
 
 
 #zimmer {
@@ -322,42 +291,6 @@ div {
 }
 
 
-.regal {
-    position: absolute;
-    width: 30%;
-    height: 12%;
-    border: 2px solid #505050;
-    background-color: #1d1a20;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-#regal_1 {
-    top: 94%;
-    left: 63%;
-}
-
-#regal_2 {
-    top: 94%;
-    left: 33%;
-}
-
-#regal_3 {
-    width: 7%;
-    height: 48%;
-    top: 36%;
-    left: 52.5%;
-}
-
-#regal_4 {
-    top: 6%;
-    left: 71%;
-}
-
-#regal_5 {
-    top: 6%;
-    left: 41%;
-}
 
 
 @media all and (orientation: landscape) {

@@ -1,0 +1,151 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+input:focus, button:focus {
+    outline: 0;
+}
+
+input::-moz-focus-inner, button::-moz-focus-inner{
+    border: 0;
+}
+
+div, button, input {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+#clock {
+    top: 90%;
+    left: 4%;
+    width: 8%;
+    height: 8%;
+    color: #808080;
+    text-align: center;
+    line-height: 100px;
+
+}
+
+#login {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background:-webkit-linear-gradient(50deg, #282828 30%, #583046, #A44C53, #C45658);
+    background:-moz-linear-gradient(50deg, #282828 30%, #583046, #A44C53, #C45658);
+}
+
+#mitte {
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 66%;
+    border-radius: 50%;
+}
+
+#links {
+    top: 50%;
+    left: 25%;
+    width: 50%;
+    height: 100%;
+    -webkit-border-bottom-left-radius: 40px;
+    -webkit-border-top-left-radius: 40px;
+    -moz-border-radius-bottomleft: 40px;
+    -moz-border-radius-topleft: 40px;
+    background: linear-gradient(50deg, #2b2640, #3b3650, #ff5e67)
+}
+
+#bildbackground {
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    padding-bottom: 30%;
+    background-repeat: no-repeat;
+    background-color: #ff5e57;
+}
+
+#bild {
+    top: 50%;
+    left: 50%;
+    background-position: center;
+    opacity: 1;
+    background-repeat: no-repeat;
+}
+
+#name {
+    top: 76%;
+    left: 50%;
+    width: 50%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 180%;
+}
+
+#rechts {
+    top: 50%;
+    left: 75%;
+    width: 50%;
+    height: 100%;
+    -webkit-border-bottom-right-radius: 40px;
+    -webkit-border-top-right-radius: 40px;
+    -moz-border-radius-bottomright: 40px;
+    -moz-border-radius-topright: 40px;
+    background: linear-gradient(50deg, #A44C53, #ff5e57, #EC7265)
+}
+
+#username {
+    top: 30%;
+    left: 50%;
+    width: 50%;
+    border: 0;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 2%;
+    background-color: transparent;
+    font-size: 110%;
+    color: #ffffff
+
+}
+
+#password {
+    top: 44%;
+    left: 50%;
+    width: 50%;
+    border: 0;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 2%;
+    background-color: transparent;
+    font-size: 110%;
+    color: #ffffff
+}
+
+#anmelden {
+    top: 60%;
+    left: 50%;
+    width: 20%;
+    height: 10%;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background-color: transparent;
+    box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #AD4257, 0 4px 2px rgba(0, 0, 0, .5);
+
+}
+
+.rand{
+    top: 60%;
+    left: 50%;
+    width: 20%;
+    height: 10%;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: inset 0 40px 50px #A44C53;
+}

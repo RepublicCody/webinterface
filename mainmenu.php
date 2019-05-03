@@ -16,6 +16,9 @@ include 'htmlheader.php';?>
 
     <div id="mainmenu" class="background">
 
+        <div id="clock">12:45:25</div>
+        <script src="javascript/miniclock.js" charset="utf-8"></script>
+
         <div id="mitte">
             <form action="raeume/schlafzimmer/zimmer.php">
                 <button id="schlafzimmer" class="maindiv"><div id="schlafzimmerbild" class="mainbild"></div><div id="schlafzimmername" class="mainname">Schlafzimmer</div></button>
@@ -37,7 +40,7 @@ include 'htmlheader.php';?>
                 <button id="flur" class="maindiv"><div id="flurbild" class="mainbild"></div><div id="flurname" class="mainname">Flur</div></button>
             </form>
 
-            <form action="">
+            <form action="login.php">
                 <button id="platzhalter" class="maindiv"><div id="platzhalterbild" class="mainbild"></div><div id="platzhaltername" class="mainname">Platzhalter</div></button>
             </form>
 

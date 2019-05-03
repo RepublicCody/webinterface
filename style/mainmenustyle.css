@@ -7,15 +7,40 @@ html, body {
     font-weight: 500;
 }
 
+input:focus, button:focus {
+    outline: 0;
+}
+
+input::-moz-focus-inner, button::-moz-focus-inner{
+    border: 0;
+}
+
 div, button {
     position: absolute;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
 }
 
 #mainmenu {
     background: linear-gradient(40deg, #3b3650, #3b3640 50%, #574960, #574970);
 }
+
+
+#clock {
+    top: 90%;
+    left: 4%;
+    width: 8%;
+    height: 8%;
+    color: #808080;
+
+    text-align: center;
+    line-height: 100px;
+
+}
+
+
 
 #mitte {
     top: 50%;
