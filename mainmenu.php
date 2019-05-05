@@ -44,8 +44,8 @@ include 'htmlheader.php';?>
                 <button id="platzhalter" class="maindiv"><div id="platzhalterbild" class="mainbild"></div><div id="platzhaltername" class="mainname">Platzhalter</div></button>
             </form>
 
-            <form action="">
-                <button id="platzhalter2" class="maindiv"><div id="platzhalter2bild" class="mainbild"></div><div id="platzhalter2name" class="mainname">Platzhalter</div></button>
+            <form action="merkzettel/merkzettel.php">
+                <button id="merkzettel" class="maindiv"><div id="merkzettelbild" class="mainbild"></div><div id="merkzettelname" class="mainname">Merkzettel</div></button>
             </form>
 
             <form action="">

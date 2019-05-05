@@ -1,0 +1,416 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+input:focus, button:focus, input:focus {
+    outline: 0;
+}
+
+input::-moz-focus-inner, button::-moz-focus-inner, input::-moz-focus-inner{
+    border: 0;
+}
+
+div, button, input {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+#clock {
+    top: 90%;
+    left: 4%;
+    width: 8%;
+    height: 8%;
+    color: #808080;
+    text-align: center;
+    line-height: 100px;
+}
+
+.header {
+    z-index: 6;
+    top: 5%;
+    left: 50%;
+    width: 100%;
+    height: 10%;
+    background-image: linear-gradient(50deg, #404040 50%, #505060)
+}
+
+.seitenname {
+    width: 36%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    color: #c0c0c0;
+    background-color: #282828;
+    border: 2px solid #505050;
+    border-radius: 3px;
+}
+
+.seitennametext {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    font-size: 200%;
+    text-align: center;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(50deg, #282828 60%, #383848)
+}
+
+.headerbutton {
+    z-index: 5;
+    top: 50%;
+    width: 10%;
+    height: 60%;
+    color: #ffffff;
+    background-color: #1e90ff;
+    border: 0;
+    border-radius: 30px;
+    font-size: 90%;
+}
+
+#merkzettelmainmenue {
+    z-index: 5;
+    top: 50%;
+    left: 6%;
+    width: 10%;
+    height: 60%;
+    color: #ffffff;
+    background-color: #6c5ce7;
+    border: 0;
+    border-radius: 30px;
+    font-size: 90%;
+}
+
+#mainmenuebild {
+    top: 50%;
+    left: 16%;
+    width: 24%;
+    height: 100%;
+    background-size: 70%;
+    background-position: center;
+    background-image: url("../images/icons/home.png");
+    opacity: 1;
+    background-repeat: no-repeat;
+}
+
+#merkzettelzurueck {
+    z-index: 5;
+    top: 50%;
+    left: 94%;
+    width: 10%;
+    height: 60%;
+    color: #ffffff;
+    background-color: #ffa502;
+    border: 0;
+    border-radius: 30px;
+    font-size: 90%;
+}
+
+#zurueckbild {
+    top: 50%;
+    left: 16%;
+    width: 24%;
+    height: 100%;
+    background-size: 70%;
+    background-position: center;
+    background-image: url("../images/icons/back.png");
+    opacity: 1;
+    background-repeat: no-repeat;
+}
+
+.headername {
+    top: 50%;
+    left: 60%;
+    width: 80%;
+}
+
+#merkzettelauswahl {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+#merkzettellistenauswahl {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 60%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+.listbutton {
+    left: 50%;
+    width: 100%;
+    height: 10%;
+    border: 0;
+    background-color: #778ca3;
+    padding-bottom: 1%;
+    border-radius: 8px;
+    font-size: 130%;
+    color: #ffffff
+}
+
+.merkzettellistebild {
+    top: 50%;
+    left: 10%;
+    width: 20%;
+    height: 100%;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-top-left-radius: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    -moz-border-radius-topleft: 8px;
+}
+
+.merkzettellistename {
+    top: 50%;
+    left: 60%;
+    width: 76%;
+    text-align: left;
+}
+
+#l_1 {
+    top: 16%;
+}
+
+#l_2 {
+    top: 28%;
+}
+
+#l_3 {
+    top: 40%;
+}
+
+#neueliste {
+    top: 52%;
+
+}
+
+#merkzettelliste_1_bild {
+    background-color: #eb3b5a;
+
+}
+
+#merkzettelliste_2_bild {
+    background-color: #0fb9b1;
+
+}
+
+#merkzettelliste_3_bild {
+    background-color: #20bf6b;
+
+}
+
+#neuelistebild {
+    background-color: #2d98da;
+
+}
+
+
+
+
+#listeneintraege {
+    top: 60%;
+    left: 50%;
+    width: 60%;
+    height: 100%;
+}
+
+.listeneintrag {
+    left: 50%;
+    width: 100%;
+    height: 10%;
+    border: 0;
+    background-color: #778ca3;
+    padding-bottom: 1%;
+    border-radius: 8px;
+    font-size: 130%;
+    color: #ffffff
+}
+
+.status {
+    top: 50%;
+    left: 2%;
+    width: 4%;
+    height: 100%;
+    background-color: #eb3b5a;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-top-left-radius: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    -moz-border-radius-topleft: 8px;
+}
+
+.inhalt {
+    top: 50%;
+    left: 44%;
+    width: 74%;
+    border: 0;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 2%;
+    background-color: transparent;
+    font-size: 110%;
+    color: #ffffff
+}
+
+.checkdiv {
+    top: 50%;
+    left: 92%;
+    width: 16%;
+    height: 100%;
+    background-color: #4b7bec;
+    -webkit-border-bottom-right-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-bottomright: 8px;
+    -moz-border-radius-topright: 8px;
+}
+
+.check{
+    top: 50%;
+    left: 50%;
+    width: 3.3em;
+    height: 3.3em;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+
+.round {
+    top: 50%;
+    left: 50%;
+}
+
+.round label {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    width: 2.0em;
+    height: 2.0em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.round label:after {
+    border: 3px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    top: 24%;
+    left: 27%;
+    width: 40%;
+    height: 26%;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: rotate(-45deg);
+}
+
+.round input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked + label {
+    background-color: #26de81;
+    border-color: #26de81;
+}
+
+.round input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
+
+
+
+
+
+#eintrag_1 {
+    top: 16%;
+}
+
+#eintrag_2 {
+    top: 28%;
+}
+
+#eintrag_3 {
+    top: 40%;
+}
+
+#eintrag_4 {
+    top: 52%;
+}
+#neu {
+    top: 64%;
+    background-color: #2bcbba;
+}
+#neuereintrag {
+    top: 50%;
+    left: 92%;
+    width: 16%;
+    height: 100%;
+    margin: 0;
+    border: 0;
+    background-color: #4b7bec;
+    -webkit-border-bottom-right-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-bottomright: 8px;
+    -moz-border-radius-topright: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media all and (orientation: landscape) {
+    #merkzettel {
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media all and (orientation: portrait) {
+    body{
+        width: 100%;
+        height: 100%;
+        margin:0;
+        overflow:hidden;
+    }
+    .background{
+        transform: rotate(90deg);
+        transform-origin:bottom left;
+
+        position:absolute;
+        top: -100vw;
+        left: 0;
+
+        height:100vw;
+        width:100vh;
+
+        overflow:auto;
+    }
+}
