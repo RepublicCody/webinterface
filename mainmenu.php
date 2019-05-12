@@ -40,7 +40,7 @@ include 'htmlheader.php';?>
                 <button id="flur" class="maindiv"><div id="flurbild" class="mainbild"></div><div id="flurname" class="mainname">Flur</div></button>
             </form>
 
-            <form action="login.php">
+            <form action="timer/timer.php">
                 <button id="platzhalter" class="maindiv"><div id="platzhalterbild" class="mainbild"></div><div id="platzhaltername" class="mainname">Platzhalter</div></button>
             </form>
 
@@ -48,7 +48,7 @@ include 'htmlheader.php';?>
                 <button id="merkzettel" class="maindiv"><div id="merkzettelbild" class="mainbild"></div><div id="merkzettelname" class="mainname">Merkzettel</div></button>
             </form>
 
-            <form action="">
+            <form action="login.php">
                 <button id="sleep" class="maindiv"><div id="sleepbild" class="mainbild"></div><div id="sleepname" class="mainname">Ruhemodus</div></button>
             </form>
 
