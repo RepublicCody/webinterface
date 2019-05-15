@@ -608,8 +608,6 @@ table {
 td {
     top: 50%;
     left: 50%;
-    width: 20vh;
-    height: 20vh;
 }
 
 .fach {
@@ -916,6 +914,11 @@ input[type=range]::-moz-range-progress {
         top: 50%;
         left: 50%;
     }
+
+    td {
+        width: 20vh;
+        height: 20vh;
+    }
 }
 
 @media all and (orientation: portrait) {
@@ -941,6 +944,11 @@ input[type=range]::-moz-range-progress {
         width:100vh;
 
         overflow:auto;
+    }
+
+    td {
+        width: 20vw;
+        height: 20vw;
     }
 }
 
