@@ -610,6 +610,16 @@ td {
     left: 50%;
 }
 
+#sf01 {
+    top: 25%;
+    height: 12.5%;
+}
+
+#sf11 {
+    top: 75%;
+    height: 12.5%;
+}
+
 .fach {
     top: 50%;
     left: 50%;
