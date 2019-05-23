@@ -17,8 +17,6 @@ elseif(isset($_POST['farbauswahlheaderbuttonzurueck'])){
 
     $dummy = $_POST['farbauswahlheaderbuttonzurueck'];
 
-    echo "ich bin ein dummy ". $dummy . "kekse";
-
     $regalnummer = $dummy;
 
 }

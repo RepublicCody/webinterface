@@ -45,7 +45,7 @@ include '../../htmlheader.php';?>
         </form>
 
         <form action="regalansicht.php" method="post">
-        <button id="fachansichtzurueck" class="zurueckbutton" name="fachansichtheaderbutton" value="<?php echo $regalundfachnummer[0]; ?>"><div class="zurueckbild"></div><div class="headername">Zurück</div></button>
+        <button id="fachansichtzurueck" class="zurueckbutton" name="fachansichtheaderbutton" value="<?php echo $regalundfachnummer[0]; ?>"><div id="zurueckbild"></div><div class="headername">Zurück</div></button>
         </form>
 
         <div id="fachansichtseitenname" class="seitenname"><div class="seitennametext">Regal: <?php echo $regalundfachnummer[0].' Fach: '.$regalundfachnummer[2].$regalundfachnummer[3]; ?></div></div>

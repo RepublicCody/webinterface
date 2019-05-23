@@ -177,7 +177,7 @@ include '../../htmlheader.php';?>
         </form>
 
         <form action="<?php echo $zielseite; ?>" method="post">
-            <button id="farbauswahlzurueck" name="farbauswahlheaderbuttonzurueck" value="<?php echo $nummern; ?>" class="zurueckbutton"><div class="zurueckbild"></div><div class="headername">Zurück</div></button>
+            <button id="farbauswahlzurueck" name="farbauswahlheaderbuttonzurueck" value="<?php echo $nummern; ?>" class="zurueckbutton"><div id="zurueckbild"></div><div class="headername">Zurück</div></button>
         </form>
 
         <div id="fachansichtseitenname" class="seitenname"><div class="seitennametext"><?php
