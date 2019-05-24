@@ -64,54 +64,54 @@ include '../../htmlheader.php';?>
             <div id="sondertabelle">
                 <div id="reihe_0" class="reihe">
                     <div id="sf00" class="sonderdivbutton">
-                        <button id="sb00" name="fach[]" value="<?php echo $regalnummer; ?>_00" class='fach'></button>
-                        <button id="sb01" name="fach[]" value="<?php echo $regalnummer; ?>_01" class='fach'></button>
+                        <button id="sb00" name="fach[]" value="<?php echo $regalnummer; ?>_00" class='sonderfach'></button>
+                        <button id="sb01" name="fach[]" value="<?php echo $regalnummer; ?>_01" class='sonderfach'></button>
                     </div>
                     <div  id="sf01" class="sonderdivbutton">
-                        <button id="sb02" name="fach[]" value="<?php echo $regalnummer; ?>_02" class='fach'></button>
+                        <button id="sb02" name="fach[]" value="<?php echo $regalnummer; ?>_02" class='sonderfach'></button>
                     </div>
                     <div id="sf02" class="sonderdivbutton">
-                        <button id="sb03" name="fach[]" value="<?php echo $regalnummer; ?>_03" class='fach'></button>
+                        <button id="sb03" name="fach[]" value="<?php echo $regalnummer; ?>_03" class='sonderfach'></button>
                     </div>
                 </div>
                 <div id="reihe_1" class="reihe">
                     <div id="sf10" class="sonderdivbutton">
-                        <button id="sb10" name="fach[]" value="<?php echo $regalnummer; ?>_04" class='fach'></button>
-                        <button id="sb11" name="fach[]" value="<?php echo $regalnummer; ?>_05" class='fach'></button>
+                        <button id="sb10" name="fach[]" value="<?php echo $regalnummer; ?>_04" class='sonderfach'></button>
+                        <button id="sb11" name="fach[]" value="<?php echo $regalnummer; ?>_05" class='sonderfach'></button>
                     </div>
                     <div id="sf11" class="sonderdivbutton">
-                        <button id="sb12" name="fach[]" value="<?php echo $regalnummer; ?>_06" class='fach'></button>
+                        <button id="sb12" name="fach[]" value="<?php echo $regalnummer; ?>_06" class='sonderfach'></button>
                     </div>
                     <div id="sf12" class="sonderdivbutton">
-                        <button id="sb13" name="fach[]" value="<?php echo $regalnummer; ?>_07" class='fach'></button>
+                        <button id="sb13" name="fach[]" value="<?php echo $regalnummer; ?>_07" class='sonderfach'></button>
                     </div>
                 </div>
                 <div id="reihe_2" class="reihe">
                     <div id="sf20" class="sonderdivbutton">
-                        <button id="sb20" name="fach[]" value="<?php echo $regalnummer; ?>_08" <?php if($_SESSION['regale'][$regalnummer][2][0]==0)echo"disabled class='fachdisabled'";else echo"class='fach'"; ?>></button>
+                        <button id="sb20" name="fach[]" value="<?php echo $regalnummer; ?>_08" <?php if($_SESSION['regale'][$regalnummer][2][0]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>></button>
                     </div>
                     <div id="sf21" class="sonderdivbutton">
-                        <button id="sb21" name="fach[]" value="<?php echo $regalnummer; ?>_09" <?php if($_SESSION['regale'][$regalnummer][2][1]==0)echo"disabled class='fachdisabled'";else echo"class='fach'"; ?>></button>
+                        <button id="sb21" name="fach[]" value="<?php echo $regalnummer; ?>_09" <?php if($_SESSION['regale'][$regalnummer][2][1]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>></button>
                     </div>
                     <div id="sf22" class="sonderdivbutton">
-                        <button id="sb22" name="fach[]" value="<?php echo $regalnummer; ?>_10" <?php if($_SESSION['regale'][$regalnummer][2][2]==0)echo"disabled class='fachdisabled'";else echo"class='fach'"; ?>></button>
+                        <button id="sb22" name="fach[]" value="<?php echo $regalnummer; ?>_10" <?php if($_SESSION['regale'][$regalnummer][2][2]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>></button>
                     </div>
                     <div id="sf23" class="sonderdivbutton">
-                        <button id="sb23" name="fach[]" value="<?php echo $regalnummer; ?>_11" <?php if($_SESSION['regale'][$regalnummer][2][3]==0)echo"disabled class='fachdisabled'";else echo"class='fach'"; ?>></button>
+                        <button id="sb23" name="fach[]" value="<?php echo $regalnummer; ?>_11" <?php if($_SESSION['regale'][$regalnummer][2][3]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>></button>
                     </div>
                 </div>
                 <div id="reihe_3" class="reihe">
                     <div id="sf30" class="sonderdivbutton">
-                        <button id="sb30" name="fach[]" value="<?php echo $regalnummer; ?>_12" <?php if($_SESSION['regale'][$regalnummer][3][0]==0)echo"disabled class='fachdisabled'";else echo"class='fach'"; ?>></button>
+                        <button id="sb30" name="fach[]" value="<?php echo $regalnummer; ?>_12" <?php if($_SESSION['regale'][$regalnummer][3][0]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>></button>
                     </div>
                     <div id="sf31" class="sonderdivbutton">
-                        <button id="sb31" name="fach[]" value="<?php echo $regalnummer; ?>_13" <?php if($_SESSION['regale'][$regalnummer][3][1]==0)echo"disabled class='fachdisabled'";else echo"class='fach'"; ?>></button>
+                        <button id="sb31" name="fach[]" value="<?php echo $regalnummer; ?>_13" <?php if($_SESSION['regale'][$regalnummer][3][1]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>></button>
                     </div>
                     <div id="sf32" class="sonderdivbutton">
-                        <button id="sb32" name="fach[]" value="<?php echo $regalnummer; ?>_14" <?php if($_SESSION['regale'][$regalnummer][3][2]==0)echo"disabled class='fachdisabled'";else echo"class='fach'"; ?>></button>
+                        <button id="sb32" name="fach[]" value="<?php echo $regalnummer; ?>_14" <?php if($_SESSION['regale'][$regalnummer][3][2]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>></button>
                     </div>
                     <div id="sf33" class="sonderdivbutton">
-                        <button id="sb33" name="fach[]" value="<?php echo $regalnummer; ?>_15" <?php if($_SESSION['regale'][$regalnummer][3][3]==0)echo"disabled class='fachdisabled'";else echo"class='fach'"; ?>></button>
+                        <button id="sb33" name="fach[]" value="<?php echo $regalnummer; ?>_15" <?php if($_SESSION['regale'][$regalnummer][3][3]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>></button>
                     </div>
                 </div>
 
