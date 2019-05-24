@@ -653,6 +653,7 @@ td {
 
 #sf01 {
     left: 50%;
+    width: 50%;
 }
 
 #sf02 {
@@ -665,13 +666,44 @@ td {
 
 #sf11 {
     left: 50%;
+    width: 50%;
 }
 
 #sf12 {
     left: 87.5%;
 }
 
+#sf20 {
+    left: 12.5%;
+}
 
+#sf21 {
+    left: 37.5%;
+}
+
+#sf22 {
+    left: 62.5%;
+}
+
+#sf23 {
+    left: 87.5%;
+}
+
+#sf30 {
+    left: 12.5%;
+}
+
+#sf31 {
+    left: 37.5%;
+}
+
+#sf32 {
+    left: 62.5%;
+}
+
+#sf33 {
+    left: 87.5%;
+}
 
 
 
@@ -709,6 +741,13 @@ td {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
+
+
+
+
+
+
+
 
 
 #fachansicht {
