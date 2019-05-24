@@ -613,14 +613,16 @@ td {
 #sondertabelle {
     top: 50%;
     left: 50%;
-    width: 60em;
-    height: 60em;
+    width: 40em;
+    height: 40em;
     border: 8px solid #000000;
     border-radius: 4px;
 }
 
 .reihe {
     left: 50%;
+    width: 100%;
+    height: 25%;
 }
 
 #reihe_0 {
@@ -641,6 +643,8 @@ td {
 
 .sonderdivbutton {
     top: 50%;
+    width: 25%;
+    height: 100%;
 }
 
 #sf00 {
