@@ -231,10 +231,21 @@ input::-moz-focus-inner, button::-moz-focus-inner, input::-moz-focus-inner{
 
 .timerhoch {
     top: 25%;
-    left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+}
+
+#buttonhoch_0 {
+    left: 25%;
+}
+
+#buttonhoch_1 {
+    left: 50%;
+}
+
+#buttonhoch_2 {
+    left: 75%;
 }
 
 .timerrunter {
@@ -243,6 +254,18 @@ input::-moz-focus-inner, button::-moz-focus-inner, input::-moz-focus-inner{
     position: absolute;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+}
+
+#buttonrunter_0 {
+    left: 25%;
+}
+
+#buttonrunter_1 {
+    left: 50%;
+}
+
+#buttonrunter_2 {
+    left: 75%;
 }
 
 #buttonsstartstopp {
@@ -260,6 +283,10 @@ input::-moz-focus-inner, button::-moz-focus-inner, input::-moz-focus-inner{
 #timerstart {
     top: 25%;
     left: 50%;
+    width: 14%;
+    height: 24%;
+    background-image: linear-gradient(top, #1d1a20, #000000);
+    color: #ffffff;
     position: absolute;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
