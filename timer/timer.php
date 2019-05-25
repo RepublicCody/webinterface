@@ -40,10 +40,16 @@ include '../htmlheader.php';?>
                 <button id="buttonhoch_0" class="timerhoch"><div class="timerhochbild"></div></button>
                 <button id="buttonhoch_1" class="timerhoch"><div class="timerhochbild"></div></button>
                 <button id="buttonhoch_2" class="timerhoch"><div class="timerhochbild"></div></button>
+                <button id="buttonhoch_3" class="timerhoch"><div class="timerhochbild"></div></button>
+                <button id="buttonhoch_4" class="timerhoch"><div class="timerhochbild"></div></button>
+                <button id="buttonhoch_5" class="timerhoch"><div class="timerhochbild"></div></button>
 
                 <button id="buttonrunter_0" class="timerrunter"><div class="timerrunterbild"></div></button>
                 <button id="buttonrunter_1" class="timerrunter"><div class="timerrunterbild"></div></button>
                 <button id="buttonrunter_2" class="timerrunter"><div class="timerrunterbild"></div></button>
+                <button id="buttonrunter_3" class="timerrunter"><div class="timerrunterbild"></div></button>
+                <button id="buttonrunter_4" class="timerrunter"><div class="timerrunterbild"></div></button>
+                <button id="buttonrunter_5" class="timerrunter"><div class="timerrunterbild"></div></button>
             </div>
             <div id="buttonsstartstopp">
                 <button id="timerstart">Start</button>

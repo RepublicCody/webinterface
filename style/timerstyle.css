@@ -209,7 +209,7 @@ input::-moz-focus-inner, button::-moz-focus-inner, input::-moz-focus-inner{
     top: 70%;
     left: 50%;
     width: 40%;
-    height: 30%;
+    height: 40%;
     position: absolute;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -231,20 +231,33 @@ input::-moz-focus-inner, button::-moz-focus-inner, input::-moz-focus-inner{
 
 .timerhoch {
     top: 25%;
+    width: 10%;
+    top: 10%;
     position: absolute;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
 
 #buttonhoch_0 {
-    left: 25%;
+    left: 5%;
 }
 
 #buttonhoch_1 {
-    left: 50%;
+    left: 15%;
 }
 
 #buttonhoch_2 {
+    left: 35%;
+}
+#buttonhoch_3 {
+    left: 45%;
+}
+
+#buttonhoch_4 {
+    left: 65%;
+}
+
+#buttonhoch_5 {
     left: 75%;
 }
 
@@ -265,6 +278,17 @@ input::-moz-focus-inner, button::-moz-focus-inner, input::-moz-focus-inner{
 }
 
 #buttonrunter_2 {
+    left: 75%;
+}
+#buttonrunter_3 {
+    left: 25%;
+}
+
+#buttonrunter_4 {
+    left: 50%;
+}
+
+#buttonrunter_5 {
     left: 75%;
 }
 
