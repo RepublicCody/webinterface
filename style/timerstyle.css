@@ -229,7 +229,7 @@ input::-moz-focus-inner, button::-moz-focus-inner, input::-moz-focus-inner{
     font-weight: 500;
 }
 
-.buttontimerhoch {
+.timerhoch {
     top: 25%;
     left: 50%;
     position: absolute;
@@ -237,7 +237,7 @@ input::-moz-focus-inner, button::-moz-focus-inner, input::-moz-focus-inner{
     -ms-transform: translate(-50%, -50%);
 }
 
-.buttontimerrunter {
+.timerrunter {
     top: 75%;
     left: 50%;
     position: absolute;
