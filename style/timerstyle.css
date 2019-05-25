@@ -194,6 +194,17 @@ input::-moz-focus-inner, button::-moz-focus-inner, input::-moz-focus-inner{
 
 }
 
+#countdown {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+
+}
+
 #buttons {
     top: 70%;
     left: 50%;
@@ -258,8 +269,8 @@ input::-moz-focus-inner, button::-moz-focus-inner, input::-moz-focus-inner{
     top: 75%;
     left: 50%;
     width: 14%;
-    height: 18%;
-    background-image: linear-gradient(top, #1d1a20, #000000);
+    height: 24%;
+    background: linear-gradient(top, #1d1a20, #000000);
     color: #ffffff;
     position: absolute;
     transform: translate(-50%, -50%);
