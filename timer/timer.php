@@ -45,7 +45,10 @@ include '../htmlheader.php';?>
                 <button id="buttonrunter_1" class="timerrunter"><div class="timerrunterbild"></div></button>
                 <button id="buttonrunter_2" class="timerrunter"><div class="timerrunterbild"></div></button>
             </div>
-
+            <div id="buttonsstartstopp">
+                <button id="timerstart">Start</button>
+                <button id="timerstopp">Stopp</button>
+            </div>
         </div>
 
 

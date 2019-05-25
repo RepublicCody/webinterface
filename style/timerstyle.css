@@ -184,7 +184,6 @@ input::-moz-focus-inner, button::-moz-focus-inner, input::-moz-focus-inner{
 #countdownmitte {
     top: 50%;
     left: 50%;
-    width: 100%;
     position: absolute;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -194,12 +193,17 @@ input::-moz-focus-inner, button::-moz-focus-inner, input::-moz-focus-inner{
 }
 
 #buttons {
-    top: 60%;
+    top: 70%;
     left: 50%;
+    width: 40%;
+    height: 30%;
 }
 
 #buttonshochrunter {
+    top: 25%;
     left: 50%;
+    width: 100%;
+    height: 50%;
 }
 
 .buttontimerhoch {
