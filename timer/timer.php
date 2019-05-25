@@ -35,7 +35,18 @@ include '../htmlheader.php';?>
     <div id="countdownmitte">
 
         <div class="countdown"></div>
-        <div class="buttons"></div>
+        <div id="buttons">
+            <div id="buttonshochrunter">
+                <button id="buttonhoch_0" class="timerhoch"><div class="timerhochbild"></div></button>
+                <button id="buttonhoch_1" class="timerhoch"><div class="timerhochbild"></div></button>
+                <button id="buttonhoch_2" class="timerhoch"><div class="timerhochbild"></div></button>
+
+                <button id="buttonrunter_0" class="timerrunter"><div class="timerrunterbild"></div></button>
+                <button id="buttonrunter_1" class="timerrunter"><div class="timerrunterbild"></div></button>
+                <button id="buttonrunter_2" class="timerrunter"><div class="timerrunterbild"></div></button>
+            </div>
+
+        </div>
 
 
         <script src="../javascript/jquery-3.4.1.min.js"></script>
