@@ -34,7 +34,7 @@ include '../htmlheader.php';?>
 
     <div id="countdownmitte">
 
-        <div class="countdown"></div>
+        <div id="countdownanzeige"><div class="countdown"></div></div>
         <div id="buttons">
             <div id="buttonshochrunter">
                 <button id="buttonhoch_0" class="timerhoch"><div class="timerhochbild"></div></button>
