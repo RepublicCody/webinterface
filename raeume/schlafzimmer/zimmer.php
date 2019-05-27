@@ -96,7 +96,7 @@ session_start();
             <button id="regal_4" name="regal[]" value="3" class="regal"></button>
             <button id="regal_5" name="regal[]" value="4" class="regal"></button>
         </form>
-        <form action="sondergealansicht.php" method="post">
+        <form action="sonderregalansicht.php" method="post">
             <button id="regal_3" name="regal[]" value="2" class="regal"></button>
         </form>
     </div>

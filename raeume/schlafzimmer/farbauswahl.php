@@ -135,7 +135,7 @@ function generatebefehlsstring($ledarray){
 
 include '../../htmlheader.php';?>
 
-    <link rel="stylesheet" href="../../style/schlafzimmerstyle.css">
+    <link rel="stylesheet" href="../../style/farbauswahlstyle.css">
     <script language="JavaScript" type="text/javascript">
         function ajax_post() {
             // Create our XMLHttpRequest object

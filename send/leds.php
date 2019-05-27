@@ -16,6 +16,24 @@ if(isset($_POST['aus'])) {
 
     header("Location:../raeume/schlafzimmer/zimmer.php");
 
+}elseif(isset($_POST['regalaus'])) {
+    //todo einzelnes Regal auswählen
+    $befehlsstring = $_POST['regalaus'];
+    $sendestring = $befehlsstring;
+
+    send_led_befehl($sendestring);
+
+    header("Location:../raeume/schlafzimmer/zimmer.php");
+
+}elseif(isset($_POST['fachaus'])) {
+    //todo einzelnes Regal auswählen
+    $befehlsstring = $_POST['fachaus'];
+    $sendestring = $befehlsstring;
+
+    send_led_befehl($sendestring);
+
+    header("Location:../raeume/schlafzimmer/zimmer.php");
+
 }elseif(isset($_POST['rgbhex'])) {
     $farbe = $_POST['rgbhex'];
     $befehlsstring = $_SESSION['befehlsstring'];

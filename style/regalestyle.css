@@ -1,0 +1,502 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+input:focus, button:focus {
+    outline: 0;
+}
+
+input::-moz-focus-inner, button::-moz-focus-inner{
+    border: 0;
+}
+
+div {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+
+.header {
+    z-index: 6;
+    top: 5%;
+    left: 50%;
+    width: 100%;
+    height: 10%;
+    background-image: linear-gradient(50deg, #404040 50%, #505060)
+}
+
+.seitenname {
+    width: 36%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    color: #c0c0c0;
+    background-color: #282828;
+    border: 2px solid #505050;
+    border-radius: 3px;
+}
+
+.seitennametext {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    font-size: 200%;
+    text-align: center;
+}
+
+.headerbutton {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    width: 10%;
+    height: 60%;
+    color: #ffffff;
+    background-color: #1e90ff;
+    border: 0;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 90%;
+    font-weight: 500;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(50deg, #282828 60%, #383848)
+}
+
+
+
+.mainmenuebutton {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 6%;
+    width: 10%;
+    height: 60%;
+    color: #ffffff;
+    background-color: #6c5ce7;
+    border: 0;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 90%;
+    font-weight: 500;
+}
+
+#mainmenuebild {
+    top: 50%;
+    left: 16%;
+    width: 24%;
+    height: 100%;
+    background-size: 70%;
+    background-position: center;
+    background-image: url("../images/icons/home.png");
+    opacity: 1;
+    background-repeat: no-repeat;
+}
+
+.schlafzimmerbutton {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 20%;
+    width: 14%;
+    height: 60%;
+    color: #ffffff;
+    background-color: #1e90ff;
+    border: 0;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 90%;
+    font-weight: 500;
+}
+
+#schlafzimmerbild {
+    top: 50%;
+    left: 16%;
+    width: 24%;
+    height: 100%;
+    background-size: 70%;
+    background-position: center;
+    background-image: url("../images/icons/bett.png");
+    opacity: 1;
+    background-repeat: no-repeat;
+}
+
+
+.zurueckbutton {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 94%;
+    width: 10%;
+    height: 60%;
+    color: #ffffff;
+    background-color: #ffa502;
+    border: 0;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 90%;
+    font-weight: 500;
+}
+
+#zurueckbild {
+    top: 50%;
+    left: 16%;
+    width: 24%;
+    height: 100%;
+    background-size: 70%;
+    background-position: center;
+    background-image: url("../images/icons/back.png");
+    opacity: 1;
+    background-repeat: no-repeat;
+}
+
+.headername {
+    top: 50%;
+    left: 60%;
+    width: 80%;
+}
+
+
+.ledbutton {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    width: 30%;
+    height: 10%;
+    color: #ffffff;
+    background-color: #1e90ff;
+    border: 0;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 90%;
+    font-weight: 500;
+}
+
+
+#regalansichtalleleds {
+    top: 8%;
+    left: 8%;
+    width: 24%;
+    background-color: #2ed573;
+}
+
+#regalansichtalleledsaus {
+    top: 22%;
+    left: 8%;
+    width: 24%;
+    background-color: #ff4757;
+}
+
+
+
+
+
+#fachansichtalleleds {
+    left: 74%;
+    width: 8%;
+    background-color: #2ed573;
+}
+
+#fachansichtalleledsaus {
+    left: 84%;
+    width: 8%;
+    background-color: #ff4757;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#regalansicht {
+    width: 90%;
+    height: 80%;
+    top: 55%;
+    left: 50%;
+}
+
+#tabelle {
+    border: 8px solid #000000;
+    border-radius: 4px;
+}
+
+table {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+td {
+    top: 50%;
+    left: 50%;
+}
+
+#sondertabelle {
+    top: 50%;
+    left: 50%;
+    width: 31em;
+    height: 31em;
+    border: 8px solid #000000;
+    border-radius: 4px;
+}
+
+.reihe {
+    left: 50%;
+    width: 100%;
+    height: 25%;
+}
+
+#reihe_0 {
+    top: 12.5%;
+}
+
+#reihe_1 {
+    top: 37.5%;
+}
+
+#reihe_2 {
+    top: 62.5%;
+}
+
+#reihe_3 {
+    top: 87.5%;
+}
+
+.sonderdivbutton {
+    top: 50%;
+    width: 25%;
+    height: 100%;
+}
+
+#sf00 {
+    left: 12.5%;
+}
+
+#sb00 {
+    top: 25%;
+    height: 49%;
+}
+#sb01 {
+    top: 75%;
+    height: 49%;
+}
+
+#sf01 {
+    left: 50%;
+    width: 50%;
+}
+
+#sf02 {
+    left: 87.5%;
+}
+
+#sf10 {
+    left: 12.5%;
+}
+
+#sb10 {
+    top: 25%;
+    height: 49%;
+}
+#sb11 {
+    top: 75%;
+    height: 49%;
+}
+
+#sf11 {
+    left: 50%;
+    width: 50%;
+}
+
+#sf12 {
+    left: 87.5%;
+}
+
+#sf20 {
+    left: 12.5%;
+}
+
+#sf21 {
+    left: 37.5%;
+}
+
+#sf22 {
+    left: 62.5%;
+}
+
+#sf23 {
+    left: 87.5%;
+}
+
+#sf30 {
+    left: 12.5%;
+}
+
+#sf31 {
+    left: 37.5%;
+}
+
+#sf32 {
+    left: 62.5%;
+}
+
+#sf33 {
+    left: 87.5%;
+}
+
+.sonderfach {
+    top: 50%;
+    left: 50%;
+    width: 99%;
+    height: 99%;
+    position: absolute;
+    border: 2px solid #000000;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.sonderfachdisabled {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000000;
+    background-image: url("../images/schloss.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+
+
+.fach {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.fachdiv {
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    height: 25%;
+    border: 2px solid #000000;
+}
+
+.fachdisabled {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000000;
+    background-image: url("../images/schloss.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+
+
+
+
+
+
+
+#fachansicht {
+    width: 90%;
+    height: 80%;
+    top: 55%;
+    left: 50%;
+}
+
+#fachansichttabelle {
+    border: 8px solid #000000;
+    border-radius: 4px;
+}
+
+#clock {
+    top: 90%;
+    left: 4%;
+    width: 8%;
+    height: 8%;
+    color: #808080;
+
+    text-align: center;
+    line-height: 100px;
+
+}
+
+@media all and (orientation: landscape) {
+    #zimmerbackground, #regalansichtbackground, #fachansichtbackground, #farbauswahlbackground {
+        top: 50%;
+        left: 50%;
+    }
+
+    td {
+        width: 20vh;
+        height: 20vh;
+    }
+}
+
+@media all and (orientation: portrait) {
+    body{
+        margin:0;
+        overflow:hidden;
+    }
+    .background{
+
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+
+        transform: rotate(90deg);
+        transform-origin:bottom left;
+
+        position:absolute;
+        top: -100vw;
+        left: 0;
+
+        height:100vw;
+        width:100vh;
+
+        overflow:auto;
+    }
+
+    td {
+        width: 20vw;
+        height: 20vw;
+    }
+}
+

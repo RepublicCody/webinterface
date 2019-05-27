@@ -27,7 +27,7 @@ else {
 
  include '../../htmlheader.php';?>
 
-<link rel="stylesheet" href="../../style/schlafzimmerstyle.css">
+<link rel="stylesheet" href="../../style/regalestyle.css">
 </head>
 <body>
 
@@ -41,12 +41,6 @@ else {
         <form action="zimmer.php">
             <button id="regalansichtschlafzimmer" class="schlafzimmerbutton"><div id="schlafzimmerbild"></div><div class="headername">Schlafzimmer</div></button>
         </form>
-        <form action="farbauswahl.php" method="post">
-            <button id="regalansichtalleleds" name="alleregalleds" value="<?php echo $regalnummer; ?>" class="headerbutton">Alle LEDs</button>
-        </form>
-        <form action="../../send/leds.php" method="post">
-            <button id="regalansichtalleledsaus" name="aus" value="off" class="headerbutton">Alle Aus</button>
-        </form>
         <form action="zimmer.php">
             <button id="regalansichtzurueck" class="zurueckbutton"><div id="zurueckbild"></div><div class="headername">Zurück</div></button>
         </form>
@@ -59,6 +53,13 @@ else {
     <script src="../../javascript/miniclock.js" charset="utf-8"></script>
 
     <div id="regalansicht">
+
+        <form action="farbauswahl.php" method="post">
+            <button id="regalansichtalleleds" name="alleregalleds" value="<?php echo $regalnummer; ?>" class="ledbutton">Ganzes Regal auswählen</button>
+        </form>
+        <form action="../../send/leds.php" method="post">
+            <button id="regalansichtalleledsaus" name="regalaus" value="off" class="ledbutton">Ganzes Regal ausschalten</button>
+        </form>
 
         <form action="fachansicht.php" method="post">
         <table id="tabelle">

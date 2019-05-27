@@ -71,6 +71,14 @@ include '../../htmlheader.php';?>
                     <td><button id="led01" name="led[]" value="<?php echo $regalundfachnummer; ?>_1" class="fach"></button></td>
                     <td><button id="led02" name="led[]" value="<?php echo $regalundfachnummer; ?>_2" class="fach"></button></td>
                     <td><button id="led03" name="led[]" value="<?php echo $regalundfachnummer; ?>_3" class="fach"></button></td>
+                    <td><button id="led04" name="led[]" value="<?php echo $regalundfachnummer; ?>_4" class="fach"></button></td>
+                    <td><button id="led05" name="led[]" value="<?php echo $regalundfachnummer; ?>_5" class="fach"></button></td>
+                    <td><button id="led06" name="led[]" value="<?php echo $regalundfachnummer; ?>_6" class="fach"></button></td>
+                    <td><button id="led07" name="led[]" value="<?php echo $regalundfachnummer; ?>_7" class="fach"></button></td>
+                    <td><button id="led08" name="led[]" value="<?php echo $regalundfachnummer; ?>_8" class="fach"></button></td>
+                    <td><button id="led09" name="led[]" value="<?php echo $regalundfachnummer; ?>_9" class="fach"></button></td>
+                    <td><button id="led10" name="led[]" value="<?php echo $regalundfachnummer; ?>_10" class="fach"></button></td>
+                    <td><button id="led11" name="led[]" value="<?php echo $regalundfachnummer; ?>_11" class="fach"></button></td>
                 </tr>
             </table>
         </form>

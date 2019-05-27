@@ -27,7 +27,7 @@ else {
 
 include '../../htmlheader.php';?>
 
-<link rel="stylesheet" href="../../style/schlafzimmerstyle.css">
+<link rel="stylesheet" href="../../style/regalestyle.css">
 </head>
 <body>
 
@@ -40,13 +40,6 @@ include '../../htmlheader.php';?>
         </form>
         <form action="zimmer.php">
             <button id="regalansichtschlafzimmer" class="schlafzimmerbutton"><div id="schlafzimmerbild"></div><div class="headername">Schlafzimmer</div></button>
-        </form>
-        <form action="farbauswahl.php" method="post">
-            <button id="regalansichtalleleds" name="alleregalleds" value="<?php echo $regalnummer; ?>" class="headerbutton">Alle LEDs</button>
-        </form>
-        <form action="../../send/leds.php" method="post">
-            <button id="regalansichtalleledsaus" name="aus" value="off" class="headerbutton">Alle Aus</button>
-        </form>
         <form action="zimmer.php">
             <button id="regalansichtzurueck" class="zurueckbutton"><div id="zurueckbild"></div><div class="headername">Zurück</div></button>
         </form>
@@ -60,32 +53,52 @@ include '../../htmlheader.php';?>
 
     <div id="regalansicht">
 
-        <form action="fachansicht.php" method="post">
+        <form action="farbauswahl.php" method="post">
+            <button id="regalansichtalleleds" name="alleregalleds" value="<?php echo $regalnummer; ?>" class="ledbutton">Ganzes Regal auswählen</button>
+        </form>
+        <form action="../../send/leds.php" method="post">
+            <button id="regalansichtalleledsaus" name="aus" value="off" class="ledbutton">Ganzes Regal ausschalten</button>
+        </form>
+
             <div id="sondertabelle">
                 <div id="reihe_0" class="reihe">
+                    <form action="fachansicht.php" method="post">
                     <div id="sf00" class="sonderdivbutton">
                         <button id="sb00" name="fach[]" value="<?php echo $regalnummer; ?>_00" class='sonderfach'></button>
                         <button id="sb01" name="fach[]" value="<?php echo $regalnummer; ?>_01" class='sonderfach'></button>
                     </div>
+                    </form>
+                    <form action="sonderfachansicht.php" method="post">
                     <div  id="sf01" class="sonderdivbutton">
                         <button id="sb02" name="fach[]" value="<?php echo $regalnummer; ?>_02" class='sonderfach'></button>
                     </div>
+                    </form>
+                    <form action="fachansicht.php" method="post">
                     <div id="sf02" class="sonderdivbutton">
                         <button id="sb03" name="fach[]" value="<?php echo $regalnummer; ?>_03" class='sonderfach'></button>
                     </div>
+                    </form>
                 </div>
                 <div id="reihe_1" class="reihe">
+                    <form action="fachansicht.php" method="post">
                     <div id="sf10" class="sonderdivbutton">
                         <button id="sb10" name="fach[]" value="<?php echo $regalnummer; ?>_04" class='sonderfach'></button>
                         <button id="sb11" name="fach[]" value="<?php echo $regalnummer; ?>_05" class='sonderfach'></button>
                     </div>
+                    </form>
+                    <form action="sonderfachansicht.php" method="post">
                     <div id="sf11" class="sonderdivbutton">
                         <button id="sb12" name="fach[]" value="<?php echo $regalnummer; ?>_06" class='sonderfach'></button>
                     </div>
+                    </form>
+                    <form action="fachansicht.php" method="post">
                     <div id="sf12" class="sonderdivbutton">
                         <button id="sb13" name="fach[]" value="<?php echo $regalnummer; ?>_07" class='sonderfach'></button>
                     </div>
+                    </form>
                 </div>
+
+                <form action="fachansicht.php" method="post">
                 <div id="reihe_2" class="reihe">
                     <div id="sf20" class="sonderdivbutton">
                         <button id="sb20" name="fach[]" value="<?php echo $regalnummer; ?>_08" <?php if($_SESSION['regale'][$regalnummer][2][0]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>></button>
@@ -114,9 +127,8 @@ include '../../htmlheader.php';?>
                         <button id="sb33" name="fach[]" value="<?php echo $regalnummer; ?>_15" <?php if($_SESSION['regale'][$regalnummer][3][3]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>></button>
                     </div>
                 </div>
-
+                </form>
             </div>
-        </form>
 
     </div>
     <div>
