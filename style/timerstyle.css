@@ -167,10 +167,10 @@ input::-moz-focus-inner, button::-moz-focus-inner, input::-moz-focus-inner{
 }
 
 #countdownmitte {
-    top: 50%;
+    top: 55%;
     left: 50%;
     width: 100%;
-    height: 100%;
+    height: 90%;
     position: absolute;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -179,9 +179,25 @@ input::-moz-focus-inner, button::-moz-focus-inner, input::-moz-focus-inner{
 
 }
 
-#countdownanzeige {
+#countdownbox {
     top: 50%;
     left: 50%;
+    width: 60%;
+    height: 70%;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    background-image: linear-gradient(50deg, #3b3640 60%, #3b3650);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+#countdownanzeige {
+    top: 35%;
+    left: 60%;
+    width: 100%;
     position: absolute;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -193,8 +209,8 @@ input::-moz-focus-inner, button::-moz-focus-inner, input::-moz-focus-inner{
 #buttons {
     top: 70%;
     left: 50%;
-    width: 40%;
-    height: 40%;
+    width: 100%;
+    height: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -214,71 +230,94 @@ input::-moz-focus-inner, button::-moz-focus-inner, input::-moz-focus-inner{
     font-weight: 500;
 }
 
-.timerhoch {
-    top: 25%;
-    width: 11%;
-    height: 10%;
+.timerhochrunterbuttons {
+    top: 15%;
+    width: 10%;
+    height: 60%;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px #000000;
+    background-color: #343434;
     position: absolute;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
 
 #buttonhoch_0 {
-    left: 4%;
+    top: 0%;
+    left: 17.5%;
 }
 
 #buttonhoch_1 {
-    left: 16%;
+    top: 0%;
+    left: 29%;
 }
 
 #buttonhoch_2 {
-    left: 44.5%;
+    top: 0%;
+    left: 43.5%;
 }
 #buttonhoch_3 {
-    left: 55.5%;
+    top: 0%;
+    left: 55%;
 }
 
 #buttonhoch_4 {
-    left: 65%;
+    top: 0%;
+    left: 69.5%;
 }
 
 #buttonhoch_5 {
-    left: 75%;
-}
-
-.timerrunter {
-    top: 75%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    top: 0%;
+    left: 81%;
 }
 
 #buttonrunter_0 {
-    left: 25%;
+    top: 75%;
+    left: 17.5%;
 }
 
 #buttonrunter_1 {
-    left: 50%;
+    top: 75%;
+    left: 29%;
 }
 
 #buttonrunter_2 {
-    left: 75%;
+    top: 75%;
+    left: 43.5%;
 }
 #buttonrunter_3 {
-    left: 25%;
+    top: 75%;
+    left: 55%;
 }
 
 #buttonrunter_4 {
-    left: 50%;
+    top: 75%;
+    left: 69.5%;
 }
 
 #buttonrunter_5 {
-    left: 75%;
+    top: 75%;
+    left: 81%;
+}
+
+.timerstartstopbutton {
+    width: 30%;
+    height: 30%;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px #000000;
+    background-color: #343434;
+    color: #ffffff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
 }
 
 #buttonsstartstopp {
-    top: 75%;
+    top: 80%;
     left: 50%;
     width: 100%;
     height: 50%;
@@ -292,31 +331,11 @@ input::-moz-focus-inner, button::-moz-focus-inner, input::-moz-focus-inner{
 #timerstart {
     top: 25%;
     left: 50%;
-    width: 30%;
-    height: 30%;
-    background-image: linear-gradient(top, #1d1a20, #000000);
-    color: #ffffff;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
-
 }
 
 #timerstopp {
     top: 75%;
     left: 50%;
-    width: 30%;
-    height: 30%;
-    background: linear-gradient(top, #1d1a20, #000000);
-    color: #ffffff;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
-
 }
 
 
@@ -540,7 +559,10 @@ input::-moz-focus-inner, button::-moz-focus-inner, input::-moz-focus-inner{
     position: absolute;
     top: -1.5em;
     right: -86px;
-    color: black;
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 100%;
+    font-weight: 500;
     text-shadow: none; }
 
 .flip-clock-divider.minutes .flip-clock-label {
