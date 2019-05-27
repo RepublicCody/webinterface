@@ -17,6 +17,7 @@ include '../htmlheader.php';?>
 <div id="countdownmain" class="background">
 
     <div id="clock">12:45:25</div>
+    <script src="../javascript/miniclock.js" charset="utf-8"></script>
 
 
     <div class="header">
@@ -61,7 +62,6 @@ include '../htmlheader.php';?>
         <script src="../javascript/jquery-3.4.1.min.js"></script>
         <script src="../javascript/flipclock.min.js"></script>
         <script src="../javascript/timer.js"></script>
-
 
 
     </div>

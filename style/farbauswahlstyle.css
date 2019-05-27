@@ -480,18 +480,6 @@ input[type=range]::-moz-range-progress {
     }
 }
 
-#clock {
-    top: 90%;
-    left: 4%;
-    width: 8%;
-    height: 8%;
-    color: #808080;
-
-    text-align: center;
-    line-height: 100px;
-
-}
-
 @media all and (orientation: portrait) {
     body{
         margin:0;

@@ -16,21 +16,6 @@ input::-moz-focus-inner, button::-moz-focus-inner, input::-moz-focus-inner{
     border: 0;
 }
 
-#clock {
-    top: 90%;
-    left: 4%;
-    width: 8%;
-    height: 8%;
-    color: #808080;
-    text-align: center;
-    line-height: 100px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
-}
-
 .header {
     z-index: 6;
     top: 5%;

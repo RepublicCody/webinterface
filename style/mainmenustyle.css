@@ -27,20 +27,6 @@ div, button {
     background: linear-gradient(40deg, #3b3650, #3b3640 50%, #574960, #574970);
 }
 
-
-#clock {
-    top: 90%;
-    left: 4%;
-    width: 8%;
-    height: 8%;
-    color: #808080;
-    text-align: center;
-    line-height: 100px;
-
-}
-
-
-
 #mitte {
     top: 50%;
     left: 50%;

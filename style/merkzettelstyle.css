@@ -23,16 +23,6 @@ div, button, input {
     font-weight: 500;
 }
 
-#clock {
-    top: 90%;
-    left: 4%;
-    width: 8%;
-    height: 8%;
-    color: #808080;
-    text-align: center;
-    line-height: 100px;
-}
-
 .header {
     z-index: 6;
     top: 5%;

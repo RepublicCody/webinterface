@@ -23,17 +23,6 @@ div, button, input {
     font-weight: 500;
 }
 
-#clock {
-    top: 90%;
-    left: 4%;
-    width: 8%;
-    height: 8%;
-    color: #808080;
-    text-align: center;
-    line-height: 100px;
-
-}
-
 #login {
     background:-webkit-linear-gradient(50deg, #282828 30%, #583046, #A44C53, #C45658);
     background:-moz-linear-gradient(50deg, #282828 30%, #583046, #A44C53, #C45658);

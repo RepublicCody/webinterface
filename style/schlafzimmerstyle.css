@@ -534,22 +534,6 @@ div {
     left: 41%;
 }
 
-
-
-
-
-#clock {
-    top: 90%;
-    left: 4%;
-    width: 8%;
-    height: 8%;
-    color: #808080;
-
-    text-align: center;
-    line-height: 100px;
-
-}
-
 @media all and (orientation: landscape) {
     #zimmerbackground, #regalansichtbackground, #fachansichtbackground, #farbauswahlbackground {
         top: 50%;
