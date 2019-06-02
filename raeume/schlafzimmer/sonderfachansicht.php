@@ -37,12 +37,6 @@ include '../../htmlheader.php';?>
         <form action="zimmer.php">
             <button id="fachansichtschlafzimmer" class="schlafzimmerbutton"><div id="schlafzimmerbild"></div><div class="headername">Schlafzimmer</div></button>
         </form>
-        <form action="farbauswahl.php" method="post">
-            <button id="fachansichtalleleds" name="allefachleds" value="<?php echo $regalundfachnummer; ?>" class="headerbutton">Alle LEDs</button>
-        </form>
-        <form action="../../send/leds.php" method="post">
-            <button id="fachansichtalleledsaus" name="fachaus" value="off" class="headerbutton">Alle Aus</button>
-        </form>
 
         <?php if ($regalundfachnummer[0] == 2) { echo '
         <form action="sonderregalansicht.php" method="post">
@@ -65,7 +59,14 @@ include '../../htmlheader.php';?>
     <div id="fachansicht">
 
         <form action="farbauswahl.php" method="post">
-            <table id="fachansichttabelle">
+            <button id="fachansichtalleleds" name="allefachleds" value="<?php echo $regalundfachnummer; ?>" class="ledbutton">Ganzes Fach auswählen</button>
+        </form>
+        <form action="../../send/leds.php" method="post">
+            <button id="fachansichtalleledsaus" name="fachaus" value="off" class="ledbutton">Ganzes Fach ausschalten</button>
+        </form>
+
+        <form action="farbauswahl.php" method="post">
+            <table id="sonderfachansichttabelle">
                 <tr>
                     <td><button id="led00" name="led[]" value="<?php echo $regalundfachnummer; ?>_0" class="fach"></button></td>
                     <td><button id="led01" name="led[]" value="<?php echo $regalundfachnummer; ?>_1" class="fach"></button></td>

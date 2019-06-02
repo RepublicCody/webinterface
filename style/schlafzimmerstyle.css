@@ -91,7 +91,7 @@ div {
     z-index: 5;
     top: 50%;
     left: 6%;
-    width: 10%;
+    width: 8%;
     height: 60%;
     color: #ffffff;
     background-color: #6c5ce7;
@@ -106,8 +106,8 @@ div {
 
 #mainmenuebild {
     top: 50%;
-    left: 16%;
-    width: 24%;
+    left: 19%;
+    width: 32%;
     height: 100%;
     background-size: 70%;
     background-position: center;
@@ -321,8 +321,110 @@ div {
     left: 50%;
     width: 96%;
     height: 92%;
+    background-color: #3b3640;
+    border-radius: 14px;
+}
+
+#kissen {
+    top: 50%;
+    left: 90%;
+    width: 16%;
+    height: 40%;
+}
+
+#kissenmuster_1 {
+    top: 50%;
+    left: 12.5%;
+    height: 100%;
+    width: 25%;
+    background-color: #1d1a20;
+    border: 1px solid #000000;
+    -moz-border-radius-topleft: 8px;
+    -webkit-border-top-left-radius: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+}
+
+#kissenmuster_2 {
+    top: 50%;
+    left: 37.5%;
+    height: 100%;
+    width: 25%;
     background-color: #ffffff;
-    border-radius: 20px;
+    border: 1px solid #000000;
+}
+
+#kissenmuster_3 {
+    top: 50%;
+    left: 62.5%;
+    height: 100%;
+    width: 25%;
+    background-color: #c44569;
+    border: 1px solid #000000;
+}
+
+#kissenmuster_4 {
+    top: 50%;
+    left: 87.5%;
+    height: 100%;
+    width: 25%;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    -moz-border-radius-topright: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-bottomright: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+}
+
+#decke {
+    top: 50%;
+    left: 23%;
+    width: 40%;
+    height: 90%;
+}
+
+#deckemuster_1 {
+    top: 50%;
+    left: 12.5%;
+    height: 100%;
+    width: 25%;
+    background-color: #1d1a20;
+    border: 1px solid #000000;
+    -moz-border-radius-topleft: 8px;
+    -webkit-border-top-left-radius: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+}
+
+#deckemuster_2 {
+    top: 50%;
+    left: 37.5%;
+    height: 100%;
+    width: 25%;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+}
+
+#deckemuster_3 {
+    top: 50%;
+    left: 62.5%;
+    height: 100%;
+    width: 25%;
+    background-color: #c44569;
+    border: 2px solid #000000;
+}
+
+#deckemuster_4 {
+    top: 50%;
+    left: 87.5%;
+    height: 100%;
+    width: 25%;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    -moz-border-radius-topright: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-bottomright: 8px;
+    -webkit-border-bottom-right-radius: 8px;
 }
 
 #nachttischbild {
@@ -466,8 +568,8 @@ div {
 .steckdose {
     z-index: 5;
     position: absolute;
-    width: 3%;
-    height: 7%;
+    width: 4%;
+    height: 8%;
     border: none;
     background: rgba(0, 0, 0, 0.0);
     transform: translate(-50%, -50%);
@@ -533,6 +635,10 @@ div {
     top: 6%;
     left: 41%;
 }
+
+
+
+
 
 @media all and (orientation: landscape) {
     #zimmerbackground, #regalansichtbackground, #fachansichtbackground, #farbauswahlbackground {

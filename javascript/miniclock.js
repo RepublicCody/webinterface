@@ -19,7 +19,8 @@
         "transform: translate(-50%, -50%);" +
         "-ms-transform: translate(-50%, -50%);" +
         "font-family: 'Quicksand', sans-serif;" +
-        "font-weight: 500;"
+        "font-weight: 500;" +
+        "font-size: 120%"
 
     var pad = function(x) {
         return x < 10 ? '0'+x : x;

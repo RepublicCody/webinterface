@@ -88,7 +88,22 @@ session_start();
         <div id="regalbettbild" name="regalbett" value="regalbett"></div>
         <div id="nachttischbild" name="nachttisch" value="nachttisch"></div>
         <div id="schreibtischbild" name="schreibtisch" value="schreibtisch"></div>
-        <div id="bettbild" name="bett" value="bett"><div id="matraze"></div></div>
+        <div id="bettbild" name="bett" value="bett">
+            <div id="matraze">
+                <div id="decke">
+                    <div id="deckemuster_1"></div>
+                    <div id="deckemuster_2"></div>
+                    <div id="deckemuster_3"></div>
+                    <div id="deckemuster_4"></div>
+                </div>
+                <div id="kissen">
+                    <div id="kissenmuster_1"></div>
+                    <div id="kissenmuster_2"></div>
+                    <div id="kissenmuster_3"></div>
+                    <div id="kissenmuster_4"></div>
+                </div>
+            </div>
+        </div>
 
         <form action="regalansicht.php" method="post">
             <button id="regal_1" name="regal[]" value="0" class="regal"></button>
