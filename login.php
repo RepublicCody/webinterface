@@ -34,7 +34,7 @@ include 'htmlheader.php';?>
             <input id="password" value="Passwort"onfocus="if (this.value == 'Passwort') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Passwort';}">
 
             <form action="index.php">
-                <button id="anmelden" onclick="var el = document.getElementById('element'); el.webkitRequestFullscreen();"><div class="clickeffect">Anmelden</div></button>
+                <button id="anmelden" onclick="var el = document.getElementById('element'); el.webkitRequestFullscreen();"><div class="clickeffect"></div>Anmelden</button>
             </form>
 
         </div>
