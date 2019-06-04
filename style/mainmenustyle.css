@@ -23,6 +23,10 @@ div, button {
     font-weight: 500;
 }
 
+button:active {
+    background: linear-gradient(10deg, transparent 20%, #df3e47, #d51b47, #f34268);
+}
+
 #mainmenu {
     background: linear-gradient(40deg, #3b3650, #3b3640 50%, #574960, #574970);
 }

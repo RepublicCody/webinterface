@@ -233,8 +233,12 @@ include '../../htmlheader.php';?>
                 <input id="hexfeld" name="hexfeld" type="text">
             </div>
 
-            <input id="submit" type="submit" name="submitbutton" value="Absenden" onclick="javascript:ajax_post();">
+            <!--input id="submit" type="submit" name="submitbutton" value="Absenden"!-->
 
+            <button id="submit" class="bubbly-button" onclick="javascript:ajax_post();">Absenden</button>
+
+            <script src="https://code.jquery.com/jquery-latest.js"></script>
+            <script src="../../javascript/bubblybutton.js" charset="utf-8"></script>
             <script src="../../javascript/colorWheel.js" charset="utf-8"></script>
 
             <script type="text/javascript">

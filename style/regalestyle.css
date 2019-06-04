@@ -95,6 +95,10 @@ div {
     font-weight: 500;
 }
 
+.mainmenuebutton:active {
+    background-color: #5c4cd7;
+}
+
 #mainmenuebild {
     top: 50%;
     left: 19%;
@@ -123,6 +127,10 @@ div {
     font-family: 'Quicksand', sans-serif;
     font-size: 90%;
     font-weight: 500;
+}
+
+.schlafzimmerbutton:active {
+    background-color: #0e70df;
 }
 
 #schlafzimmerbild {
@@ -154,6 +162,10 @@ div {
     font-family: 'Quicksand', sans-serif;
     font-size: 90%;
     font-weight: 500;
+}
+
+.zurueckbutton:active {
+    background-color: #df8502;
 }
 
 #zurueckbild {
@@ -200,6 +212,10 @@ div {
     background-color: #2ed573;
 }
 
+#regalansichtalleleds:active {
+    background-color: #0eb553;
+}
+
 #regalansichtalleledsaus {
     top: 22%;
     left: 13%;
@@ -207,7 +223,9 @@ div {
     background-color: #ff4757;
 }
 
-
+#regalansichtalleledsaus:active {
+    background-color: #df2737;
+}
 
 
 
@@ -218,11 +236,19 @@ div {
     background-color: #2ed573;
 }
 
+#fachansichtalleleds:active {
+    background-color: #0eb553;
+}
+
 #fachansichtalleledsaus {
     top: 22%;
     left: 13%;
     width: 22%;
     background-color: #ff4757;
+}
+
+#regalansichtalleledsaus:active {
+    background-color: #df2737;
 }
 
 

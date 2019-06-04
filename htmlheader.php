@@ -11,5 +11,5 @@ echo '<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <title>Hier könnte Ihre Werbung stehen</title>
-    <link rel="icon" href="images/icon.ico">
+    <link rel="icon" href="">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">';

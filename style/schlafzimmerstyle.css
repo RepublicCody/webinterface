@@ -104,6 +104,10 @@ div {
     font-weight: 500;
 }
 
+.mainmenuebutton:active {
+    background-color: #5c4cd7;
+}
+
 #mainmenuebild {
     top: 50%;
     left: 19%;
@@ -114,24 +118,6 @@ div {
     background-image: url("../images/icons/home.png");
     opacity: 1;
     background-repeat: no-repeat;
-}
-
-.schlafzimmerbutton {
-    position: absolute;
-    z-index: 5;
-    top: 50%;
-    left: 20%;
-    width: 14%;
-    height: 60%;
-    color: #ffffff;
-    background-color: #1e90ff;
-    border: 0;
-    border-radius: 30px;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    font-family: 'Quicksand', sans-serif;
-    font-size: 90%;
-    font-weight: 500;
 }
 
 #schlafzimmerbild {
@@ -165,6 +151,10 @@ div {
     font-weight: 500;
 }
 
+.zurueckbutton:active {
+    background-color: #df8502;
+}
+
 #zurueckbild {
     top: 50%;
     left: 16%;
@@ -189,16 +179,28 @@ div {
     background-color: #2ed573;
 }
 
+#alleregale:active {
+    background-color: #0eb553;
+}
+
 #alleregaleledsaus {
     left: 84%;
     width: 8%;
     background-color: #ff4757;
 }
 
+#alleregaleledsaus:active {
+    background-color: #df2737;
+}
+
 #allesteckdosenaus {
     left: 25%;
     width: 12%;
     background-color: #ff4757;
+}
+
+#allesteckdosenaus:active {
+    background-color: #df2737;
 }
 
 
@@ -227,6 +229,10 @@ div {
     background-color: #006266;
 }
 
+#computer:active {
+    background-color: #004246;
+}
+
 #computerdiv {
     background-image: url("../images/icons/computer.png");
 }
@@ -237,6 +243,10 @@ div {
     width: 4%;
     padding-bottom: 4%;
     background-color: #FFC312;
+}
+
+#lampe:active {
+    background-color: #DFA302;
 }
 
 #lampediv {
@@ -251,6 +261,10 @@ div {
     background-color: #1289A7;
 }
 
+#schreibtischlampe_1:active {
+    background-color: #026987;
+}
+
 #schreibtischlampe_1div {
     background-image: url("../images/icons/schreibtichlampe.png");
 }
@@ -261,6 +275,10 @@ div {
     width: 4%;
     padding-bottom: 4%;
     background-color: #1289A7;
+}
+
+#schreibtischlampe_2:active {
+    background-color: #026987;
 }
 
 #schreibtischlampe_2div {
@@ -275,6 +293,10 @@ div {
     background-color: #833471;
 }
 
+#monitore:active {
+    background-color: #631451;
+}
+
 #monitorediv {
     background-image: url("../images/icons/bildschirm.png");
 }
@@ -285,6 +307,10 @@ div {
     width: 4%;
     padding-bottom: 4%;
     background-color: #c44569;
+}
+
+#sleep:active {
+    background-color: #a42549;
 }
 
 #sleepdiv {
@@ -607,6 +633,10 @@ div {
     background-color: #1d1a20;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+}
+
+.regal:active {
+    background-color: #0d0a10;
 }
 
 #regal_1 {
