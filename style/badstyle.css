@@ -299,6 +299,11 @@ div {
     -ms-transform: translate(-50%, -50%);
 }
 
+.steckdose:active {
+    width: 4.5%;
+    height: 9%;
+}
+
 .steckdosedivan {
     top: 50%;
     left: 50%;

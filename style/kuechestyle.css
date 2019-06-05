@@ -288,6 +288,11 @@ div {
     left: 97.5%;
 }
 
+.steckdose:active {
+    width: 4.5%;
+    height: 9%;
+}
+
 .steckdose {
     z-index: 5;
     position: absolute;
