@@ -66,14 +66,12 @@ include '../../htmlheader.php';?>
         </form>
 
         <form action="../../send/farbauswahl.php" method="post">
-            <table id="fachansichttabelle">
-                <tr>
-                    <td><button id="led00" name="led[]" value="<?php echo $regalundfachnummer; ?>_0" class="fach"></button></td>
-                    <td><button id="led01" name="led[]" value="<?php echo $regalundfachnummer; ?>_1" class="fach"></button></td>
-                    <td><button id="led02" name="led[]" value="<?php echo $regalundfachnummer; ?>_2" class="fach"></button></td>
-                    <td><button id="led03" name="led[]" value="<?php echo $regalundfachnummer; ?>_3" class="fach"></button></td>
-                </tr>
-            </table>
+            <div id="fachansichttabelle">
+                <div id="f00" class="divbutton"><button name="led[]" value="<?php echo $regalundfachnummer; ?>_0" class="fach"></button></div>
+                <div id="f01" class="divbutton"><button name="led[]" value="<?php echo $regalundfachnummer; ?>_1" class="fach"></button></div>
+                <div id="f02" class="divbutton"><button name="led[]" value="<?php echo $regalundfachnummer; ?>_2" class="fach"></button></div>
+                <div id="f03" class="divbutton"><button name="led[]" value="<?php echo $regalundfachnummer; ?>_3" class="fach"></button></div>
+            </div>
         </form>
     </div>
 

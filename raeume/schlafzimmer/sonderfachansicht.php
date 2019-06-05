@@ -66,22 +66,44 @@ include '../../htmlheader.php';?>
         </form>
 
         <form action="../../send/farbauswahl.php" method="post">
-            <table id="sonderfachansichttabelle">
-                <tr>
-                    <td><button id="led00" name="led[]" value="<?php echo $regalundfachnummer; ?>_0" class="fach"></button></td>
-                    <td><button id="led01" name="led[]" value="<?php echo $regalundfachnummer; ?>_1" class="fach"></button></td>
-                    <td><button id="led02" name="led[]" value="<?php echo $regalundfachnummer; ?>_2" class="fach"></button></td>
-                    <td><button id="led03" name="led[]" value="<?php echo $regalundfachnummer; ?>_3" class="fach"></button></td>
-                    <td><button id="led04" name="led[]" value="<?php echo $regalundfachnummer; ?>_4" class="fach"></button></td>
-                    <td><button id="led05" name="led[]" value="<?php echo $regalundfachnummer; ?>_5" class="fach"></button></td>
-                    <td><button id="led06" name="led[]" value="<?php echo $regalundfachnummer; ?>_6" class="fach"></button></td>
-                    <td><button id="led07" name="led[]" value="<?php echo $regalundfachnummer; ?>_7" class="fach"></button></td>
-                    <td><button id="led08" name="led[]" value="<?php echo $regalundfachnummer; ?>_8" class="fach"></button></td>
-                    <td><button id="led09" name="led[]" value="<?php echo $regalundfachnummer; ?>_9" class="fach"></button></td>
-                    <td><button id="led10" name="led[]" value="<?php echo $regalundfachnummer; ?>_10" class="fach"></button></td>
-                    <td><button id="led11" name="led[]" value="<?php echo $regalundfachnummer; ?>_11" class="fach"></button></td>
-                </tr>
-            </table>
+            <div id="sonderfachansichttabelle">
+                <div id="sfb00" class="sonderdivbuttonkeks">
+                    <button name="led[]" value="<?php echo $regalundfachnummer; ?>_0" class="fach"></button>
+                </div>
+                <div id="sfb01" class="sonderdivbuttonkeks">
+                    <button name="led[]" value="<?php echo $regalundfachnummer; ?>_1" class="fach"></button>
+                </div>
+                <div id="sfb02" class="sonderdivbuttonkeks">
+                    <button name="led[]" value="<?php echo $regalundfachnummer; ?>_2" class="fach"></button>
+                </div>
+                <div id="sfb03" class="sonderdivbuttonkeks">
+                    <button name="led[]" value="<?php echo $regalundfachnummer; ?>_3" class="fach"></button>
+                </div>
+                <div id="sfb04" class="sonderdivbuttonkeks">
+                    <button name="led[]" value="<?php echo $regalundfachnummer; ?>_4" class="fach"></button>
+                </div>
+                <div id="sfb05" class="sonderdivbuttonkeks">
+                    <button name="led[]" value="<?php echo $regalundfachnummer; ?>_5" class="fach"></button>
+                </div>
+                <div id="sfb06" class="sonderdivbuttonkeks">
+                    <button name="led[]" value="<?php echo $regalundfachnummer; ?>_6" class="fach"></button>
+                </div>
+                <div id="sfb07" class="sonderdivbuttonkeks">
+                    <button name="led[]" value="<?php echo $regalundfachnummer; ?>_7" class="fach"></button>
+                </div>
+                <div id="sfb08" class="sonderdivbuttonkeks">
+                    <button name="led[]" value="<?php echo $regalundfachnummer; ?>_8" class="fach"></button>
+                </div>
+                <div id="sfb09" class="sonderdivbuttonkeks">
+                    <button name="led[]" value="<?php echo $regalundfachnummer; ?>_9" class="fach"></button>
+                </div>
+                <div id="sfb10" class="sonderdivbuttonkeks">
+                    <button name="led[]" value="<?php echo $regalundfachnummer; ?>_10" class="fach"></button>
+                </div>
+                <div id="sfb11" class="sonderdivbuttonkeks">
+                    <button name="led[]" value="<?php echo $regalundfachnummer; ?>_11" class="fach"></button>
+                </div>
+            </div>
         </form>
     </div>
 

@@ -271,21 +271,15 @@ div {
 }
 
 #tabelle {
-    border: 8px solid #000000;
-    border-radius: 4px;
-}
-
-table {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 31em;
+    height: 31em;
+    border: 8px solid #000000;
+    border-radius: 4px;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-}
-
-td {
-    top: 50%;
-    left: 50%;
 }
 
 #sondertabelle {
@@ -430,21 +424,26 @@ td {
 
 
 .fach {
+    position: absolute;
     top: 50%;
     left: 50%;
     width: 100%;
     height: 100%;
+    border: 2px solid #000000;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
-.fachdiv {
+.divbutton {
     top: 50%;
-    left: 50%;
     width: 25%;
-    height: 25%;
-    border: 2px solid #000000;
+    height: 100%;
 }
 
 .fachdisabled {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 100%;
     height: 100%;
     border: 2px solid #000000;
@@ -469,14 +468,165 @@ td {
 }
 
 #fachansichttabelle {
+    top: 50%;
+    left: 50%;
+    width: 72%;
+    height: 34%;
     border: 8px solid #000000;
     border-radius: 4px;
 }
 
+#f00 {
+    left: 12.5%;
+}
+
+#f01 {
+    left: 37.5%;
+}
+
+#f02 {
+    left: 62.5%;
+}
+
+#f03 {
+    left: 87.5%;
+}
+
+#f10 {
+    left: 12.5%;
+}
+
+#f11 {
+    left: 37.5%;
+}
+
+#f12 {
+    left: 62.5%;
+}
+
+#f13 {
+    left: 87.5%;
+}
+
+#f20 {
+    left: 12.5%;
+}
+
+#f21 {
+    left: 37.5%;
+}
+
+#f22 {
+    left: 62.5%;
+}
+
+#f23 {
+    left: 87.5%;
+}
+
+#f30 {
+    left: 12.5%;
+}
+
+#f31 {
+    left: 37.5%;
+}
+
+#f32 {
+    left: 62.5%;
+}
+
+#f33 {
+    left: 87.5%;
+}
+
 #sonderfachansichttabelle {
-    width: 90%;
+    top: 50%;
+    left: 50%;
+    width: 96%;
+    height: 24%;
     border: 8px solid #000000;
     border-radius: 4px;
+}
+
+.sonderdivbuttonkeks {
+    top: 50%;
+    width: 8.33%;
+    height: 100%;
+}
+
+#sfb00 {
+    left: 4.16%;
+}
+
+#sfb01 {
+    left: 12.49%;
+}
+
+#sfb02 {
+    left: 20.83%;
+}
+
+#sfb03 {
+    left: 29.16%;
+}
+
+#sfb04 {
+    left: 37.49%;
+}
+
+#sfb05 {
+    left: 45.82%;
+}
+
+#sfb06 {
+    left: 54.15%;
+}
+
+#sfb07 {
+    left: 62.48%;
+}
+
+#sfb08 {
+    left: 70.81%;
+}
+
+#sfb09 {
+    left: 79.14%;
+}
+
+#sfb10 {
+    left: 87.47%;
+}
+
+#sfb11 {
+    left: 95.80%;
+}
+
+.fachled {
+    position: absolute;
+    top: 12.5%;
+    width: 25%;
+    height: 25%;
+    border: 2px solid #000000;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#led000, #led010, #led020, #led030, #led100, #led110, #led120, #led130, #led200, #led210, #led220, #led230, #led300, #led310, #led320, #led330 {
+    left: 12.5%;
+}
+
+#led001, #led011, #led021, #led031, #led101, #led111, #led121, #led131, #led201, #led211, #led221, #led231, #led301, #led311, #led321, #led331 {
+    left: 37.5%;
+}
+
+#led002, #led012, #led022, #led032, #led102, #led112, #led122, #led132, #led202, #led212, #led222, #led232, #led302, #led312, #led322, #led332 {
+    left: 62.5%;
+}
+
+#led003, #led013, #led023, #led033, #led103, #led113, #led123, #led133, #led203, #led213, #led223, #led233, #led303, #led313, #led323, #led333 {
+    left: 87.5%;
 }
 
 
