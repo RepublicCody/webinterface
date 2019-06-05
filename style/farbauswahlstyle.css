@@ -7,6 +7,10 @@ html, body {
     font-weight: 500;
 }
 
+:root {
+    --color: #ff0081;
+}
+
 input:focus, button:focus {
     outline: 0;
 }
@@ -517,10 +521,6 @@ input[type=range]::-moz-range-progress {
     transition: all ease-in-out 0.5s;
     background-repeat: no-repeat;
 }
-:root {
-    --color: #ff0081;
-}
-
 .bubbly-button:before {
     display: none;
     top: -75%;

@@ -54,27 +54,6 @@ colorPicker.on(["color:init", "color:change"], function(color){
     document.getElementById("redbar").value = color.rgb["r"];
     document.getElementById("greenbar").value = color.rgb["g"];
     document.getElementById("bluebar").value = color.rgb["b"];
-
-        /*"<style>.bubbly-button:before {" +
-        "background-image: radial-gradient(circle, " +
-        color.hexString + " 20%, transparent 20%), radial-gradient(circle, transparent 20%, " +
-        color.hexString + " 20%, transparent 30%), radial-gradient(circle, " +
-        color.hexString + " 20%, transparent 20%), radial-gradient(circle, " +
-        color.hexString + " 20%, transparent 20%), radial-gradient(circle, transparent 10%, " +
-        color.hexString + " 15%, transparent 20%), radial-gradient(circle, " +
-        color.hexString + " 20%, transparent 20%), radial-gradient(circle, " +
-        color.hexString + " 20%, transparent 20%), radial-gradient(circle, " +
-        color.hexString + " 20%, transparent 20%), radial-gradient(circle, " +
-        color.hexString + " 20%, transparent 20%)}</style>";
-    document.getElementsByClassName("bubbly-button").innerHTML = "<style>.bubbly-button:after {" +
-        "background-image: radial-gradient(circle, " +
-        color.hexString + " 20%, transparent 20%), radial-gradient(circle, " +
-        color.hexString + " 20%, transparent 20%), radial-gradient(circle, transparent 10%, " +
-        color.hexString + " 15%, transparent 20%), radial-gradient(circle, " +
-        color.hexString + " 20%, transparent 20%), radial-gradient(circle, " +
-        color.hexString + " 20%, transparent 20%), radial-gradient(circle, " +
-        color.hexString + " 20%, transparent 20%), radial-gradient(circle, " +
-        color.hexString + " 20%, transparent 20%)}</style>";*/
-
-    //status.innerHTML = color.hexString;
+    let root = document.documentElement;
+    root.style.setProperty('--color', color.hexString);
 });
