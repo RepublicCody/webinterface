@@ -29,7 +29,7 @@ session_start();
         <form action="../../mainmenu.php">
             <button id="alleregalemainmenue" class="mainmenuebutton"><div id="mainmenuebild"></div><div class="headername">Menü</div></button>
         </form>
-        <form action="farbauswahl.php" method="post">
+        <form action="../../send/farbauswahl.php" method="post">
             <button id="alleregale" name="alleregale" value="alleregale" class="headerbutton">Alle LEDs</button>
         </form>
         <form action="../../send/leds.php" method="post">

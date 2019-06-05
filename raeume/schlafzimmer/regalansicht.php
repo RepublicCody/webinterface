@@ -54,7 +54,7 @@ else {
 
     <div id="regalansicht">
 
-        <form action="farbauswahl.php" method="post">
+        <form action="../../send/farbauswahl.php" method="post">
             <button id="regalansichtalleleds" name="alleregalleds" value="<?php echo $regalnummer; ?>" class="ledbutton">Ganzes Regal auswählen</button>
         </form>
         <form action="../../send/leds.php" method="post">

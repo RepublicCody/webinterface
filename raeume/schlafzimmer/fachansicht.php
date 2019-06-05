@@ -58,14 +58,14 @@ include '../../htmlheader.php';?>
 
     <div id="fachansicht">
 
-        <form action="farbauswahl.php" method="post">
+        <form action="../../send/farbauswahl.php" method="post">
             <button id="fachansichtalleleds" name="allefachleds" value="<?php echo $regalundfachnummer; ?>" class="ledbutton">Ganzes Fach auswählen</button>
         </form>
         <form action="../../send/leds.php" method="post">
             <button id="fachansichtalleledsaus" name="fachaus" value="off" class="ledbutton">Ganzes Fach ausschalten</button>
         </form>
 
-        <form action="farbauswahl.php" method="post">
+        <form action="../../send/farbauswahl.php" method="post">
             <table id="fachansichttabelle">
                 <tr>
                     <td><button id="led00" name="led[]" value="<?php echo $regalundfachnummer; ?>_0" class="fach"></button></td>

@@ -18,13 +18,13 @@ $zielseite = '';
 
 if (isset($_POST['alleregale'])) {
 
-    $zielseite = 'zimmer.php';
+    $zielseite = '../raeume/schlafzimmer/zimmer.php';
 
     $_SESSION['befehlsstring'] = 'all_color ';
 
 } elseif (isset($_POST['alleregalleds'])) {
 
-    $zielseite = 'regalansicht.php';
+    $zielseite = '../raeume/schlafzimmer/regalansicht.php';
 
     $regalnummer = $_POST['alleregalleds'];
 
@@ -38,7 +38,7 @@ if (isset($_POST['alleregale'])) {
 
 } elseif (isset($_POST['allefachleds'])) {
 
-    $zielseite = 'fachansicht.php';
+    $zielseite = '../raeume/schlafzimmer/fachansicht.php';
 
     $regal_und_fachnummer = explode('_', $_POST['allefachleds']);
 
@@ -54,7 +54,7 @@ if (isset($_POST['alleregale'])) {
 
 } elseif (isset($_POST['led'])) {
 
-    $zielseite = 'fachansicht.php';
+    $zielseite = '../raeume/schlafzimmer/fachansicht.php';
 
     $dummy = $_POST['led'];
 
@@ -133,15 +133,15 @@ function generatebefehlsstring($ledarray){
     return $returnstring;
 }
 
-include '../../htmlheader.php';?>
+include '../htmlheader.php';?>
 
-    <link rel="stylesheet" href="../../style/farbauswahlstyle.css">
+    <link rel="stylesheet" href="../style/farbauswahlstyle.css">
     <script language="JavaScript" type="text/javascript">
         function ajax_post() {
             // Create our XMLHttpRequest object
             var hr = new XMLHttpRequest();
             // Create some variables we need to send to our PHP file
-            var url = "../../send/leds.php";
+            var url = "../send/leds.php";
             var hexfeld = document.getElementById("hexfeld").value;
             var vars = "hexfeld=" + hexfeld;
             hr.open("POST", url, true);
@@ -166,13 +166,13 @@ include '../../htmlheader.php';?>
 
     <div id="farbauswahlheader" class="header">
 
-        <form action="../../mainmenu.php">
+        <form action="../mainmenu.php">
             <button id="farbauswahlmainmenue" class="mainmenuebutton"><div id="mainmenuebild"></div><div class="headername">Menü</div></button>
         </form>
-        <form action="zimmer.php">
+        <form action="../raeume/schlafzimmer/zimmer.php">
             <button id="farbauswahlschlafzimmer" class="schlafzimmerbutton"><div id="schlafzimmerbild"></div><div class="headername">Schlafzimmer</div></button>
         </form>
-        <form action="../../send/leds.php" method="post">
+        <form action="leds.php" method="post">
             <button id="farbauswahlausschalten" name="aus" value="off" class="headerbutton">Alle Aus</button>
         </form>
 
@@ -197,7 +197,7 @@ include '../../htmlheader.php';?>
     </div>
 
     <div id="clock">12:45:25</div>
-    <script src="../../javascript/miniclock.js" charset="utf-8"></script>
+    <script src="../javascript/miniclock.js" charset="utf-8"></script>
 
     <div id="farbauswahl">
 
@@ -205,7 +205,7 @@ include '../../htmlheader.php';?>
 
             <div class="wheel" id="colorWheel"></div>
 
-            <script src="../../javascript/iro.min.js" charset="utf-8"></script>
+            <script src="../javascript/iro.min.js" charset="utf-8"></script>
 
         </div>
 
@@ -238,8 +238,8 @@ include '../../htmlheader.php';?>
             <button id="submit" class="bubbly-button" onclick="javascript:ajax_post();">Absenden</button>
 
             <script src="https://code.jquery.com/jquery-latest.js"></script>
-            <script src="../../javascript/bubblybutton.js" charset="utf-8"></script>
-            <script src="../../javascript/colorWheel.js" charset="utf-8"></script>
+            <script src="../javascript/bubblybutton.js" charset="utf-8"></script>
+            <script src="../javascript/colorWheel.js" charset="utf-8"></script>
 
             <script type="text/javascript">
 
