@@ -450,6 +450,8 @@ div {
     background-image: url("../images/schloss.png");
     background-repeat: no-repeat;
     background-size: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 
@@ -628,6 +630,70 @@ div {
 #led003, #led013, #led023, #led033, #led103, #led113, #led123, #led133, #led203, #led213, #led223, #led233, #led303, #led313, #led323, #led333 {
     left: 87.5%;
 }
+
+.sfachled {
+    position: absolute;
+    top: 8%;
+    width: 8.33%;
+    height: 16%;
+    border: 2px solid #000000;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#sled020, #sled120 {
+    left: 4.16%;
+}
+
+#sled021, #sled121 {
+    left: 12.49%;
+}
+
+#sled022, #sled122 {
+    left: 20.83%;
+}
+
+#sled023, #sled123 {
+    left: 29.16%;
+}
+
+#sled024, #sled124 {
+    left: 37.49%;
+}
+
+#sled025, #sled125 {
+    left: 45.82%;
+}
+
+#sled026, #sled126 {
+    left: 54.15%;
+}
+
+#sled027, #sled127 {
+    left: 62.48%;
+}
+
+#sled028, #sled128 {
+    left: 70.81%;
+}
+
+#sled029, #sled129 {
+    left: 79.14%;
+}
+
+#sled0210, #sled1210 {
+    left: 87.47%;
+}
+
+#sled0211, #sled1211 {
+    left: 95.80%;
+}
+
+
+
+
+
+
 
 
 @media all and (orientation: landscape) {
