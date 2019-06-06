@@ -24,8 +24,6 @@ if(isset($_POST['allesteckdosenaus'])) {
 
     $frequenzUndNummer = explode(' ', $_POST['steckdose'][0]);
 
-    echo $_POST['steckdose'][0];
-
     $frequenz = $frequenzUndNummer[0];
     $nummer = $frequenzUndNummer[1];
     $zustand = $frequenzUndNummer[2];
@@ -42,11 +40,9 @@ if(isset($_POST['allesteckdosenaus'])) {
 
 
 function send_steckdose ($frequenz, $nummer, $zustand){
-    echo 'Ich rede mit der Steckdose: '. $frequenz . ' ' .$nummer . ' ' . $zustand;
     exec("bash /var/www/html/scripts/steckdosen.sh ". $frequenz . ' ' .$nummer . ' ' . $zustand);
     exec("bash /var/www/html/scripts/steckdosen.sh ". $frequenz . ' ' .$nummer . ' ' . $zustand);
-    $output = exec("bash /var/www/html/scripts/steckdosen.sh ". $frequenz . ' ' .$nummer . ' ' . $zustand);
-    echo $output;
+    exec("bash /var/www/html/scripts/steckdosen.sh ". $frequenz . ' ' .$nummer . ' ' . $zustand);
 }
 
 
