@@ -41,7 +41,7 @@ include 'htmlheader.php';?>
             </form>
 
             <form action="timer/timer.php">
-                <button id="platzhalter" class="maindiv"><div id="platzhalterbild" class="mainbild"></div><div id="platzhaltername" class="mainname">Platzhalter</div></button>
+                <button id="uhr" class="maindiv"><div id="uhrbild" class="mainbild"></div><div id="uhrname" class="mainname">Uhr</div></button>
             </form>
 
             <form action="merkzettel/merkzettel.php">

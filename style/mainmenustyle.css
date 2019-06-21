@@ -100,7 +100,7 @@ button:active {
     left: 20%;
 }
 
-#platzhalter {
+#uhr {
     top: 75%;
     left: 40%;
 }
@@ -135,6 +135,7 @@ button:active {
 
 #kuechebild {
     background-color: #20bf6b;
+    background-size: 70%;
     background-image: url("../images/icons/kueche.png");
 }
 
@@ -143,12 +144,16 @@ button:active {
     background-image: url("../images/icons/flur.png");
 }
 
-#platzhalterbild {
+#uhrbild {
     background-color: #a55eea;
+    background-size: 70%;
+    background-image: url("../images/icons/uhr.png");
 }
 
 #merkzettelbild {
     background-color: #fa8231;
+    background-size: 50%;
+    background-image: url("../images/icons/notizen.png");
 }
 
 #sleepbild {

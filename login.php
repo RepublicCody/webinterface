@@ -22,10 +22,12 @@ include 'htmlheader.php';?>
     <div id="mitte">
 
         <div id="links">
-            <div id="bildbackground">
-                <div id="bild"></div>
+            <div id="linksbackgroundbild">
+                <div id="bildbackground">
+                    <div id="bild"></div>
+                </div>
+                <div id="name">Webinterface</div>
             </div>
-            <div id="name">Webinterface</div>
         </div>
 
         <div id="rechts">

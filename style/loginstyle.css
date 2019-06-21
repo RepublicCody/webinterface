@@ -67,11 +67,30 @@ button:active {
     background-color: #ff5e57;
 }
 
+#linksbackgroundbild {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    -webkit-border-bottom-left-radius: 40px;
+    -webkit-border-top-left-radius: 40px;
+    -moz-border-radius-bottomleft: 40px;
+    -moz-border-radius-topleft: 40px;
+    background-repeat: no-repeat;
+    border: 0;
+    background-size: 100%;
+    background-image: url("../images/background.png");
+}
+
 #bild {
     top: 50%;
     left: 50%;
+    width: 100%;
+    height: 100%;
     background-position: center;
     opacity: 1;
+    background-size: 70%;
+    background-image: url("../images/riven.png");
     background-repeat: no-repeat;
 }
 
