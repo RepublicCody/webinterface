@@ -6,16 +6,6 @@
  * Time: 08:40
  */
 
-/*
-$steckdosenzustaendeFile = fopen("txtfiles/steckdosenzustand.txt", "w");
-$txt = "John Doe\n";
-fwrite($steckdosenzustaendeFile, $txt);
-$txt = "Jane Doe\n";
-fwrite($steckdosenzustaendeFile, $txt);
-fclose($steckdosenzustaendeFile);
-
-*/
-
 //txtfiles/regalledfarbe.txt
 //txtfiles/regalzustand.txt
 /**
@@ -39,16 +29,47 @@ function write_Files($pfad, $inhalt){
     fclose($file);
 }
 
+function regalzustand($pfad){
+
+    $regale = array(
+        array(
+            array(),array(),array(),array()
+        ),
+        array(
+            array(),array(),array(),array()
+        ),
+        array(
+            array(),array(),array(),array()
+        ),
+        array(
+            array(),array(),array(),array()
+        ),
+        array(
+            array(),array(),array(),array()
+        )
+    );
+
+    $inhalt = read_Files($pfad);
+
+    $regal = explode("\n", $inhalt);
+
+    for($i = 0; $i < sizeof($regal); $i++){
+
+        $reihe = explode("|", $regal[$i]);
+        for($x = 0; $x < sizeof($reihe); $x++) {
+
+            $dummy = explode(",", $reihe[$x]);
+            for($y = 0; $y < sizeof($dummy); $y++) {
+
+                $regale[$i][$x][$y] = $dummy[$y];
+            }
+        }
+    }
 
 
 
 
 
-
-
-
-
-
-
+}
 
 ?>
