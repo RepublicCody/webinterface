@@ -29,7 +29,7 @@ function write_Files($pfad, $inhalt){
     fclose($file);
 }
 
-function regalzustand($pfad){
+function load_Regalzustand($pfad){
 
     $regale = array(
         array(
@@ -65,11 +65,11 @@ function regalzustand($pfad){
             }
         }
     }
+    //TODO muss in Globale Variable gepackt werden
+}
 
-
-
-
-
+function load_Regalledfarbe($pfad){
+    //TODO
 }
 
 ?>
