@@ -238,7 +238,7 @@ div {
 }
 
 #lampe {
-    top: 26%;
+    top: 28%;
     border-radius: 50%;
     width: 4%;
     padding-bottom: 4%;
@@ -254,7 +254,7 @@ div {
 }
 
 #schreibtischlampe_1 {
-    top: 34%;
+    top: 38%;
     border-radius: 50%;
     width: 4%;
     padding-bottom: 4%;
@@ -270,7 +270,7 @@ div {
 }
 
 #schreibtischlampe_2 {
-    top: 42%;
+    top: 48%;
     border-radius: 50%;
     width: 4%;
     padding-bottom: 4%;
@@ -286,7 +286,7 @@ div {
 }
 
 #monitore {
-    top: 50%;
+    top: 58%;
     border-radius: 50%;
     width: 4%;
     padding-bottom: 4%;
@@ -302,7 +302,7 @@ div {
 }
 
 #sleep {
-    top: 58%;
+    top: 68%;
     border-radius: 50%;
     width: 4%;
     padding-bottom: 4%;

@@ -54,7 +54,7 @@ if (isset($_POST['alleregale'])) {
 
 }elseif (isset($_POST['allesonderfachleds'])) {
 
-    $zielseite = '../raeume/schlafzimmer/fachansicht.php';
+    $zielseite = '../raeume/schlafzimmer/sonderfachansicht.php';
 
     $regal_und_fachnummer = explode('_', $_POST['allesonderfachleds']);
 
