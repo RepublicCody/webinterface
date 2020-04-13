@@ -323,15 +323,6 @@ div {
     left: 12.5%;
 }
 
-#sb00 {
-    top: 25%;
-    height: 49%;
-}
-#sb01 {
-    top: 75%;
-    height: 49%;
-}
-
 #sf01 {
     left: 50%;
     width: 50%;
@@ -343,15 +334,6 @@ div {
 
 #sf10 {
     left: 12.5%;
-}
-
-#sb10 {
-    top: 25%;
-    height: 49%;
-}
-#sb11 {
-    top: 75%;
-    height: 49%;
 }
 
 #sf11 {

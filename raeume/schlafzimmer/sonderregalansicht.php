@@ -70,17 +70,11 @@ include '../../htmlheader.php';?>
                             <div id="led002" class="fachled"></div>
                             <div id="led003" class="fachled"></div>
                         </button>
-                        <button id="sb01" name="fach[]" value="<?php echo $regalnummer; ?>_01" class='sonderfach'>
-                            <div id="led010" class="fachled"></div>
-                            <div id="led011" class="fachled"></div>
-                            <div id="led012" class="fachled"></div>
-                            <div id="led013" class="fachled"></div>
-                        </button>
                     </div>
                     </form>
                     <form action="sonderfachansicht.php" method="post">
                     <div  id="sf01" class="sonderdivbutton">
-                        <button id="sb02" name="fach[]" value="<?php echo $regalnummer; ?>_02" class='sonderfach'>
+                        <button id="sb01" name="fach[]" value="<?php echo $regalnummer; ?>_01" class='sonderfach'>
                             <div id="sled020" class="sfachled"></div>
                             <div id="sled021" class="sfachled"></div>
                             <div id="sled022" class="sfachled"></div>
@@ -98,7 +92,7 @@ include '../../htmlheader.php';?>
                     </form>
                     <form action="fachansicht.php" method="post">
                     <div id="sf02" class="sonderdivbutton">
-                        <button id="sb03" name="fach[]" value="<?php echo $regalnummer; ?>_03" class='sonderfach'>
+                        <button id="sb02" name="fach[]" value="<?php echo $regalnummer; ?>_02" class='sonderfach'>
                             <div id="led030" class="fachled"></div>
                             <div id="led031" class="fachled"></div>
                             <div id="led032" class="fachled"></div>
@@ -110,23 +104,17 @@ include '../../htmlheader.php';?>
                 <div id="reihe_1" class="reihe">
                     <form action="fachansicht.php" method="post">
                     <div id="sf10" class="sonderdivbutton">
-                        <button id="sb10" name="fach[]" value="<?php echo $regalnummer; ?>_04" class='sonderfach'>
+                        <button id="sb10" name="fach[]" value="<?php echo $regalnummer; ?>_03" class='sonderfach'>
                             <div id="led100" class="fachled"></div>
                             <div id="led101" class="fachled"></div>
                             <div id="led102" class="fachled"></div>
                             <div id="led103" class="fachled"></div>
                         </button>
-                        <button id="sb11" name="fach[]" value="<?php echo $regalnummer; ?>_05" class='sonderfach'>
-                            <div id="led110" class="fachled"></div>
-                            <div id="led111" class="fachled"></div>
-                            <div id="led112" class="fachled"></div>
-                            <div id="led113" class="fachled"></div>
-                        </button>
                     </div>
                     </form>
                     <form action="sonderfachansicht.php" method="post">
                     <div id="sf11" class="sonderdivbutton">
-                        <button id="sb12" name="fach[]" value="<?php echo $regalnummer; ?>_06" class='sonderfach'>
+                        <button id="sb11" name="fach[]" value="<?php echo $regalnummer; ?>_04" class='sonderfach'>
                             <div id="sled120" class="sfachled"></div>
                             <div id="sled121" class="sfachled"></div>
                             <div id="sled122" class="sfachled"></div>
@@ -144,7 +132,7 @@ include '../../htmlheader.php';?>
                     </form>
                     <form action="fachansicht.php" method="post">
                     <div id="sf12" class="sonderdivbutton">
-                        <button id="sb13" name="fach[]" value="<?php echo $regalnummer; ?>_07" class='sonderfach'>
+                        <button id="sb12" name="fach[]" value="<?php echo $regalnummer; ?>_05" class='sonderfach'>
                             <div id="led130" class="fachled"></div>
                             <div id="led131" class="fachled"></div>
                             <div id="led132" class="fachled"></div>
@@ -157,7 +145,7 @@ include '../../htmlheader.php';?>
                 <form action="fachansicht.php" method="post">
                 <div id="reihe_2" class="reihe">
                     <div id="sf20" class="sonderdivbutton">
-                        <button id="sb20" name="fach[]" value="<?php echo $regalnummer; ?>_08" <?php if($_SESSION['regale'][$regalnummer][2][0]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>>
+                        <button id="sb20" name="fach[]" value="<?php echo $regalnummer; ?>_06" <?php if($_SESSION['regale'][$regalnummer][2][0]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>>
                             <?php if($_SESSION['regale'][$regalnummer][2][0]!=0)echo'
                                 <div id="led000" class="fachled"></div>
                                 <div id="led001" class="fachled"></div>
@@ -167,7 +155,7 @@ include '../../htmlheader.php';?>
                         </button>
                     </div>
                     <div id="sf21" class="sonderdivbutton">
-                        <button id="sb21" name="fach[]" value="<?php echo $regalnummer; ?>_09" <?php if($_SESSION['regale'][$regalnummer][2][1]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>>
+                        <button id="sb21" name="fach[]" value="<?php echo $regalnummer; ?>_07" <?php if($_SESSION['regale'][$regalnummer][2][1]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>>
                             <?php if($_SESSION['regale'][$regalnummer][2][1]!=0)echo'
                             <div id="led000" class="fachled"></div>
                             <div id="led001" class="fachled"></div>
@@ -177,7 +165,7 @@ include '../../htmlheader.php';?>
                         </button>
                     </div>
                     <div id="sf22" class="sonderdivbutton">
-                        <button id="sb22" name="fach[]" value="<?php echo $regalnummer; ?>_10" <?php if($_SESSION['regale'][$regalnummer][2][2]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>>
+                        <button id="sb22" name="fach[]" value="<?php echo $regalnummer; ?>_08" <?php if($_SESSION['regale'][$regalnummer][2][2]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>>
                             <?php if($_SESSION['regale'][$regalnummer][2][2]!=0)echo'
                             <div id="led000" class="fachled"></div>
                             <div id="led001" class="fachled"></div>
@@ -187,7 +175,7 @@ include '../../htmlheader.php';?>
                         </button>
                     </div>
                     <div id="sf23" class="sonderdivbutton">
-                        <button id="sb23" name="fach[]" value="<?php echo $regalnummer; ?>_11" <?php if($_SESSION['regale'][$regalnummer][2][3]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>>
+                        <button id="sb23" name="fach[]" value="<?php echo $regalnummer; ?>_09" <?php if($_SESSION['regale'][$regalnummer][2][3]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>>
                             <?php if($_SESSION['regale'][$regalnummer][2][3]!=0)echo'
                             <div id="led000" class="fachled"></div>
                             <div id="led001" class="fachled"></div>
@@ -199,7 +187,7 @@ include '../../htmlheader.php';?>
                 </div>
                 <div id="reihe_3" class="reihe">
                     <div id="sf30" class="sonderdivbutton">
-                        <button id="sb30" name="fach[]" value="<?php echo $regalnummer; ?>_12" <?php if($_SESSION['regale'][$regalnummer][3][0]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>>
+                        <button id="sb30" name="fach[]" value="<?php echo $regalnummer; ?>_10" <?php if($_SESSION['regale'][$regalnummer][3][0]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>>
                             <?php if($_SESSION['regale'][$regalnummer][3][0]!=0)echo'
                             <div id="led000" class="fachled"></div>
                             <div id="led001" class="fachled"></div>
@@ -209,7 +197,7 @@ include '../../htmlheader.php';?>
                         </button>
                     </div>
                     <div id="sf31" class="sonderdivbutton">
-                        <button id="sb31" name="fach[]" value="<?php echo $regalnummer; ?>_13" <?php if($_SESSION['regale'][$regalnummer][3][1]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>>
+                        <button id="sb31" name="fach[]" value="<?php echo $regalnummer; ?>_11" <?php if($_SESSION['regale'][$regalnummer][3][1]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>>
                             <?php if($_SESSION['regale'][$regalnummer][3][1]!=0)echo'
                             <div id="led000" class="fachled"></div>
                             <div id="led001" class="fachled"></div>
@@ -219,7 +207,7 @@ include '../../htmlheader.php';?>
                         </button>
                     </div>
                     <div id="sf32" class="sonderdivbutton">
-                        <button id="sb32" name="fach[]" value="<?php echo $regalnummer; ?>_14" <?php if($_SESSION['regale'][$regalnummer][3][2]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>>
+                        <button id="sb32" name="fach[]" value="<?php echo $regalnummer; ?>_12" <?php if($_SESSION['regale'][$regalnummer][3][2]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>>
                             <?php if($_SESSION['regale'][$regalnummer][3][2]!=0)echo'
                             <div id="led000" class="fachled"></div>
                             <div id="led001" class="fachled"></div>
@@ -229,7 +217,7 @@ include '../../htmlheader.php';?>
                         </button>
                     </div>
                     <div id="sf33" class="sonderdivbutton">
-                        <button id="sb33" name="fach[]" value="<?php echo $regalnummer; ?>_15" <?php if($_SESSION['regale'][$regalnummer][3][3]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>>
+                        <button id="sb33" name="fach[]" value="<?php echo $regalnummer; ?>_13" <?php if($_SESSION['regale'][$regalnummer][3][3]==0)echo"disabled class='sonderfachdisabled'";else echo"class='sonderfach'"; ?>>
                             <?php if($_SESSION['regale'][$regalnummer][3][3]!=0)echo'
                             <div id="led000" class="fachled"></div>
                             <div id="led001" class="fachled"></div>

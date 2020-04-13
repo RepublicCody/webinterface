@@ -645,30 +645,30 @@ div {
 }
 
 #regal_1 {
-    top: 94%;
-    left: 63%;
-}
-
-#regal_2 {
-    top: 94%;
-    left: 33%;
-}
-
-#regal_3 {
     width: 7%;
     height: 48%;
     top: 36%;
     left: 52.5%;
 }
 
-#regal_4 {
+#regal_2 {
     top: 6%;
     left: 71%;
 }
 
-#regal_5 {
+#regal_3 {
     top: 6%;
     left: 41%;
+}
+
+#regal_4 {
+    top: 94%;
+    left: 33%;
+}
+
+#regal_5 {
+    top: 94%;
+    left: 63%;
 }
 
 
