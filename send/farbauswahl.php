@@ -28,7 +28,7 @@ if (isset($_POST['alleregale'])) {
 
     $regalnummer = $_POST['alleregalleds'];
 
-    $nummern = $regalnummer;
+    $nummern = $regalnummer;               #für zurück button
 
     $position = position($regalnummer, $regalfach_pro_regal);
 
@@ -42,7 +42,7 @@ if (isset($_POST['alleregale'])) {
 
     $regal_und_fachnummer = explode('_', $_POST['allefachleds']);
 
-    $nummern = $regal_und_fachnummer[0] . "_" . $regal_und_fachnummer[1];
+    $nummern = $regal_und_fachnummer[0] . "_" . $regal_und_fachnummer[1];               #für zurück button
 
     $position = position($regal_und_fachnummer[0], $regalfach_pro_regal);
 
@@ -56,9 +56,9 @@ if (isset($_POST['alleregale'])) {
 
     $zielseite = '../raeume/schlafzimmer/fachansicht.php';
 
-    $regal_und_fachnummer = explode('_', $_POST['allefachleds']);
+    $regal_und_fachnummer = explode('_', $_POST['allesonderfachleds']);
 
-    $nummern = $regal_und_fachnummer[0] . "_" . $regal_und_fachnummer[1] . "_" . $regal_und_fachnummer[2] . "_" . $regal_und_fachnummer[3];
+    $nummern = $regal_und_fachnummer[0] . "_" . $regal_und_fachnummer[1];               #für zurück button
 
     $position = position($regal_und_fachnummer[0], $regalfach_pro_regal);
 
@@ -76,7 +76,7 @@ if (isset($_POST['alleregale'])) {
 
     $regal_und_fach_und_lednummer = $stringarray = explode('_', $_POST['led'][0]);
 
-    $nummern = $regal_und_fach_und_lednummer[0] . "_" . $regal_und_fach_und_lednummer[1];
+    $nummern = $regal_und_fach_und_lednummer[0] . "_" . $regal_und_fach_und_lednummer[1];               #für zurück button
 
     $position = position($regal_und_fach_und_lednummer[0], $regalfach_pro_regal);
 
