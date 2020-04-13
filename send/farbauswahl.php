@@ -8,7 +8,7 @@
 
 session_start();
 
-$regalfach_pro_regal = array(16, 12, 14, 12, 12);               //todo modularer machen also function schreiben
+$regalfach_pro_regal = array(18, 12, 12, 12, 16);               //todo modularer machen also function schreiben
 
 $befehlsstring = '';
 

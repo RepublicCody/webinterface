@@ -9,10 +9,10 @@ session_start();
 $_SESSION['steckdosenzustand'] = array(array(0, 0, 0, 0, 0, 0));
 $_SESSION['regale'] = array(
     array(array(1,1,1,1),array(1,1,1,1),array(1,1,1,1),array(1,1,1,1)),
-    array(array(1,1,1,1),array(1,1,1,1),array(1,1,0,0),array(1,1,0,0)),
-    array(array(1,1,1,1),array(1,1,1,1),array(0,1,1,0),array(1,1,1,1)),
     array(array(1,1,1,1),array(1,1,1,1),array(1,1,1,1),array(0,0,0,0)),
-    array(array(1,1,1,0),array(1,1,1,0),array(1,1,1,0),array(1,1,1,0)));
+    array(array(1,1,1,0),array(1,1,1,0),array(1,1,1,0),array(1,1,1,0)),
+    array(array(1,1,1,1),array(1,1,1,1),array(1,1,0,0),array(1,1,0,0)),
+    array(array(1,1,1,1),array(1,1,1,1),array(1,1,1,1),array(1,1,1,1)));
 
 $_SESSION['regalzustand'] = array(
     array(array("000000","000000","000000","000000"),array("000000","000000","000000","000000"),array("000000","000000","000000","000000"),array("000000","000000","000000","000000")),
