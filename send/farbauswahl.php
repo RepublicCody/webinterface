@@ -42,19 +42,29 @@ if (isset($_POST['alleregale'])) {
 
     $regal_und_fachnummer = explode('_', $_POST['allefachleds']);
 
-    if (sizeof($regal_und_fachnummer)> 2 ) {
-        $nummern = $regal_und_fachnummer[0] . "_" . $regal_und_fachnummer[1] . "_" . $regal_und_fachnummer[2] . "_" . $regal_und_fachnummer[3];
-    }
-
-    else {
-        $nummern = $regal_und_fachnummer[0] . "_" . $regal_und_fachnummer[1];
-    }
+    $nummern = $regal_und_fachnummer[0] . "_" . $regal_und_fachnummer[1];
 
     $position = position($regal_und_fachnummer[0], $regalfach_pro_regal);
 
     $position = $position + $regal_und_fachnummer[1];
 
     $ledarray = leds_im_regal($position, 1);
+
+    $_SESSION['befehlsstring'] = generatebefehlsstring($ledarray);
+
+}elseif (isset($_POST['allesonderfachleds'])) {
+
+    $zielseite = '../raeume/schlafzimmer/fachansicht.php';
+
+    $regal_und_fachnummer = explode('_', $_POST['allefachleds']);
+
+    $nummern = $regal_und_fachnummer[0] . "_" . $regal_und_fachnummer[1] . "_" . $regal_und_fachnummer[2] . "_" . $regal_und_fachnummer[3];
+
+    $position = position($regal_und_fachnummer[0], $regalfach_pro_regal);
+
+    $position = $position + $regal_und_fachnummer[1];
+
+    $ledarray = leds_im_regal($position, 3);
 
     $_SESSION['befehlsstring'] = generatebefehlsstring($ledarray);
 

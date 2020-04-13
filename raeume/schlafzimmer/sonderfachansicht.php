@@ -59,7 +59,7 @@ include '../../htmlheader.php';?>
     <div id="fachansicht">
 
         <form action="../../send/farbauswahl.php" method="post">
-            <button id="fachansichtalleleds" name="allefachleds" value="<?php echo $regalundfachnummer.'_'.($regalundfachnummer+1).'_'.($regalundfachnummer+2); ?>" class="ledbutton">Ganzes Fach auswählen</button>
+            <button id="fachansichtalleleds" name="allesonderfachleds" value="<?php echo $regalundfachnummer.'_'.($regalundfachnummer[2].$regalundfachnummer[3]+1).'_'.($regalundfachnummer[2].$regalundfachnummer[3]+2); ?>" class="ledbutton">Ganzes Fach auswählen</button>
         </form>
         <form action="../../send/leds.php" method="post">
             <button id="fachansichtalleledsaus" name="fachaus" value="off" class="ledbutton">Ganzes Fach ausschalten</button>
