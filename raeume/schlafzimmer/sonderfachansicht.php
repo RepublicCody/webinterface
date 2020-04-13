@@ -38,7 +38,7 @@ include '../../htmlheader.php';?>
             <button id="fachansichtschlafzimmer" class="schlafzimmerbutton"><div id="schlafzimmerbild"></div><div class="headername">Schlafzimmer</div></button>
         </form>
 
-        <?php if ($regalundfachnummer[0] == 2) { echo '
+        <?php if ($regalundfachnummer[0] == 0) { echo '
         <form action="sonderregalansicht.php" method="post">
         <button id="fachansichtzurueck" class="zurueckbutton" name="fachansichtheaderbutton" value='; echo $regalundfachnummer[0].'><div id="zurueckbild"></div><div class="headername">Zurück</div></button>
         </form>';}
