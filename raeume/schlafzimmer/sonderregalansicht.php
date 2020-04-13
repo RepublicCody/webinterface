@@ -54,7 +54,7 @@ include '../../htmlheader.php';?>
     <div id="regalansicht">
 
         <form action="../../send/farbauswahl.php" method="post">
-            <button id="regalansichtalleleds" name="alleregalleds" value="<?php echo $regalnummer; ?>" class="ledbutton">Ganzes Regal auswählen</button>
+            <button id="regalansichtalleleds" name="allersonderegalleds" value="<?php echo $regalnummer; ?>" class="ledbutton">Ganzes Regal auswählen</button>
         </form>
         <form action="../../send/leds.php" method="post">
             <button id="regalansichtalleledsaus" name="aus" value="off" class="ledbutton">Ganzes Regal ausschalten</button>

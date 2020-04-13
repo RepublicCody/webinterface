@@ -36,6 +36,20 @@ if (isset($_POST['alleregale'])) {
 
     $_SESSION['befehlsstring'] = generatebefehlsstring($ledarray);
 
+} elseif (isset($_POST['allersonderegalleds'])) {
+
+    $zielseite = '../raeume/schlafzimmer/sonderregalansicht.php';
+
+    $regalnummer = $_POST['allersonderegalleds'];
+
+    $nummern = $regalnummer;               #für zurück button
+
+    $position = position($regalnummer, $regalfach_pro_regal);
+
+    $ledarray = leds_im_regal($position, $regalfach_pro_regal[$regalnummer]);
+
+    $_SESSION['befehlsstring'] = generatebefehlsstring($ledarray);
+
 } elseif (isset($_POST['allefachleds'])) {
 
     $zielseite = '../raeume/schlafzimmer/fachansicht.php';
